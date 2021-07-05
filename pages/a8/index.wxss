@@ -1,0 +1,26 @@
+.pay-hint-content{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #888;
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+  text-overflow: ellipsis;
+  overflow:hidden;
+}
+.ellipsis{
+  -webkit-line-clamp:3; 
+  opacity: 0.75 
+}
+.unellipsis{
+  -webkit-line-clamp:0;
+  opacity: 1;
+}
+.bg-white-ellipsis{
+  margin: 20rpx 0 0 340rpx;
+}
+.bg-white-ellipsis image{
+  width: 40rpx;
+  height: 40rpx;
+}

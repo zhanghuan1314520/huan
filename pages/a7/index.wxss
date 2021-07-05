@@ -1,0 +1,127 @@
+page {
+  background: #f6fbff;
+}
+
+.container {
+  width: 100%;
+}
+.wrap {
+  width: 100%;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+}
+.item {
+  width: 100%;
+  border: 1rpx solid #acacac80;
+  border-radius: 10rpx;
+  background: #fff;
+  padding: 15rpx;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+
+.item .top {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.item .top .img {
+  flex: 0 0 260rpx;
+  height: 360rpx;
+  margin-right: 20rpx;
+}
+
+.item .top .img image {
+  width: 100%;
+  height: 100%;
+}
+
+.item .top .desc {
+  flex: 1;
+  width: 0;
+  font-size: 29rpx;
+}
+.item .top .desc .title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+.item .top .desc .subtitle {
+  margin-bottom: 30rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.item .top .desc .type {
+  margin-bottom: 10rpx;
+}
+.item .top .desc .duration {
+  margin-bottom: 10rpx;
+}
+.item .top .desc .opentime {
+  margin-bottom: 30rpx;
+}
+.item .top .desc .btn-group {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.item .top .desc .btn-group .btn {
+  width: 186rpx;
+  height: 60rpx;
+  background: #ffaa7f;
+  border-radius: 30rpx;
+  font-size: 29rpx;
+  font-weight: normal;
+  text-align: center;
+  line-height: 60rpx;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.item .top .desc .btn-group .btn:first-child {
+  margin-right: 20rpx;
+}
+
+.item .top .desc .btn-group .btnhover {
+  background: #ea986c;
+}
+
+.item .btm {
+  width: 100%;
+  font-size: 30rpx;
+}
+.item .btm .tit-wrap {
+  width: 100%;
+  padding: 4rpx 15rpx 10rpx 0rpx;
+  box-sizing: border-box;
+  margin-top: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item .btm .tit-wrap .txt {
+  font-size: 30rpx;
+}
+
+.item .btm .tit-wrap .arrow {
+  width: 16rpx;
+  height: 16rpx;
+  border-top: 2rpx solid #33373E;
+  border-left: 2rpx solid #33373E;
+  transform: rotate(-135deg);
+  margin-top: -10rpx;
+  margin-right: 4rpx;
+}
+
+.item .btm .tit-wrap .arrow.active {
+  margin-top: 8rpx;
+  transform: rotate(45deg);
+}
+
+.item .btm .plot {
+  text-indent: 2em;
+}

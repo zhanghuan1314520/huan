@@ -1,0 +1,19 @@
+<view class='title'>radio单选标签</view>
+<radio-group bindchange="radioChange">
+<view class='label'>
+  <label class="ui-radio {{item.checked==true?'active':''}}" wx:for="{{items}}">
+    <radio value="{{item.value}}" checked="{{item.checked}}" />
+    <text class="text">{{item.name}}</text>
+  </label>
+  </view>
+</radio-group>
+
+<view class='title'>checkbox多选标签</view>
+<checkbox-group bindchange="checkboxChange">
+  <view class='label'>
+    <label class="ui-radio {{item.checked==true?'active':''}}" wx:for="{{checkboxItems}}">
+      <checkbox value="{{item.name}},{{item.id}}" checked="{{item.checked}}" />
+      <text class="text">{{item.name}}</text>
+    </label>
+  </view>
+</checkbox-group>

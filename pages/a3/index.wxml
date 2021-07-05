@@ -1,0 +1,88 @@
+<view class="container">
+  <view class='class bgFFF' bindtap='isDep'>
+    <view class='class-text'>
+        <text class='red'> </text>
+        <text>开放部门</text>
+      </view>
+    <view class='class-choose'>
+      <text class='color333 perItem' wx:if="{{checkValue.length>0}}">
+        <block wx:for="{{checkValue}}" wx:key="index"> {{item}} </block>
+      </text>
+      <text wx:else>默认全部</text>
+      <image src='/images/right-icon.png' mode="widthFix"></image>
+    </view>
+  </view>
+  <view class='class bgFFF' bindtap='isPer'>
+    <view class='class-text'>
+        <text class='red'> </text>
+        <text>开放成员</text>
+      </view>
+    <view class='class-choose'>
+      <text class='color333 perItem' wx:if="{{depValue.length>0}}">
+        <block wx:for="{{depValue}}" wx:key="index"> {{item}} </block>
+      </text>
+      <text wx:else>默认全部</text>
+      <image src='/images/right-icon.png' mode="widthFix"></image>
+    </view>
+  </view>
+</view>
+
+
+<!-- 部门列表 -->
+<view class='typeListBox' wx:if="{{isDep}}">
+  <view class='wrap'>
+    <view class='nav'>
+      <text class='active'>部门</text>
+      <!-- <text class='{{navId==2?"active":""}}' data-id='2' bindtap='getNav'>人员</text> -->
+    </view>
+    <view class='checkbox-con'>
+      <scroll-view scroll-y style="height: 700rpx;" scroll-top="{{scrollTop}}">
+        <checkbox-group bindchange="checkboxChange" class="checkbox-group">
+          <view wx:for="{{checkboxArr}}" wx:key="item.name">
+            <label class="{{item.checked?'checkbox checked':'checkbox'}}" bindtap='checkbox' data-index="{{index}}">
+              <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
+            </label>
+          </view>
+        </checkbox-group>
+      </scroll-view>
+    </view>
+    <view class='btn1'>
+      <button class='bgFFF' bindtap='cancel'>取消</button>
+      <button class='' bindtap='confirm'>确定</button>
+    </view>
+  </view>
+</view>
+
+<!-- 成员列表 -->
+<view class='typeListBox' wx:if="{{isPer}}">
+  <view class='wrap'>
+      <!-- 字母锚点 -->
+      <view class='anchor'>
+        <view bindtap="jumpTo" wx:for="{{words}}" wx:key="i" data-opt="{{item}}">{{item}}</view>
+      </view>
+
+
+    <view class='nav'>
+      <text class='active'>人员</text>
+    </view>
+    <view class='checkbox-con'>
+      <scroll-view scroll-y style="height: 700rpx;" scroll-with-animation='true' scroll-top="{{scrollTop}}" scroll-into-view="{{toView}}">
+        <view class='typeList'>
+          <checkbox-group class="radio-group" bindchange="checkBoxPer">
+            <view wx:for="{{personnelArr}}" wx:key="index" wx:for-item="itemName" wx:for-index="itemNameInd">
+              <view class='typeList-item-title' id="{{itemName.name}}">{{itemName.name}}</view>
+              <label class='typeList-item' data-itemnameind='{{itemNameInd}}' bindtap="checkPer" wx:for="{{itemName.a}}" wx:key="a" wx:for-item="item" data-index="{{index}}">
+                <checkbox value="{{item.name}}" checked="{{item.checked}}" color='#3eace2'/>
+                <text>{{item.name}}</text>
+              </label>
+            </view>
+          </checkbox-group>
+        </view>
+      </scroll-view>
+    </view>
+    <view class='btn1'>
+      <button class='bgFFF' bindtap='cancel'>取消</button>
+      <button class='' bindtap='confirmPer'>确定</button>
+    </view>
+  </view>
+</view>
