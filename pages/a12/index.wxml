@@ -1,0 +1,368 @@
+<view class="box">
+  <view class="item1 a">
+    <view class="box_item_r">
+      <view class="box_item_r_1">文本</view>
+      <view class="box_item_r_2">文本</view>
+    </view>
+    <view class="box_item_l">
+      <view class="arrow_1"></view>
+      <view class="arrow_01"></view>
+    </view>
+  </view>
+</view>
+
+
+<view class="box">
+  <view class="item2 a">
+    <text>文本</text>
+    <text class="dian"></text>
+    <text>文本</text>
+    <text class="dian"></text>
+    <text>文本</text>
+    <text class="dian"></text>
+    <text>文本</text>
+  </view>
+</view>
+
+
+
+<view class="box">
+  <view class="item3 a">
+    <view class="btm" wx:for="{{list}}" wx:key="index">
+      <view class="tit-wrap" wx:if="{{item.plot}}" bindtap="showPlot" data-index="{{index}}">
+        <view class="txt">文本</view>
+        <view class="arrow_a {{item.flag ? 'active' : ''}}"></view>
+      </view>
+      <view class="plot" hidden="{{!item.flag}}">{{item.plot}}</view>
+    </view>
+  </view>
+</view>
+
+
+<view class="box">
+  <view class="item4 a">
+    <text class="content {{ellipsis?'ellipsis':'unellipsis'}}">
+      飞房间卡了飞机而来发发色法尔范发疯安峰山粉色案发前二十阿里附近发打发打发是范德萨发放就开了房间爱离开房间爱卡房间爱疯爱疯飞房间卡了飞机而来发发色法尔范发疯安峰山粉色案发飞房间卡了飞机而来发发色法尔范发疯安峰山粉色案发
+    </text>
+    <view bindtap='ellipsis'>
+      <view class="ellipsis_1">
+        {{ellipsis?'展开':'收起'}}
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="box">
+  <view class="item5 a">
+    <view class="btm" wx:for="{{list1}}" wx:key="index">
+      <view class="tit-wrap" wx:if="{{item.plot}}" bindtap="showPlot1" data-index="{{index}}">
+        <view class="txt">{{item.tite}}</view>
+        <view class="arrow_b {{item.flag ? 'active' : ''}}"></view>
+      </view>
+      <view class="plot" hidden="{{!item.flag}}">{{item.plot}}</view>
+    </view>
+  </view>
+</view>
+
+
+<view class="box">
+  <view class="item6 a">
+    <view class="team-content">文本文本文本文本文本文本文本文本文本文本文本文本</view>
+    <view class="homework">文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文文本文本</view>
+  </view>
+</view>
+
+
+
+
+<view class="box">
+  <view class="item7 a">
+    <view class="nav bc_white">
+      <view class="{{selected?'red':'default'}}" bindtap="selected">文本1内容</view>
+      <view class="{{selected1?'red':'default'}}" bindtap="selected1">文本2内容</view>
+    </view>
+    <view class="{{selected?'show':'hidden'}}">文本1内容</view>
+    <view class="{{selected1?'show':'hidden'}}">文本2内容</view>
+  </view>
+</view>
+
+<view class="box">
+  <view class="item8 a">
+    <view class="tab-container">
+      <view class="default {{type=='expend'? 'expend-active':''}}" bindtap="handleType" data-type="expend">文本1</view>
+      <view class="default {{type=='earning'? 'earning-active': ''}}" bindtap="handleType" data-type="earning">文本2
+      </view>
+      <view class="default {{type=='transaccount'?'transaccount-active': ''}}" bindtap="handleType"
+        data-type="transaccount">文本3</view>
+    </view>
+
+
+    <view class="encourage-content">
+      <view class="encorage-title">{{accountlist.encourtitle}}</view>
+      <view class="encourage-list">
+        <block wx:for="{{listData}}" wx:key="*this">
+          <view data-item="{{item}}" class="list-item {{item.account == accountlist.account ? 'list-active': ''}}"
+            bindtap="handleList">{{item.account}}</view>
+        </block>
+      </view>
+    </view>
+
+    <view class="input-wrap">
+      输入框的内容<input type="number" bindinput="handleInput" model:value="{{accountlist.account}}" />
+    </view>
+  </view>
+</view>
+
+
+
+<view class="box">
+  <view class="item9 a">
+    <scroll-view scroll-x="true" class="ip_tab_comtainer">
+      <view class="ip_tab_comtainer_padd"></view>
+      <block wx:for="{{ips}}" wx:for-item="ip" wx:key="{{ip.id}}">
+        <view class="{{ip.isSelect?'ip_tab_item_s':'ip_tab_item_n'}}" bindtap="onIpItemClick" wx:key="{{ip.id}}"
+          data-item="{{ip}}">
+          {{ip.title}}
+        </view>
+      </block>
+      <view class="ip_tab_comtainer_padd"></view>
+    </scroll-view>
+    <view class='content'>
+      {{content}}
+    </view>
+
+  </view>
+</view>
+
+
+
+<view class="box">
+  <view class="item10 a">
+    <view class="swiper-tab">
+      <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">文本1</view>
+      <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">文本2</view>
+      <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">文本3</view>
+    </view>
+    <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
+      <swiper-item>
+        <view>文本1的内容</view>
+      </swiper-item>
+      <swiper-item>
+        <view>文本2的内容</view>
+      </swiper-item>
+      <swiper-item>
+        <view>文本3的内容</view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
+
+
+<view class="box">
+  <view class="item11 a">
+    <view id='tabs'>
+      <view class='tabs-box'>
+        <block wx:for="{{['文本1','文本2','文本3','文本4']}}" wx:key="index">
+          <view class="tabs-item {{currentTabIndex == index ? 'selected' : '' }}" bindtap='onTabsItemTap'
+            data-index='{{index}}'>
+            {{item}}
+          </view>
+        </block>
+      </view>
+      <view class='ordert-detail'>
+        <view hidden='{{currentTabIndex != 0}}'>页面1</view>
+        <view hidden='{{currentTabIndex != 1}}'>页面2</view>
+        <view hidden='{{currentTabIndex != 2}}'>页面3</view>
+        <view hidden='{{currentTabIndex != 3}}'>页面4</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="box">
+  <view class="item12 a">
+    <view class="top">
+      <view class=" li" bindtap="changeIndex" data-index="{{index}}" wx:for="{{topNav}}"
+        style="color:{{activetop == index?'#000':''}}" wx:key="*this">{{item}}
+        <view class="hr" wx:if="{{activetop == index}}"></view>
+      </view>
+    </view>
+    <view class="banner1" wx:if="{{activetop == 0}}">
+      文本1内容
+    </view>
+    <view class="banner1" wx:if="{{activetop == 1}}">
+      文本2内容
+    </view>
+    <view class="banner1" wx:if="{{activetop == 2}}">
+      文本3内容
+    </view>
+  </view>
+</view>
+
+
+
+<view class="box">
+  <view class="item13 a">
+    <view class="option-list">
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{radioChange}}" wx:key="index">
+          <radio value="{{item.name}}" checked="{{item.checked}}" color="#fff"></radio>
+          <text>{{item.name}}</text>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="box">
+  <view class="item14 a">
+    <checkbox-group bindchange="HandelItemChange">
+      <checkbox value="{{item.value}}" wx:for="{{list2}}" wx:key="id">
+        {{item.name}}
+      </checkbox>
+    </checkbox-group>
+    <view>
+      结果:{{checkedList}}
+    </view>
+  </view>
+</view>
+
+
+
+<view class="box">
+  <view class="item15 a">
+    <view class='list'>
+      <block wx:for="{{items}}" wx:for-item="v" wx:key="k" wx:for-index="index">
+        <view class='li {{v.checked?"cur":""}}' data-index='{{index}}' data-value="{{v.value}}" bindtap='selSingle'>
+          <label class='ti'>{{v.value}} </label>
+        </view>
+      </block>
+    </view>
+
+    <!-- 这里用来存储选中的标签的值 {{selVal}}-->
+    <view class='seled'>
+      <view class='tt'>你当前选中的是：</view>
+      <label class='sel-v'>{{selVal}}</label>
+    </view>
+  </view>
+</view>
+
+
+
+
+<view class="box">
+  <view class="item16 a">
+    <checkbox-group bindchange="checkboxChange" class="checkbox-group">
+      <view wx:for="{{checkboxArr}}" wx:key="index" class="padding-xs">
+        <label class="{{item.checked?'checkbox checked':'checkbox'}}" bindtap='checkbox' data-index="{{index}}">
+          <checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.name}}
+        </label>
+      </view>
+    </checkbox-group>
+  </view>
+</view>
+
+
+
+
+<view class="box">
+  <view class="item17 a">
+    <view class="two {{showView?'hide':'show'}} the-label">
+      <view class='list'>
+        <block wx:for="{{items2}}" wx:for-item="v" wx:key="k" wx:for-index="index">
+          <!-- wx:for绑定数组 wx:for-item指定数组当前元素的变量名 index指定下标的变量名 -->
+          <view class="li {{v.checked?'cur':''}}" data-index="{{index}}" data-value="{{v.value}}" bindtap="checkLabs">
+            <label class='ti'>{{v.value}}</label>
+            <image class="zi {{v.checked?'cur':''}}" data-index="{{index}}" data-value="{{v.value}}" bindtap="switchtap"
+              src="/images/zhengq.png"></image>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+<view class="box">
+  <view class="item19 a">
+    <view class="telbox">
+      <view class="tel">
+        <text class="telname">微信号</text>
+        <text class="telnum">{{phone}}</text>
+      </view>
+      <view class="moretap" bindtap="copywxtap">
+        <text class="fuzhi">复制</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+<view class="box">
+  <view class="item18 a">
+    <view class='fenlei'>
+      <text>文本标题</text>
+      <!-- 下拉框 -->
+      <view class='select_box'>
+        <view class='select' catchtap='selectTaps'>
+          <text class='select_text'>{{selectDatas[indexs]}}</text>
+          <image class='select_img {{shows&&"select_img_rotate"}}' src='/images/sanjiao.png'></image>
+        </view>
+        <view class='option_box' style='height:{{shows?(selectDatas.length>5?300:selectDatas.length*60):0}}rpx;'>
+          <text class='option' style='{{indexs==selectDatas.length-1&&"border:0;"}}' wx:for='{{selectDatas}}'
+            wx:key='this' data-index='{{index}}' catchtap='optionTaps'>{{item}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="box">
+  <view class="item20 a">
+    <form bindsubmit="reg">
+      <view>
+        <text>用户:</text>
+        <input type="text" name="username"></input>
+      </view>
+      <view>
+        <text>密码:</text>
+        <input type="password" name="password"></input>
+      </view>
+      <view>
+        <checkbox-group name="cb">
+          <checkbox value="A">乒乓球</checkbox>
+          <checkbox value="B" checked="false">羽毛球</checkbox>
+          <checkbox value="C" checked="{{checked}}">排球</checkbox>
+        </checkbox-group>
+      </view>
+      <view>
+        <radio-group name="r">
+          <radio value="a">初级</radio>
+          <radio value="b">中级</radio>
+          <radio value="c">高级</radio>
+        </radio-group>
+      </view>
+      <view>
+        <button type="primary" form-type="submit">注册</button>
+      </view>
+    </form>
+  </view>
+</view>
+
+
+<view class="box">
+  <view class="item21 a">
+    <view>文本</view>
+  </view>
+</view>

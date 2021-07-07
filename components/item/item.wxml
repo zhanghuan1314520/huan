@@ -1,0 +1,15 @@
+<view class="box">
+  <view class="box_item">
+    <view class="box_item_r">
+      <view class="box_item_r_1">文本</view>
+      <view class="box_item_r_2">文本</view>
+    </view>
+    <view class="box_item_l">
+      <view class="arrow_1"></view>
+      <view class="arrow_2"></view>
+      <view class="arrow_3"></view>
+      <view class="arrow_4"></view>
+      <view class="arrow_01"></view>
+    </view>
+  </view>
+</view>

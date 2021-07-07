@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Echarts绘制图表实现tab切换",
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  }
+}

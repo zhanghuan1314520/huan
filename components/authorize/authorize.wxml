@@ -1,0 +1,9 @@
+
+  <view class="item_show"></view>
+<view class="item_show_box">
+  <view class="item_show_1">微信授权</view>
+  <view class="item_show_2">小程序将获取以下权限:</view>
+  <view class="item_show_3">(如未授权,可能无法正常使用该小程序)</view>
+  <view class="item_show_4">获取你的公开信息(昵称、头像等)</view>
+  <view class="item_show_5" >授权</view>
+ </view>

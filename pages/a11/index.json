@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "蒙层和croll-view",
+  "usingComponents": {
+    "authorize":"/components/authorize/authorize"
+  }
+}

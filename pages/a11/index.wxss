@@ -1,0 +1,40 @@
+/* pages/a11/index.wxss */
+.parent{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+.first-child{
+  height: 100rpx;
+  width: 100%;
+  background-color: red;
+ margin-top: 200rpx;
+}
+.second-child{
+  flex: 1;
+  height: 1rpx;
+  width: 100%;
+  background-color:#ccc;
+}
+.third-child{
+  height: 100rpx;
+  width: 100%;
+  background-color: blue;
+}
+
+::-webkit-scrollbar{
+  height: 0;
+  width: 0;
+  color:transparent;
+}
+.aa{
+  margin-top: 100rpx;
+}
+.box{
+  height: 200rpx;
+  background-color: rgb(107, 136, 199);
+  margin-bottom: 10rpx;
+  margin: 20rpx;
+  border-radius: 10rpx;
+}

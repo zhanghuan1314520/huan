@@ -1,0 +1,11 @@
+<view class="parent">
+  <view class="first-child"></view>
+  <scroll-view class="second-child" scroll-y="true">
+    <view  wx:for="{{20}}" wx:key="index" class="aa">
+      <view class="box">11</view>
+    </view>
+  </scroll-view>
+  <view class="third-child"></view>
+</view>
+
+<authorize bind:__l="__l" dataApi="{{member}}"></authorize>
