@@ -1,59 +1,14 @@
-<view class="tabNav">
-  <view wx:for="{{navTab}}" wx:key="index" data-idx="{{index}}" bindtap="currentTab" style=" background-color:{{bg}}"
-    class="{{currentTab==index ? 'cur' : ''}}" data-name="{{item.name}}" data-bg="{{item.bg}}" data-bg2="{{bg2}}">
-    <text>{{item.name}}</text>
-  </view>
-</view>
-<view class="orderInfo">
-  <scroll-view scroll-y="true" style="height:1160rpx">
-    <view class="orderInfo_title">畅享所有功能</view>
-    <view class="orderInfo_tip">多账号运营管理,推动团队电商、直播变现</view>
-    <view class="orderInfo_name">手边买房</view>
-    <view wx:if="{{currentTab == 0}}" data-idx="0">
-      <view class="orderInfo_box">
-        <view class="orderInfo_content" wx:for="{{list}}">
-          <view class="orderInfo_content_r">{{item.title}}</view>
-          <!-- <view class="orderInfo_content_l">800次/月</view> -->
-          <!-- <view class="orderInfo_content_l">
-            <view class="success"></view>
-          </view> -->
-          <view class="orderInfo_content_l">
-            <view class="error"></view>
-          </view>
-        </view>
-      </view>
-    </view>
-    <view wx:if="{{currentTab == 1}}" data-idx="1">
-      <view class="orderInfo_box">
-        <view class="orderInfo_content" wx:for="{{list}}">
-          <view class="orderInfo_content_r">{{item.title}}</view>
-          <view class="orderInfo_content_l">800次/月</view>
-          <!-- <view class="orderInfo_content_l">
-            <view class="success"></view>
-          </view> -->
-          <!-- <view class="orderInfo_content_l">
-            <view class="error"></view>
-          </view> -->
-        </view>
-      </view>
-    </view>
+<view class="mask" catchtouchmove="preventTouchMove" hidden="{{hid_mengceng}}"></view>
 
-    <view wx:if="{{currentTab == 2}}" data-idx="2">
-      <view class="orderInfo_box">
-        <view class="orderInfo_content" wx:for="{{list}}">
-          <view class="orderInfo_content_r">{{item.title}}</view>
-          <!-- <view class="orderInfo_content_l">800次/月</view> -->
-          <view class="orderInfo_content_l">
-            <view class="success"></view>
-          </view>
-          <!-- <view class="orderInfo_content_l">
-            <view class="error"></view>
-          </view> -->
-        </view>
-      </view>
-    </view>
-  </scroll-view>
-</view>
-<view class="btn_box">
-  <view class="btn_item" style=" background-color:{{bg}}">{{name}}</view>
+
+<view wx:for="{{100}}">測試內容</view>
+
+
+<view></view><view class="item_show"></view>
+<view class="item_show_box">
+  <view class="item_show_1">微信授权</view>
+  <view class="item_show_2">小程序将获取以下权限:</view>
+  <view class="item_show_3">(如未授权,可能无法正常使用该小程序)</view>
+  <view class="item_show_4">获取你的公开信息(昵称、头像等)</view>
+  <view class="item_show_5">授权</view>
 </view>

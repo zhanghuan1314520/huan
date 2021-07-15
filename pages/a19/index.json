@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "自定义组件(弹窗)和循环列表",
+  "usingComponents": {
+    "items": "/components/Items/items",
+    "test":"/components/test/test"
+  }
+}

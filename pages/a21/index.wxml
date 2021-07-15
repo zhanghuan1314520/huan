@@ -1,0 +1,9 @@
+<view class="page" style="background-color:{{pageBackgroundColor}}">
+  <view class="bj" bindtap="changeColor">点击修改背景颜色</view>
+  <view bindtap="hotLinkTopic" class="list-item_type flexbox_xuequ {{topic==1?'sub-cur':''}}" data-index="{{1}}">
+    热门刚需
+  </view>
+  <view bindtap="hotLinkTopic" class="list-item_type flexbox_xuequ {{topic==2?'sub-cur':''}}" data-index="{{2}}">
+    改善置业
+  </view>
+</view>

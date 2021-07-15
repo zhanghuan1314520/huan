@@ -1,11 +1,11 @@
-// pages/a9/index.js
+// pages/a17/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    topic: 1,
   },
 
   /**
@@ -14,17 +14,28 @@ Page({
   onLoad: function (options) {
 
   },
-  preventTouchMove: function (e) {
- 
-  },   
+  changeColor: function () {
+    var bgColor = this.data.pageBackgroundColor == 'red' ? '#5cb85c' : 'red';
+    // 设置背景颜色数据
+    this.setData({
+      pageBackgroundColor: bgColor
+    });
+  },
+
+  hotLinkTopic: function (dt) {
+    var t = this,
+      dc = dt.currentTarget.dataset.index;
+    t.setData({
+      topic: dc,
+    });
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
 
   },
- // 防止滑动穿透
- preventTouchMove:function(){},
+
   /**
    * 生命周期函数--监听页面显示
    */

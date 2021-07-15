@@ -227,7 +227,103 @@ Page({
     selectDatas: ['文本1', '文本2', '文本3', '文本4', '文本5', '文本6'], //下拉列表的数据
     indexs: 0, //选择的下拉列 表下标,
     //item19
-    phone:"18112345678"
+    phone: "18112345678",
+    //item21
+    price: 100,
+    //item22
+    list3: {
+      aa: 20,
+      bb: 30
+    },
+    //itewm23
+    list4: {
+      cj_junjia: "33740",
+      cj_junjia_hb: "33872",
+      cj_num: "8079",
+      cj_num_hb: "8941",
+      gp_junjia: "37878",
+      gp_junjia_hb: "38424",
+      gp_num: "49501",
+      kucun: "135252",
+      kucun_hb: "134753",
+      looksum: "293749",
+      looksum_hb: "343276"
+    },
+    //item24
+    //标签云
+    labArr: ['文本1', '文本2', '文本3', '文本4', '文本5', '文本6', '文本7', '文本8', '文本9', '文本10'],
+    // 自定义自己喜欢的颜色
+    colorArr: ["#EE2C2C", "#ff7070", "#EEC900", "#4876FF", "#ff6100",
+      "#7DC67D", "#E17572", "#7898AA", "#C35CFF", "#33BCBA", "#C28F5C",
+      "#FF8533", "#6E6E6E", "#428BCA", "#5cb85c", "#FF674F", "#E9967A",
+      "#66CDAA", "#00CED1", "#9F79EE", "#CD3333", "#FFC125", "#32CD32",
+      "#00BFFF", "#68A2D5", "#FF69B4", "#DB7093", "#CD3278", "#607B8B"
+    ],
+    // 存储随机颜色
+    randomColorArr: [],
+    //item25
+    arr11: [{
+        id: '1',
+        name: 1,
+        age: '12'
+      },
+      {
+        id: '5',
+        name: 2,
+        age: '24'
+      },
+      {
+        id: '3',
+        name: 3,
+        age: '28'
+      },
+      {
+        id: '4',
+        name: 4,
+        age: '18'
+      },
+      {
+        id: '2',
+        name: 5,
+        age: '36'
+      },
+    ],
+    //item26
+    method: '寄付',
+    //item27
+    listData: [{
+      type: 1,
+      content: [{
+        url: 'http://img0.imgtn.bdimg.com/it/u=1424239015,525755483&fm=26&gp=0.jpg'
+      }]
+    }, {
+      type: 2,
+      content: [{
+        url: 'http://img2.imgtn.bdimg.com/it/u=3984473917,238095211&fm=26&gp=0.jpg'
+      }, {
+        url: 'http://img2.imgtn.bdimg.com/it/u=3984473917,238095211&fm=26&gp=0.jpg'
+      }]
+    }, {
+      type: 3,
+      content: [{
+        url: 'http://img4.imgtn.bdimg.com/it/u=2229864841,4232235061&fm=26&gp=0.jpg',
+      }, {
+        url: 'http://img5.imgtn.bdimg.com/it/u=3053840139,4109911854&fm=26&gp=0.jpg',
+      }, {
+        url: 'http://img5.imgtn.bdimg.com/it/u=3053840139,4109911854&fm=26&gp=0.jpg',
+      }]
+    }, {
+      type: 4,
+      content: [{
+        url: 'http://img4.imgtn.bdimg.com/it/u=3360834600,1404834512&fm=26&gp=0.jpg'
+      }, {
+        url: 'http://img4.imgtn.bdimg.com/it/u=3360834600,1404834512&fm=26&gp=0.jpg'
+      }, {
+        url: 'http://img4.imgtn.bdimg.com/it/u=3360834600,1404834512&fm=26&gp=0.jpg'
+      }, {
+        url: 'http://img4.imgtn.bdimg.com/it/u=3360834600,1404834512&fm=26&gp=0.jpg'
+      }]
+    }]
   },
 
   /**
@@ -235,6 +331,22 @@ Page({
    */
   onLoad: function (options) {
     this.defaultSelected();
+    let that = this,
+      //item24
+      labLen = that.data.labArr.length,
+      colorArr = that.data.colorArr,
+      colorLen = colorArr.length,
+      randomColorArr = [];
+    //判断执行
+    do {
+      let random = colorArr[Math.floor(Math.random() * colorLen)];
+      randomColorArr.push(random);
+      labLen--;
+    } while (labLen > 0)
+
+    that.setData({
+      randomColorArr: randomColorArr
+    });
   },
   // 展开
   showPlot(e) {
@@ -479,15 +591,47 @@ Page({
       }
     })
   },
-  // item20
-  reg:function(e){
-    console.log(e.detail.value);
-    wx.showToast({
-        title: e.detail.value["cb"].join(","),//把cb的每一个原始转化为字符串,用,连接起来
-        icon: "success",
-        duration:2000
+  // item25
+  mySort: function (e) {
+    console.log("333", e)
+    //property 根据什么排序
+    var property = e.currentTarget.dataset.property;
+    var self = this;
+    var arr11 = self.data.arr11;
+    var sortRule = true; // 正序倒序
+    self.setData({
+      arr11: arr11.sort(self.compare(property, sortRule))
     })
-},
+    //console.log(arr)
+  },
+  compare: function (property, bol) {
+    return function (a, b) {
+      var value1 = a[property];
+      var value2 = b[property];
+      console.log("value1", value1)
+      console.log("value2", value2)
+      if (bol) {
+        return value1 - value2;
+      } else {
+        return value2 - value1;
+      }
+    }
+  },
+  //item26
+  // 选择付钱方式
+  selectMethod() {
+    let that = this;
+    wx.showActionSheet({
+      itemList: ['寄付', '到付'],
+      success(e) {
+        that.setData({
+          method: e.tapIndex == 0 ? '寄付' : '到付'
+        })
+      }
+    })
+  },
+  
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

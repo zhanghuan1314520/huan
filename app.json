@@ -1,8 +1,14 @@
 {
   "pages": [
+    "pages/a23/index",
     "pages/a12/index",
-    "pages/a17/index",
+    "pages/a22/index",
+    "pages/a21/index",
+    "pages/a20/index",
+    "pages/a19/index",
+    "pages/a18/index",
     "pages/a16/index",
+    "pages/a17/index",
     "pages/a15/index",
     "pages/a14/index",
     "pages/a13/index",

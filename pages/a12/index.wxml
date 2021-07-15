@@ -1,3 +1,4 @@
+<view class="tip">中间竖线/css三角形</view>
 <view class="box">
   <view class="item1 a">
     <view class="box_item_r">
@@ -10,8 +11,7 @@
     </view>
   </view>
 </view>
-
-
+<view class="tip">css圆点/对号/叉号</view>
 <view class="box">
   <view class="item2 a">
     <text>文本</text>
@@ -21,27 +21,26 @@
     <text>文本</text>
     <text class="dian"></text>
     <text>文本</text>
+    <view class="success"></view>
+    <view class="error"></view>
   </view>
 </view>
-
-
-
+<view class="tip">点击下拉展示更多</view>
 <view class="box">
   <view class="item3 a">
     <view class="btm" wx:for="{{list}}" wx:key="index">
       <view class="tit-wrap" wx:if="{{item.plot}}" bindtap="showPlot" data-index="{{index}}">
         <view class="txt">文本</view>
-        <view class="arrow_a {{item.flag ? 'active' : ''}}"></view>
+        <view class="arrow_a {{item.flag ? 'active_a' : ''}}"></view>
       </view>
       <view class="plot" hidden="{{!item.flag}}">{{item.plot}}</view>
     </view>
   </view>
 </view>
-
-
+<view class="tip">展开更多</view>
 <view class="box">
   <view class="item4 a">
-    <text class="content {{ellipsis?'ellipsis':'unellipsis'}}">
+    <text class="content_box {{ellipsis?'ellipsis':'unellipsis'}}">
       飞房间卡了飞机而来发发色法尔范发疯安峰山粉色案发前二十阿里附近发打发打发是范德萨发放就开了房间爱离开房间爱卡房间爱疯爱疯飞房间卡了飞机而来发发色法尔范发疯安峰山粉色案发飞房间卡了飞机而来发发色法尔范发疯安峰山粉色案发
     </text>
     <view bindtap='ellipsis'>
@@ -51,35 +50,29 @@
     </view>
   </view>
 </view>
-
-
-
+<view class="tip">手风琴</view>
 <view class="box">
   <view class="item5 a">
     <view class="btm" wx:for="{{list1}}" wx:key="index">
       <view class="tit-wrap" wx:if="{{item.plot}}" bindtap="showPlot1" data-index="{{index}}">
         <view class="txt">{{item.tite}}</view>
-        <view class="arrow_b {{item.flag ? 'active' : ''}}"></view>
+        <view class="arrow_b {{item.flag ? 'active_c' : ''}}"></view>
       </view>
       <view class="plot" hidden="{{!item.flag}}">{{item.plot}}</view>
     </view>
   </view>
 </view>
-
-
+<view class="tip">单行和多行溢出</view>
 <view class="box">
   <view class="item6 a">
     <view class="team-content">文本文本文本文本文本文本文本文本文本文本文本文本</view>
     <view class="homework">文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文文本文本</view>
   </view>
 </view>
-
-
-
-
+<view class="tip">选项卡切换(常规)</view>
 <view class="box">
   <view class="item7 a">
-    <view class="nav bc_white">
+    <view class="nav">
       <view class="{{selected?'red':'default'}}" bindtap="selected">文本1内容</view>
       <view class="{{selected1?'red':'default'}}" bindtap="selected1">文本2内容</view>
     </view>
@@ -87,14 +80,14 @@
     <view class="{{selected1?'show':'hidden'}}">文本2内容</view>
   </view>
 </view>
-
+<view class="tip">选项卡切换(多个联动)</view>
 <view class="box">
   <view class="item8 a">
     <view class="tab-container">
-      <view class="default {{type=='expend'? 'expend-active':''}}" bindtap="handleType" data-type="expend">文本1</view>
-      <view class="default {{type=='earning'? 'earning-active': ''}}" bindtap="handleType" data-type="earning">文本2
+      <view class="default1 {{type=='expend'? 'expend-active':''}}" bindtap="handleType" data-type="expend">文本1</view>
+      <view class="default1 {{type=='earning'? 'earning-active': ''}}" bindtap="handleType" data-type="earning">文本2
       </view>
-      <view class="default {{type=='transaccount'?'transaccount-active': ''}}" bindtap="handleType"
+      <view class="default1 {{type=='transaccount'?'transaccount-active': ''}}" bindtap="handleType"
         data-type="transaccount">文本3</view>
     </view>
 
@@ -114,9 +107,7 @@
     </view>
   </view>
 </view>
-
-
-
+<view class="tip">选项卡切换(tab滚动)</view>
 <view class="box">
   <view class="item9 a">
     <scroll-view scroll-x="true" class="ip_tab_comtainer">
@@ -129,21 +120,19 @@
       </block>
       <view class="ip_tab_comtainer_padd"></view>
     </scroll-view>
-    <view class='content'>
+    <view class='content_c'>
       {{content}}
     </view>
 
   </view>
 </view>
-
-
-
+<view class="tip">选项卡切换(tab和内容滚动)</view>
 <view class="box">
   <view class="item10 a">
     <view class="swiper-tab">
-      <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">文本1</view>
-      <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">文本2</view>
-      <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">文本3</view>
+      <view class="swiper-tab-item {{currentTab==0?'active_b':''}}" data-current="0" bindtap="clickTab">文本1</view>
+      <view class="swiper-tab-item {{currentTab==1?'active_b':''}}" data-current="1" bindtap="clickTab">文本2</view>
+      <view class="swiper-tab-item {{currentTab==2?'active_b':''}}" data-current="2" bindtap="clickTab">文本3</view>
     </view>
     <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
       <swiper-item>
@@ -158,8 +147,7 @@
     </swiper>
   </view>
 </view>
-
-
+<view class="tip">选项卡切换(常规)</view>
 <view class="box">
   <view class="item11 a">
     <view id='tabs'>
@@ -180,8 +168,7 @@
     </view>
   </view>
 </view>
-
-
+<view class="tip">选项卡切换(常规)</view>
 <view class="box">
   <view class="item12 a">
     <view class="top">
@@ -201,9 +188,7 @@
     </view>
   </view>
 </view>
-
-
-
+<view class="tip">单选框(常规)</view>
 <view class="box">
   <view class="item13 a">
     <view class="option-list">
@@ -216,9 +201,7 @@
     </view>
   </view>
 </view>
-
-
-
+<view class="tip">多选框(常规)</view>
 <view class="box">
   <view class="item14 a">
     <checkbox-group bindchange="HandelItemChange">
@@ -232,8 +215,7 @@
   </view>
 </view>
 
-
-
+<view class="tip">自定义单选框(默认选中第一个，有结果)</view>
 <view class="box">
   <view class="item15 a">
     <view class='list'>
@@ -243,7 +225,6 @@
         </view>
       </block>
     </view>
-
     <!-- 这里用来存储选中的标签的值 {{selVal}}-->
     <view class='seled'>
       <view class='tt'>你当前选中的是：</view>
@@ -251,10 +232,7 @@
     </view>
   </view>
 </view>
-
-
-
-
+<view class="tip">自定义多选框(选中取消)</view>
 <view class="box">
   <view class="item16 a">
     <checkbox-group bindchange="checkboxChange" class="checkbox-group">
@@ -266,13 +244,10 @@
     </checkbox-group>
   </view>
 </view>
-
-
-
-
+<view class="tip">自定义多选框(选中图标)</view>
 <view class="box">
   <view class="item17 a">
-    <view class="two {{showView?'hide':'show'}} the-label">
+    <view class="the-label">
       <view class='list'>
         <block wx:for="{{items2}}" wx:for-item="v" wx:key="k" wx:for-index="index">
           <!-- wx:for绑定数组 wx:for-item指定数组当前元素的变量名 index指定下标的变量名 -->
@@ -286,12 +261,9 @@
     </view>
   </view>
 </view>
-
-
-
-
+<view class="tip">复制</view>
 <view class="box">
-  <view class="item19 a">
+  <view class="item18 a">
     <view class="telbox">
       <view class="tel">
         <text class="telname">微信号</text>
@@ -303,12 +275,9 @@
     </view>
   </view>
 </view>
-
-
-
-
+<view class="tip">输入框下拉选择</view>
 <view class="box">
-  <view class="item18 a">
+  <view class="item19 a">
     <view class='fenlei'>
       <text>文本标题</text>
       <!-- 下拉框 -->
@@ -325,44 +294,113 @@
     </view>
   </view>
 </view>
-
-
-
+<view class="tip">文本宽度自适应</view>
 <view class="box">
   <view class="item20 a">
-    <form bindsubmit="reg">
-      <view>
-        <text>用户:</text>
-        <input type="text" name="username"></input>
-      </view>
-      <view>
-        <text>密码:</text>
-        <input type="password" name="password"></input>
-      </view>
-      <view>
-        <checkbox-group name="cb">
-          <checkbox value="A">乒乓球</checkbox>
-          <checkbox value="B" checked="false">羽毛球</checkbox>
-          <checkbox value="C" checked="{{checked}}">排球</checkbox>
-        </checkbox-group>
-      </view>
-      <view>
-        <radio-group name="r">
-          <radio value="a">初级</radio>
-          <radio value="b">中级</radio>
-          <radio value="c">高级</radio>
-        </radio-group>
-      </view>
-      <view>
-        <button type="primary" form-type="submit">注册</button>
-      </view>
-    </form>
+    <view class="parent">
+      <view class="children">欢迎来到脚本之家</view>
+    </view>
   </view>
 </view>
-
-
+<view class="tip">根据要求显示不同的颜色(if判断)</view>
 <view class="box">
   <view class="item21 a">
-    <view>文本</view>
+    <view wx:if="{{price>20}}" class='record_price1'>{{price}}</view>
+    <view wx:else class='record_price2'>{{price}}</view>
+  </view>
+</view>
+<view class="tip">根据要求显示不同的颜色(三目运算)</view>
+<view class="box">
+  <view class="item22 a">
+    <view class="{{list3.aa-list3.bb>0?'red1':'green'}}">{{list3.aa}}</view>
+    <view class="{{list3.bb-list3.aa>0?'red1':'green'}}">{{list3.bb}}</view>
+  </view>
+</view>
+<view class="tip">环比(上下箭头)</view>
+<view class="box">
+  <view class="item23 a">
+    <wxs module="filters" src="/pages/filter.wxs"></wxs>
+    <view class="nwe_boxs_item">
+      <view class="nwe_boxs_item">成交均价</view>
+      <view class="nwe_boxs_item">{{list4.cj_junjia}}<text>元/m²</text></view>
+      <view class="nwe_boxs_item">环比{{list4.cj_junjia-list4.cj_junjia_hb>0?'上涨':'下跌'}}<text
+          class="{{list4.cj_junjia-list4.cj_junjia_hb>0?'red2':'green2'}}">{{filters.toFix(((list4.cj_junjia-list4.cj_junjia_hb)/list4.cj_junjia_hb)*100)}}%↓</text>
+      </view>
+    </view>
+    <view class="nwe_boxs_item">
+      <view class="nwe_boxs_item">挂牌套数</view>
+      <view class="nwe_boxs_item">{{list4.kucun}}<text>套</text></view>
+      <view class="nwe_boxs_item">环比{{list4.kucun-list4.kucun_hb>0?'上涨':'下跌'}}<text
+          class="{{list4.kucun-list4.kucun_hb>0?'red2':'green2'}}">{{filters.toFix(((list4.kucun-list4.kucun_hb)/list4.kucun_hb)*100)}}%↑</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="tip">自定义颜色，并随机显示不同颜色</view>
+<view class="box">
+  <view class="item24 a">
+    <view class='content_5'>
+      <block wx:for="{{labArr}}" wx:key="key" wx:for-index="key" wx:for-item="v">
+        <view class='lab' data-key="{{key}}" style="background-color:{{randomColorArr[key]}}">{{v}}</view>
+      </block>
+    </view>
+  </view>
+</view>
+<view class="tip">排序</view>
+<view class="box">
+  <view class="item25 a">
+    <view class="box_3">
+      <view class="mySort" bindtap="mySort" data-property="id">根据id排序</view>
+      <view class="mySort" bindtap="mySort" data-property="age">根据年龄排序</view>
+    </view>
+    <view class="box_3_1" wx:for="{{arr11}}" wx:key="id" wx:for-item="item" data-id="{{item.id}}">
+      <view class="box_3_1_item">{{item.name}}</view>
+    </view>
+  </view>
+</view>
+<view class="tip">选择列表</view>
+<view class="box">
+  <view class="item26 a">
+    <view class='method'>
+      <text class='left'>付费方式</text>
+      <view class='right' bindtap='selectMethod'>
+        <text>{{ method }}</text>
+        <text wx:if="{{ method=='寄付' }}">快递员称重后在平台支付</text>
+        <text wx:else>快递到达后由收货人支付</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="tip">页面布局之单列、双列、三列、四列</view>
+<view class="box">
+  <view class="item27 a">
+    <view class="rowBox">
+      <view wx:for="{{listData}}" wx:for-item="listDataItem">
+        <!-- 单图 -->
+        <view class="rowItem" wx:if="{{listDataItem.type==1}}">
+          <image class="rowOne" wx:for="{{listDataItem.content}}" src="{{item.url}}" mode="aspectFill"></image>
+        </view>
+        <!-- 双图 -->
+        <view class="rowItem flexBetween" wx:if="{{listDataItem.type==2}}">
+          <image class="rowTwo" wx:for="{{listDataItem.content}}" style="margin-right:{{index==1?'0':''}}"
+            src="{{item.url}}" mode="aspectFill"></image>
+        </view>
+        <!-- 三图 -->
+        <view class="rowItem flexBetween" wx:if="{{listDataItem.type==3}}">
+          <image class="rowThreeLeft" src="{{listDataItem.content[0].url}}" mode="aspectFill"></image>
+          <view class="rowThreeRight flexColumnBetween">
+            <image class="rowThreeRightItem" style="margin-top:0" src="{{listDataItem.content[1].url}}"
+              mode="aspectFill">
+            </image>
+            <image class="rowThreeRightItem" src="{{listDataItem.content[2].url}}" mode="aspectFill"></image>
+          </view>
+        </view>
+        <!-- 四图 -->
+        <view class="rowItem flexBetween" wx:if="{{listDataItem.type==4}}">
+          <image class="rowFore" wx:for="{{listDataItem.content}}" style="margin-right:{{index==3?'0':''}}"
+            src="{{item.url}}" mode="aspectFill"></image>
+        </view>
+      </view>
+    </view>
   </view>
 </view>

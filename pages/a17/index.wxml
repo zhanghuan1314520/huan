@@ -1,31 +1,75 @@
-<form bindsubmit="formSubmit" bindreset="formReset">
- <view class="section section_gap">
-  <view class="section__title">是否公开信息</view>
-  <switch name="isPub" />
- </view>
- 
- <view class="section">
-  <view class="section__title">手机号</view>
-  <input name="phone" placeholder="手机号" />
- </view>
- <view class="section">
-  <view class="section__title">密码</view>
-  <input name="pwd" placeholder="密码" password/>
- </view>
- <view class="section section_gap">
-  <view class="section__title">性别</view>
-  <radio-group name="sex">
-   <label>
-    <radio value="男" checked/>男</label>
-   <label>
-    <radio value="女" />女</label>
-  </radio-group>
- </view>
- <view class="btn-area">
-  <button formType="submit">提交</button>
-  <button formType="reset">重置</button>
- </view>
-</form>
-<view wx:if="{{isSubmit}}">
- {{warn ? warn : "是否公开信息："+isPub+"，手机号："+phone+"，密码："+pwd+"，性别："+sex}}
+<view class="tabNav">
+  <view wx:for="{{navTab}}" wx:key="index" data-idx="{{index}}" bindtap="currentTab" style=" background-color:{{bg}}"
+    class="{{currentTab==index ? 'cur' : ''}}" data-name="{{item.name}}" data-bg="{{item.bg}}" data-bg2="{{bg2}}"
+    data-describe="{{item.describe}}" data-limit="{{item.limit}}" data-index="{{index}}" data-titles="{{item.titles}}">
+    <text>{{item.name}}</text>
+  </view>
+</view>
+<view class="orderInfo">
+  <scroll-view scroll-y="true" style="height:1160rpx">
+    <view wx:if="{{currentTab == 0}}" data-idx="0">
+      <view class="orderInfo_title">{{limit}}相关功能受限</view>
+      <view class="orderInfo_tip">{{describe}}</view>
+      <view class="orderInfo_name">{{titles}}</view>
+      <view class="orderInfo_box">
+        <view class="orderInfo_content_r" wx:for="{{list}}" data-index="{{index}}" wx:key="id" wx:if="{{index<15}}">
+          <view>{{item.title}}</view>
+          <view class="orderInfo_content_l"
+            wx:if="{{index == 1 || index == 2 ||index == 3 ||index == 4 ||index == 5 ||index == 6 ||index == 7 ||index == 8 ||index == 9 ||index == 10 ||index == 11 ||index == 12 ||index == 13 ||index == 14 }}">
+            <view class="orderInfo_content_l">{{item.names}}</view>
+          </view>
+          <view class="orderInfo_content_l" wx:else>
+            <view class="success"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view wx:if="{{currentTab == 1}}" data-idx="1">
+      <view class="orderInfo_title">{{limit}}相关功能受限</view>
+      <view class="orderInfo_tip">{{describe}}</view>
+      <view class="orderInfo_name">{{titles}}</view>
+      <view class="orderInfo_box">
+        <view class="orderInfo_content_r" wx:for="{{list}}" data-index="{{index}}" wx:key="id"
+          wx:if="{{ index == 0 ||index<15}}">
+          <view>{{item.title}}</view>
+          <view class="orderInfo_content_l" wx:if="{{index == 11 || index == 12 || index == 13 || index == 14}}">
+            <view class="error"></view>
+          </view>
+          <view class="orderInfo_content_l"
+            wx:elif="{{index == 1 || index == 2 || index == 3 || index == 4 || index == 5 || index == 6 || index == 7 || index == 8 || index == 9 || index == 10 || index == 11 || index == 12 || index == 13 || index == 14}}">
+            <view class="orderInfo_content_l">{{item.names}}</view>
+          </view>
+          <view class="orderInfo_content_l" wx:else>
+            <view class="success"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+    <view wx:if="{{currentTab == 2}}" data-idx="2">
+      <view class="orderInfo_title">{{limit}}相关功能受限</view>
+      <view class="orderInfo_tip">{{describe}}</view>
+      <view class="orderInfo_name">{{titles}}</view>
+      <view class="orderInfo_box">
+    <view class="orderInfo_content_r" wx:for="{{list1}}" data-index="{{index}}" wx:key="id">
+          <view>{{item.title}}</view>
+          <view class="orderInfo_content_l" wx:if="{{index == 1 || index == 2 || index == 3 || index == 4}}">
+            <view class="orderInfo_content_l">{{item.names}}</view>
+          </view>
+          <view class="orderInfo_content_l" wx:elif="{{index == 0}}">
+            <view class="success"></view>
+          </view>
+          <view class="orderInfo_content_l" wx:else>
+            <view class="error"></view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </scroll-view>
+</view>
+<view class="btn_box">
+  <view class="btn_item" style=" background-color:{{bg}}" bindtap="home">{{name}}</view>
 </view>
