@@ -1,0 +1,25 @@
+/* pages/a21/index.wxss */
+.content{
+  margin:40rpx  20rpx;
+}
+.box{
+  width: 710rpx;
+  position: relative;
+  background-color: rgb(233, 151, 151);
+}
+.box1{
+  width: 710rpx;
+  position: relative;
+  background-color: rgb(233, 151, 151);
+  margin-top: 100rpx;
+}
+.box_t{
+  background-color: rgb(124, 207, 228);
+  font-size: 30rpx;
+}
+.box2{
+  width: 710rpx;
+  position: relative;
+  background-color: rgb(233, 151, 151);
+  margin-top: 100rpx;
+}

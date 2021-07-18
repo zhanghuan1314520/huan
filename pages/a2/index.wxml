@@ -1,10 +1,38 @@
-<view class="swiperContainer">
-  <swiper bindchange="swiperChange"  autoplay="{{autoplay}}"  duration="{{duration}}" style='height: 380rpx;'>
-    <block wx:for="{{imgUrls}}" wx:key="*this">
-      <swiper-item wx:key="*this">
-        <image src="{{item}}" class="slide-image"  class='img'  />
+<view class="parent">
+  <!-- 轮播图 -->
+  <swiper bindchange="monitorCurrent" indicator-dots="{{false}}" circular="true" indicator-color="white"
+    indicator-active-color="orange" current="{{current}}" autoplay="{{autoplay}}" interval="{{interval}}">
+    <block wx:for="{{backgroundArr}}" wx:key="*this">
+      <swiper-item>
+        <view class="{{item}}"></view>
       </swiper-item>
     </block>
   </swiper>
-  <view class="imageCount">{{current+1}}/{{imgUrls.length}}</view>
+  <!-- 自定义轮播图进度点 -->
+  <view class="dots-parent">
+    <block wx:for="{{backgroundArr}}" wx:for-index="index" wx:key="*this">
+      <view class="progress-line-bg">
+        <view class="{{current==index?'progress-line':''}}" style="width:{{progressNum}}%;"></view>
+      </view>
+    </block>
+  </view>
 </view>
+
+
+
+
+
+
+      <navigator url='../details/details2/detail2?artical_id={{newsId}}'>
+        <view class='chakan'>查看</view>
+      </navigator>
+    <view class='sx_lunbo page_row'>
+      <text class='red'>公告</text>
+      <swiper class='sx_swiper page_row' autoplay interval="5000" duration="3000" bindchange="newsId"  data-newsId='{{item.id}}' circular>
+        <swiper-item wx:for="{{news}}" wx:key="">
+          <view class='reds'>{{item.title}}
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+

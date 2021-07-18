@@ -1,7 +1,12 @@
 {
   "pages": [
-    "pages/a23/index",
     "pages/a12/index",
+    "pages/a2/index",
+    "pages/a1/index",
+    "pages/a26/index",
+    "pages/a25/index",
+    "pages/a24/index",
+    "pages/a23/index",
     "pages/a22/index",
     "pages/a21/index",
     "pages/a20/index",
@@ -20,9 +25,7 @@
     "pages/a6/index",
     "pages/a5/index",
     "pages/a4/index",
-    "pages/a3/index",
-    "pages/a2/index",
-    "pages/a1/index"
+    "pages/a3/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

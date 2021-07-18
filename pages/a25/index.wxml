@@ -1,0 +1,23 @@
+<view class="content">
+  <view class="box">
+    <view class="box_t" wx:for="{{10}}">测试</view>
+    <zhezhao id='dialog' bindtap="showDialogBtn" height="70%" top="30%"></zhezhao>
+  </view>
+
+
+  <view class="box1">
+    <view class="box_t" wx:for="{{20}}">测试</view>
+    <zhezhao id='dialog1' bindtap="showDialogBtn" height="80%" top="20%"></zhezhao>
+  </view>
+
+
+  <view class="box2">
+    <view class="box_t" wx:for="{{30}}">测试</view>
+    <zhezhao id='dialog1' bindtap="showDialogBtn" height="80%" top="20%"></zhezhao>
+  </view>
+
+
+</view>
+
+
+

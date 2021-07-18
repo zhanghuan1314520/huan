@@ -1,0 +1,76 @@
+/* pages/a26/index.wxss */
+.tip{
+  background-color: rgb(238, 11, 11);
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  padding: 10rpx 0;
+}
+
+
+
+.box {
+  background-color: #FF8C00;
+  width:750rpx ;
+  height: 300rpx;
+  position: relative;
+}
+.content {
+  background-color: #F00;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -50px 0 0 -50px;
+}
+
+.box1 {
+  background-color: #FF8C00;
+  width: 750rpx;
+  height: 300rpx;
+  position: relative;
+}
+.content1 {
+  background-color: #F00;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.box2 {
+  background-color: #FF8C00;
+  width: 750rpx;
+  height: 300rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content2 {
+  background-color: #F00;
+  width: 100px;
+  height: 100px;
+}
+
+
+.box3 {
+  background-color: #6078e4;
+  width: 750rpx;
+  height: 300rpx;
+  display: table;
+}
+.content3 {
+  background-color: #FF8C00;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.inner {
+  background-color: #000;
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+}

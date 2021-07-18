@@ -1,3 +1,11 @@
+.tip{
+  background-color: rgb(238, 11, 11);
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  padding: 10rpx 0;
+}
+
 .swiper-container{
   position: relative;
 }
@@ -27,4 +35,72 @@
 .swiper-container .dots .dot.active{
   width: 24rpx;
   background: #f80;
+}
+
+
+/*  */
+.dots1 {
+  width: 210rpx;
+  height: 20rpx;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10rpx;
+}
+/*未选中时的小圆点样式 */
+.dot1 {
+  width: 70rpx;
+  height: 10rpx;
+  border-radius: 14rpx;
+  margin-right: 26rpx;
+  background-color: #de8a78;
+}
+/*选中以后的小圆点样式  */
+.active1 {
+  width: 70rpx;
+  height: 10rpx;
+  background-color: #fc4308;
+}
+
+
+
+
+.dots2{ 
+  position: absolute; 
+  right: 40rpx; 
+  bottom: 20rpx; 
+  display: flex; 
+  justify-content: center; 
+ } 
+ .dot2{ 
+  margin: 0 10rpx; 
+  width: 28rpx; 
+  height: 28rpx; 
+  background: #fff; 
+  border-radius: 50%; 
+  transition: all .6s; 
+  font: 300 18rpx/28rpx "microsoft yahei"; 
+  text-align: center; 
+ } 
+ .active2{ 
+  background: #f80; 
+  color:#fff; 
+ }
+
+
+
+.imageCount {
+  width: 120rpx;
+  height: 50rpx;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 40rpx;
+  line-height: 50rpx;
+  color: #fff;
+  text-align: center;
+  font-size: 26rpx;
+  position: absolute;
+  left: 13px;
+  bottom: 20rpx;
 }

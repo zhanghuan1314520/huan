@@ -323,13 +323,199 @@ Page({
       }, {
         url: 'http://img4.imgtn.bdimg.com/it/u=3360834600,1404834512&fm=26&gp=0.jpg'
       }]
-    }]
+    }],
+    //item28
+    news: [{
+        id: 1,
+        title: "参数参数测试 测试参数参数测试 测试参数参数测试 测试"
+      },
+      {
+        id: 2,
+        title: "参数参数测试 测试"
+      }
+    ],
+    //item30
+    processData: [{
+        name: '提交工单',
+        start: '#fff',
+        end: '#EFF3F6',
+        icon: '/images/process_1.png'
+      },
+      {
+        name: '已接单',
+        start: '#EFF3F6',
+        end: '#EFF3F6',
+        icon: '/images/process_1.png'
+      },
+      {
+        name: '开始维修',
+        start: '#EFF3F6',
+        end: '#EFF3F6',
+        icon: '/images/process_1.png'
+      },
+      {
+        name: '维修结束',
+        start: '#EFF3F6',
+        end: '#EFF3F6',
+        icon: '/images/process_1.png'
+      },
+      {
+        name: '已确认',
+        start: '#EFF3F6',
+        end: '#fff',
+        icon: '/images/process_1.png'
+      }
+    ],
+    //item31
+    whether: false,
+    flop: '点击翻牌',
+    really: '',
+    implement: 0,
+    surplus: false,
+    biutin: '点击翻牌',
+    //item33
+    carWidth: '', //卡片宽度
+    number: 10,
+    cardData: [{
+        animationData: {},
+        front: '/images/img_01.jpg',
+        back: '/images/img_01.jpg',
+        id: '1',
+        showClass: false, // 控制翻转
+        opacity: false, // 控制翻转过来以后的 opacity
+        money: 1,
+        disabled: false, // disabled 属性，控制手速点击过快，导致多个牌被翻开, 默认为false 可以点击
+      },
+      {
+        animationData: {},
+        front: '/images/img_01.jpg',
+        back: '/images/img_01.jpg',
+        id: '2',
+        showClass: false,
+        opacity: false,
+        money: 2,
+        disabled: false,
+      },
+      {
+        animationData: {},
+        front: '/images/img_01.jpg',
+        back: '/images/img_01.jpg',
+        id: '3',
+        showClass: false,
+        opacity: false,
+        money: 3,
+        disabled: false,
+      },
+      {
+        animationData: {},
+        front: '/images/img_01.jpg',
+        back: '/images/img_01.jpg',
+        id: '4',
+        showClass: false,
+        opacity: false,
+        money: 4,
+        disabled: false,
+      },
+      {
+        animationData: {},
+        front: '/images/img_01.jpg',
+        back: '/images/img_01.jpg',
+        id: '5',
+        showClass: false,
+        opacity: false,
+        money: 5,
+        disabled: false,
+      },
+      {
+        animationData: {},
+        front: '/images/img_01.jpg',
+        back: '/images/img_01.jpg',
+        id: '6',
+        showClass: false,
+        opacity: false,
+        money: 6,
+        disabled: false,
+      },
+      {
+        animationData: {},
+        front: '/images/img_01.jpg',
+        back: '/images/img_01.jpg',
+        id: '7',
+        showClass: false,
+        opacity: false,
+        money: 7,
+        disabled: false,
+      },
+      {
+        animationData: {},
+        front: '/images/img_01.jpg',
+        back: '/images/img_01.jpg',
+        id: '8',
+        showClass: false,
+        opacity: false,
+        money: 8,
+        disabled: false,
+      },
+      {
+        animationData: {},
+        front: '/images/img_01.jpg',
+        back: '/images/img_01.jpg',
+        id: '9',
+        showClass: false,
+        opacity: false,
+        money: 9,
+        disabled: false,
+      },
+    ],
+    picList:[],
+    // banner 轮播图 
+    banner_list: [
+      { type: 1, video: "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4", img: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/b51889744910df7979a2f672434da84e.jpg?thumb=1&w=720&h=360" },
+      { type: 0, url: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/b51889744910df7979a2f672434da84e.jpg?thumb=1&w=720&h=360" },
+      { type: 0, url: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/b51889744910df7979a2f672434da84e.jpg?thumb=1&w=720&h=360" },
+      { type: 0, url: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/b51889744910df7979a2f672434da84e.jpg?thumb=1&w=720&h=360" },
+      { type: 0, url: "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/b51889744910df7979a2f672434da84e.jpg?thumb=1&w=720&h=360" }
+    ],
+    indicatorDots: true,
+    autoplay: false, // 自动播放
+    interval: 5000, //轮播时间
+    duration: 300, // 滑动速度越大越慢
+    circular: true, //是否循环
+    beforeColor: "lightgray", //指示点颜色
+    afterColor: "red", //当前选中的指示点颜色
+    // 轮播数据 + 效果 E
+    controls: false,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var picList = []
+    picList.push("https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/b51889744910df7979a2f672434da84e.jpg?thumb=1&w=720&h=360")
+    picList.push("https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/37dfdc929ee9a4313facb0b23ebcd721.jpg?thumb=1&w=720&h=360")
+    picList.push("https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/a0ff3dc30027f3b615bfe03f1d306ee5.jpg?thumb=1&w=720&h=360")
+    this.setData({
+      picList: picList,
+    })
+
+
+
+
+    let carWidth = 0;
+    const {
+      cardData
+    } = this.data;
+    this.addPosition(cardData); // 数组添加移动坐标位置
+    wx.getSystemInfo({
+      success(res) {
+        carWidth = parseInt((res.windowWidth - 40) / 3);
+
+      }
+    })
+    this.setData({
+      carWidth
+    })
     this.defaultSelected();
     let that = this,
       //item24
@@ -630,54 +816,271 @@ Page({
       }
     })
   },
-  
 
+  //item28
+  newsId: function (e) {
+    var that = this
+    var item = e.detail.current;
+    this.setData({
+      newsId: that.data.news[item].id
+    })
+  },
+  //item30
+  //进度条的状态
+  setPeocessIcon: function () {
+    var index = 0 //记录状态为1的最后的位置
+    var processArr = this.data.processData
+    console.log("progress", this.data.detailData.progress)
+    for (var i = 0; i < this.data.detailData.progress.length; i++) {
+      var item = this.data.detailData.progress[i]
+      processArr[i].name = item.word
+      if (item.state == 1) {
+        index = i
+        processArr[i].icon = "/images/process_3.png"
+        processArr[i].start = "#45B2FE"
+        processArr[i].end = "#45B2FE"
+      } else {
+        processArr[i].icon = "/images/process_1.png"
+        processArr[i].start = "#EFF3F6"
+        processArr[i].end = "#EFF3F6"
+      }
+    }
+    processArr[index].icon = "/images/process_2.png"
+    processArr[index].end = "#EFF3F6"
+    processArr[0].start = "#fff"
+    processArr[this.data.detailData.progress.length - 1].end = "#fff"
+    this.setData({
+      processData: processArr
+    })
+  },
+  //item31
+  again: function (e) {
+    if (this.data.implement == 3 || this.data.implement == 0) {
+      this.setData({
+        whether: false,
+        flop: '点击翻牌',
+        really: '',
+        implement: 0,
+        surplus: false,
+        biutin: '点击翻牌',
+      })
+    } else {
+      wx.showToast({
+        title: '正在执行抽奖中...',
+        icon: 'none',
+        duration: 2000
+      })
+      return false
+    }
+  },
+  tamin: function (e) {
+    let that = this
+    let index = e.currentTarget.dataset.index
+    that.setData({
+      whether: true,
+      really: index,
+      implement: 1,
+    })
+    setTimeout(function () {
+      that.setData({
+        flop: '',
+      })
+    }, 500)
+    setTimeout(function () {
+      that.setData({
+        flop: '有奖品',
+        surplus: true,
+        implement: 2,
+      })
+    }, 1200)
+    setTimeout(function () {
+      that.setData({
+        biutin: '',
+      })
+    }, 1700)
+    setTimeout(function () {
+      that.setData({
+        biutin: '没有奖品',
+        implement: 3,
+      })
+    }, 2500)
+  },
+  //item33
+  // 数组添加移动坐标值 并且把所有的disabled 状态还原会false 
+  addPosition(cardData) {
+    const lineTotal = 3 // 单行数
+    cardData.map((item, index) => {
+      let x = index % lineTotal
+      let y = parseInt(index / lineTotal)
+      item.twoArry = {
+        x,
+        y
+      }
+      item.disabled = false; // 还原所有的disabled 状态
+    })
+    this.setData({
+      cardData
+    })
+  },
+
+  //全部翻转
+  allChange() {
+    const {
+      cardData
+    } = this.data
+    cardData.map(item => {
+      if (!item.showClass) {
+        item.showClass = true;
+      }
+    })
+    this.setData({
+      cardData
+    })
+  },
+
+  //洗牌
+  allMove() {
+    const {
+      carWidth,
+      cardData
+    } = this.data;
+    // 110 是卡牌宽度加边距
+    this.shuffle(carWidth) //移动到中心,  110 是牌的宽度，加上外边距边框
+    let timer = setTimeout(() => {
+      // 每次移动到中心位置以后，先打乱数组顺序，给数组每一项重新添加移动坐标值，setData({cardData}) 然后在散开
+      cardData.sort(this.randomsort);
+      this.addPosition(cardData)
+      clearTimeout(timer)
+      this.shuffle(0) // 间隔1秒钟，移动到原来位置
+    }, 1000)
+  },
+  // 洗牌函数
+  shuffle(translateUnit) {
+    let {
+      cardData
+    } = this.data;
+    console.log(cardData)
+    cardData.map((item, index) => {
+      let animation = wx.createAnimation({
+        duration: 500,
+        timingFunction: 'ease'
+      })
+      animation.export()
+      const translateUnitX = translateUnit * (1 - item.twoArry.x)
+      const translateUnitY = translateUnit * (1 - item.twoArry.y)
+      animation.translate(translateUnitX, translateUnitY).step()
+      item.animationData = animation.export()
+      item.opacity = false;
+      if (item.showClass) {
+        item.showClass = false;
+      }
+    })
+    this.setData({
+      cardData
+    })
+  },
+
+  // 打乱数组顺序
+  randomsort(a, b) {
+    return Math.random() > .5 ? -1 : 1;
+    //用Math.random()函数生成0~1之间的随机数与0.5比较，返回-1或1
+  },
+
+  // 处理单个点击翻转
+  handleCurClick(event) {
+    let curId = event.currentTarget.dataset.id;
+    // 每次点击时获取被点击拍的disable 属性，
+    let disabled = event.currentTarget.dataset.disabled;
+    //如果为true 就返回不继续向下执行
+    if (disabled) {
+      return;
+    }
+    let {
+      cardData,
+      number,
+      carWidth
+    } = this.data;
+    let money = '';
+    cardData.forEach(item => {
+      item.disabled = true; // 点击一张拍以后，把所有的牌的disabled 属性改成true ，
+      if (item.id === curId) {
+        item.showClass = true;
+        money = item.money;
+      } else {
+        item.opacity = true
+      }
+    })
+    number -= 1;
+    this.setData({
+      cardData,
+      number
+    })
+    setTimeout(() => {
+      this.allChange()
+    }, 1000);
+    let _this = this;
+    setTimeout(() => {
+      wx.showModal({
+        title: '提示',
+        content: '恭喜您中奖' + money + '元！',
+        cancelText: '去看看',
+        confirmText: '再翻一次',
+        success(res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+            _this.shuffle(carWidth) //移动到中心,  110 是牌的宽度，加上外边距边框
+            wx.showLoading({
+              title: '获取数据中...',
+            })
+            // 这里去请求接口重新获取数据，获取成功以后调用 this.shuffle(0) 这里用
+            setTimeout(() => {
+              wx.hideLoading()
+              // 每次移动到中心位置以后，先打乱数组顺序，给数组每一项重新添加移动坐标值，setData({cardData}) 然后在散开
+              cardData.sort(_this.randomsort);
+              _this.addPosition(cardData)
+              _this.shuffle(0)
+            }, 3000)
+          } else if (res.cancel) {
+            console.log('用户点击取消')
+          }
+        }
+      })
+    }, 3000);
+  },
+    // item34
+  //预览图片
+  previewImg: function (e) {
+    var currentUrl = e.currentTarget.dataset.currenturl
+    var previewUrls = e.currentTarget.dataset.previewurl
+    wx.previewImage({
+      current: currentUrl, //必须是http图片，本地图片无效
+      urls: previewUrls, //必须是http图片，本地图片无效
+    })
+  },
+  //item35
+  //预览图片
+  previewImage: function(e) {
+    console.log(e.target.dataset.src)
+    var current = e.target.dataset.src;
+    wx.previewImage({
+      current: current, // 当前显示图片的http链接  
+      urls: this.data.banner_list
+      // urls: this.data.imgUrls // 需要预览的图片http链接列表  
+    })
+  },
+// 播放
+  videoPlay: function() {
+    console.log("开始播放")
+    var videoplay = wx.createVideoContext("video");
+    videoplay.play()
+    this.setData({
+      controls: true,
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
+  onReady: function () {},
+  onShow: function () {},
+  onHide: function () {},
 })
