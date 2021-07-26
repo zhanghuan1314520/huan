@@ -8,9 +8,7 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  margin-left: 10rpx;
-  margin-right: 10rpx;
-  margin-trim: 40rpx;
+  margin: 20rpx;
 
 } 
 

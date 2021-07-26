@@ -3,12 +3,12 @@
   width: 100%;
   background-color: rgb(240, 131, 131);
   text-align: center;
-  height: 70%;
+  /* height: 70%; */
   /* border-bottom-right-radius: 10rpx;
   border-bottom-left-radius: 10rpx; */
   position: absolute;
   opacity: 0.9;
-  top: 30%;
+  /* top: 30%; */
   display: flex;
 }
 .box_item{

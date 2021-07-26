@@ -269,37 +269,31 @@
   border-radius: 50%;
 }
 /************** item3 *****************/
-.btm {
-  width: 100%;
-  font-size: 30rpx;
+.pay-hint-content{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #888;
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+  text-overflow: ellipsis;
+  overflow:hidden;
 }
-.btm .tit-wrap {
-  width: 100%;
-  padding: 4rpx 15rpx 10rpx 0rpx;
-  box-sizing: border-box;
-  margin-top: 16rpx;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.ellipsis{
+  -webkit-line-clamp:3; 
+  opacity: 0.75 
 }
-.btm .tit-wrap .txt {
-  font-size: 30rpx;
+.unellipsis{
+  -webkit-line-clamp:0;
+  opacity: 1;
 }
-.btm .tit-wrap .arrow_a {
-  width: 16rpx;
-  height: 16rpx;
-  border-top: 2rpx solid #fff;
-  border-left: 2rpx solid #fff;
-  transform: rotate(-135deg);
-  margin-top: -10rpx;
-  margin-right: 4rpx;
+.bg-white-ellipsis{
+  margin: 20rpx 0 0 340rpx;
 }
-.btm .tit-wrap .arrow_a .active_a {
-  margin-top: 8rpx;
-  transform: rotate(45deg);
-}
-.btm .plot {
-  text-indent: 2em;
+.bg-white-ellipsis image{
+  width: 40rpx;
+  height: 40rpx;
 }
 /************** item4 *****************/
 .content_box {
@@ -324,18 +318,41 @@
   -webkit-line-clamp: 0;
 }
 /************** item5 *****************/
-.btm .tit-wrap .arrow_b {
+.item .btm {
+  width: 100%;
+  font-size: 30rpx;
+}
+.item .btm .tit-wrap {
+  width: 100%;
+  padding: 4rpx 15rpx 10rpx 0rpx;
+  box-sizing: border-box;
+  margin-top: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item .btm .tit-wrap .txt {
+  font-size: 30rpx;
+}
+
+.item .btm .tit-wrap .arrow {
   width: 16rpx;
   height: 16rpx;
-  border-top: 2rpx solid #fff;
-  border-left: 2rpx solid #fff;
+  border-top: 2rpx solid #33373E;
+  border-left: 2rpx solid #33373E;
   transform: rotate(-135deg);
   margin-top: -10rpx;
   margin-right: 4rpx;
 }
-.btm .tit-wrap .arrow_b .active_c {
+
+.item .btm .tit-wrap .arrow.active {
   margin-top: 8rpx;
   transform: rotate(45deg);
+}
+
+.item .btm .plot {
+  text-indent: 2em;
 }
 /************** item6 *****************/
 /* 单行文本超出 */

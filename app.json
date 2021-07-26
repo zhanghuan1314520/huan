@@ -1,37 +1,49 @@
 {
   "pages": [
-    "pages/a12/index",
-    "pages/a2/index",
-    "pages/a1/index",
-    "pages/a26/index",
+    "pages/a30/index",
     "pages/a25/index",
     "pages/a24/index",
     "pages/a23/index",
-    "pages/a22/index",
     "pages/a21/index",
     "pages/a20/index",
     "pages/a19/index",
     "pages/a18/index",
-    "pages/a16/index",
     "pages/a17/index",
+    "pages/a16/index",
     "pages/a15/index",
     "pages/a14/index",
     "pages/a13/index",
     "pages/a11/index",
     "pages/a10/index",
-    "pages/a9/index",
     "pages/a8/index",
     "pages/a7/index",
+    "pages/a12/index",
     "pages/a6/index",
     "pages/a5/index",
     "pages/a4/index",
-    "pages/a3/index"
+    "pages/a3/index",
+    "pages/a2/index",
+    "pages/a1/index",
+    "pages/a28/index/index",
+    "pages/a27/index",
+    "pages/a29/index",
+    "pages/a26/index",
+    "pages/a22/index",
+    "pages/a9/index",
+    "pages/a28/forget_password/forget_password"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
+    "backgroundColor": "#366AB3",
+    "navigationBarBackgroundColor": "#366AB3",
+    "navigationBarTitleText": "小功能",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

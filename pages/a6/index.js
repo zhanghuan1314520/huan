@@ -1,12 +1,73 @@
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    motto: '在实际的开发中,疑或是页面的预览中,或多或少都碰到过这样的情景,那就是文本的折叠与展开!近期在做一个小程序项目，也遇到此情况，就将此顺便总结下来~',
-    isF: true
+    menuTapCurrent: 0,
   },
 
-  aa: function() {
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
+  },
+  // 切换
+  menuTap: function (e) {
+    var current = e.currentTarget.dataset.current;//获取到绑定的数据
+    //改变menuTapCurrent的值为当前选中的menu所绑定的数据
     this.setData({
-      isF: !this.data.isF
-    })
+      menuTapCurrent: current
+    });
+
+  },
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
   }
 })

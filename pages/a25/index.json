@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "遮罩",
   "usingComponents": {
-    "zhezhao":"/components/zhezhao/zhezhao"
+    "vipmask":"/components/vipmask/index"
   }
 }

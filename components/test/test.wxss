@@ -6,6 +6,8 @@
 .list-group{
   display: flex;
   padding:5px 10px;
+  background-color: rgb(233, 188, 188);
+  margin: 10rpx;
 }
  .img{
    width:100%;

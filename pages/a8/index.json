@@ -1,4 +1,6 @@
 {
-  "navigationBarTitleText": "text文本的展开与收起",
-  "usingComponents": {}
+  "navigationBarTitleText": "切换(图表)",
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  }
 }

@@ -1,0 +1,54 @@
+<view class="box_b" style="top:{{top}};height:{{height}}" top="{{top}}"  memeber="{{memeber}}" typeid="{{typeid}}" height="{{height}}"
+  bindtap="{{showDialogBtn1}}" hidden='{{vipShowed}}'>
+  <view class="box_item">
+    <view class="new_mc_tip">点击解锁</view>
+    <view class="new_mc_ts">即可查看全部片区排名</view>
+    <view class="new_mc_btn">立即解锁</view>
+  </view>
+</view>
+
+
+
+
+<!--弹窗内容开始-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModals}}"></view>
+<view class="modal-dialog" wx:if="{{showModals}}">
+  <scroll-view scroll-y="true">
+    <view class="modal-title">解锁全部价格走势</view>
+    <view class="modal_jb">{{list.money}}金币</view>
+    <view class="modal-content3">
+      <view class="modal-content_tip">邀请好友</view>
+      <navigator openType="navigate" hover-class="none" url="/house/cenglou/invitation/invitation">
+        <view class="modal-content_btn">邀请好友</view>
+      </navigator>
+    </view>
+    <view class="modal-content">
+      <view class="modal-content_tip">成为会员免费解锁</view>
+      <navigator openType="navigate" hover-class="none" url="/pages/member/membercard/index">
+        <view class="modal-content_btn">马上开通会员</view>
+      </navigator>
+    </view>
+    <view class="modal-content">
+      <view class="modal-content_tip">直接充值金币</view>
+      <view class="modal-content_btn2">解锁后一个月内免费查询</view>
+    </view>
+    <view class="modal-content">
+      <view wx:if="{{status>-1}}">
+      </view>
+      <view wx:else>
+        <view class="modal-content_tip3">余额不足，请邀请朋友一起赚金币</view>
+      </view>
+      <view class="modal-content_btn3">当前余额:<text>{{member.credit2}}</text>金币</view>
+    </view>
+
+   <view wx:if="{{status>-1}}">
+    <view class="modal-content_btn_ed" bindtap="getPay">立即解锁</view>
+   </view>
+   <view wx:else>
+    <view class="modal-content_btn1" bindtap="getPay">立即解锁</view>
+   </view>
+    <!-- <view class="modal-content_tip1">充值即代表同意<text>《充值协议》</text></view>
+    <view class="modal-content_tip2">虚拟商品购买后不可退换，1金币=1元</view> -->
+  </scroll-view>
+</view>
+<!--弹窗内容结束-->

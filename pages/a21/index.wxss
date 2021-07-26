@@ -1,38 +1,13 @@
-/* pages/a17/index.wxss */
-.page{
+.page {
+  display: block;
+  min-height: 100%;
   width: 100%;
-  height: 100%;
-}
-.bj{
-  width: 220rpx;
-  height: 40rpx;
-  color: blue;
-  background-color: rgb(241, 19, 130);
-  font-size: 26rpx;
-  text-align: center;
-  border-radius: 10rpx;
-  padding: 10rpx;
-  margin: 0 auto;
-}
-.list-item_type {
-  margin: 5rpx;
-  padding-left: 20rpx;
-  padding-right: 20rpx;
-  border-radius: 10rpx;
-  height: 60rpx;
-  text-align: center;
-  font-size: 28rpx;
-  line-height: 60rpx;
-  color: #292B33;
-  background-color: #e7f4fa;
-  margin-right: 10rpx;
-
-}
-
-.sub-cur {
-  color: #fff;
-  background: #366ab3;
-}
-.flexbox_xuequ {
-  display: inline;
-}
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }

@@ -1,7 +1,7 @@
 
 
 
-<view class="box_b" top="{{top}}" height="{{height}}">
+<view class="box_b" style="top:{{top}};height:{{height}}">
   <view class="box_item">
     <view class="new_mc_tip">点击解锁</view>
     <view class="new_mc_ts">即可查看全部片区排名</view>

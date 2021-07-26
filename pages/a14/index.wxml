@@ -1,7 +1,20 @@
+<view class="container1">
+  <ec-canvas id="mychart-dom-area" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
+</view>
 
-   
-  
-    <view class="container1">
-      <ec-canvas id="mychart-dom-area" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
-    </view>
- 
+
+<view class="container1">
+  <ec-canvas id="mychart-dom-area" canvas-id="mychart-pie" ec="{{ ec2 }}"></ec-canvas>
+</view>
+
+
+
+<view class="container1">
+  <ec-canvas id="mychart-dom-area" canvas-id="mychart-pie" ec="{{ ec3 }}"></ec-canvas>
+</view>
+
+
+
+<view class="container1">
+  <ec-canvas id="mychart-dom-area" canvas-id="mychart-pie" ec="{{ ec4 }}"></ec-canvas>
+</view>

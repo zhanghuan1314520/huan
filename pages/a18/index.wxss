@@ -1,4 +1,7 @@
 /* pages/a18/index.wxss */
+.box{
+  position: relative;
+}
 /* 弹窗内容区域开始 */
 .show-btn {
   margin-top: 100rpx;
@@ -76,7 +79,7 @@
 
 .new_mc1 {
   width: 750rpx;
-  background-color: #fff;
+  background-color: rgb(238, 137, 137);
   text-align: center;
   height: 255rpx;
   border-bottom-right-radius: 10rpx;
@@ -84,6 +87,8 @@
   position: absolute;
   z-index: 10;
   opacity: 0.9;
+  top: 30%;
+  height: 70%;
 }
 
 .new_mc_tip {

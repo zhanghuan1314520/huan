@@ -1,7 +1,11 @@
 /* pages/a21/index.wxss */
+page{
+  background-color: rgb(75, 131, 235);
+}
 .content{
   margin:40rpx  20rpx;
 }
+.box_content{margin-bottom: 20rpx;}
 .box{
   width: 710rpx;
   position: relative;

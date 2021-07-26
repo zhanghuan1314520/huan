@@ -10,17 +10,19 @@ Page({
     }, ],
     list1: [{
         tite: "文本一",
-        plot: '继曼谷、纽约之后，东京再出大案。唐人街神探唐仁（王宝强 饰）、秦风（刘昊然 饰）受侦探野田昊（妻夫木聪 饰）的邀请前往破案。“CRIMASTER世界侦探排行榜”中的侦探们闻讯后也齐聚东京，加入挑战，而排名第一Q的现身，让这个大案更加扑朔迷离，一场亚洲最强神探之间的较量即将爆笑展开……'
+        plot: '继曼谷、纽约之后，东京再出大案。唐人街神探唐仁（王宝强 饰）、秦风（刘昊然 饰）受侦探野田昊（妻夫木聪 饰）的邀请前往破案'
       },
       {
         tite: "文本二",
-        plot: '继曼谷、纽约之后，东京再出大案。唐人街神探唐仁（王宝强 饰）、秦风（刘昊然 饰）受侦探野田昊（妻夫木聪 饰）的邀请前往破案。“CRIMASTER世界侦探排行榜”中的侦探们闻讯后也齐聚东京，加入挑战，而排名第一Q的现身，让这个大案更加扑朔迷离，一场亚洲最强神探之间的较量即将爆笑展开……'
+        plot: '继曼谷、纽约之后，东京再出大案。唐人街神探唐仁（王宝强 饰）、秦风（刘昊然 饰）受侦探野田昊（妻夫木聪 饰）的邀请前往破案'
       },
       {
         tite: "文本三",
-        plot: '继曼谷、纽约之后，东京再出大案。唐人街神探唐仁（王宝强 饰）、秦风（刘昊然 饰）受侦探野田昊（妻夫木聪 饰）的邀请前往破案。“CRIMASTER世界侦探排行榜”中的侦探们闻讯后也齐聚东京，加入挑战，而排名第一Q的现身，让这个大案更加扑朔迷离，一场亚洲最强神探之间的较量即将爆笑展开……'
+        plot: '继曼谷、纽约之后，东京再出大案。唐人街神探唐仁（王宝强 饰）、秦风（刘昊然 饰）受侦探野田昊（妻夫木聪 饰）的邀请前往破案'
       },
     ],
+    // item3
+    ellipsis: true, // 文字是否收起，默认收起
     //item7
     ellipsis: true, // 文字是否收起，默认收起
     selected: true,
@@ -498,10 +500,6 @@ Page({
     this.setData({
       picList: picList,
     })
-
-
-
-
     let carWidth = 0;
     const {
       cardData
@@ -534,14 +532,14 @@ Page({
       randomColorArr: randomColorArr
     });
   },
-  // 展开
-  showPlot(e) {
-    let index = e.currentTarget.dataset.index
-    this.data.list[index].flag = !this.data.list[index].flag
+  // item3
+  ellipsis: function () {  
+    var value = !this.data.ellipsis;
     this.setData({
-      list: this.data.list
-    })
+      ellipsis: value
+    }) 
   },
+  
   // 多个展开
   showPlot1(e) {
     let index = e.currentTarget.dataset.index
@@ -1081,6 +1079,13 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {},
-  onShow: function () {},
+  onShow: function () {
+    this.data.list1.forEach((item) => {
+      item.flag = false
+    })
+    this.setData({
+      list1: this.data.list1
+    })
+  },
   onHide: function () {},
 })

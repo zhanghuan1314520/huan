@@ -1,14 +1,15 @@
-<view class="mask" catchtouchmove="preventTouchMove" hidden="{{hid_mengceng}}"></view>
-
-
-<view wx:for="{{100}}">測試內容</view>
-
-
-<view></view><view class="item_show"></view>
-<view class="item_show_box">
-  <view class="item_show_1">微信授权</view>
-  <view class="item_show_2">小程序将获取以下权限:</view>
-  <view class="item_show_3">(如未授权,可能无法正常使用该小程序)</view>
-  <view class="item_show_4">获取你的公开信息(昵称、头像等)</view>
-  <view class="item_show_5">授权</view>
+<view class='' bindtap='showMask'>显示遮罩</view>
+<view class="mask" hidden="{{flag}}">
+  <view class="maskContent">
+    <view>
+      <input class='input' placeholder="input" />
+    </view>
+    <view>
+      <input class='input' placeholder="input" />
+    </view>   
+    <view class='btn'>提交按钮</view>
+  </view>
+  <view class="closeImg" bindtap="closeMask">
+   <view class="error"></view>
+  </view>
 </view>

@@ -15,12 +15,7 @@ Page({
     //轮播图进度条的计时器
     progressNumInterval: null,
     //轮播图进度条的进度
-    progressNum: 0,
-    
-    news:[
-      {id:1,title:"参数参数测试 测试"},
-      {id:2,title:"参数参数测试 测试"}
-    ]
+    progressNum: 0
   },
 
   /**
@@ -102,14 +97,5 @@ Page({
     })
     // 清理进度条的计时器
     clearInterval(this.data.progressNumInterval)
-  },
-
-
-  newsId: function (e) {
-    var that = this
-    var item = e.detail.current;
-    this.setData({
-      newsId:that.data.news[item].id
-    })
-  },
+  }
 })

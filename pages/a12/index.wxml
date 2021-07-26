@@ -25,19 +25,21 @@
     <view class="error"></view>
   </view>
 </view>
-<view class="tip">点击下拉展示更多</view>
+<view class="tip">>展开更多(图标)</view>
 <view class="box">
   <view class="item3 a">
-    <view class="btm" wx:for="{{list}}" wx:key="index">
-      <view class="tit-wrap" wx:if="{{item.plot}}" bindtap="showPlot" data-index="{{index}}">
-        <view class="txt">文本</view>
-        <view class="arrow_a {{item.flag ? 'active_a' : ''}}"></view>
+    <view class='bg-white marginTop10 vertical'>
+      <text class="pay-hint-content {{ellipsis?'ellipsis':'unellipsis'}}">1.
+        支付成功后，将会推送排队号；就诊当日可直接前往诊室等待叫号就诊，无需再现场缴费、排队。\n2.
+        已完成支付挂号费用的用户，如在就诊前一日取消预约订单，成功申请取消订单后，正常情况下系统将会在7个工作日内自动退费至用户支付账号内。\n3.
+        订单在正常状态下（非系统故障、非医生临时停诊）被爽约，由于占用了医院号源，此类订单不予以退费。</text>
+      <view class='bg-white-ellipsis' bindtap='ellipsis'>
+        <image class='img-ellipsis' src="{{ellipsis?'/images/ellipsis.png':'/images/unellipsis.png'}}"></image>
       </view>
-      <view class="plot" hidden="{{!item.flag}}">{{item.plot}}</view>
     </view>
   </view>
 </view>
-<view class="tip">展开更多</view>
+<view class="tip">展开更多(文字)</view>
 <view class="box">
   <view class="item4 a">
     <text class="content_box {{ellipsis?'ellipsis':'unellipsis'}}">
@@ -53,12 +55,16 @@
 <view class="tip">手风琴</view>
 <view class="box">
   <view class="item5 a">
-    <view class="btm" wx:for="{{list1}}" wx:key="index">
-      <view class="tit-wrap" wx:if="{{item.plot}}" bindtap="showPlot1" data-index="{{index}}">
-        <view class="txt">{{item.tite}}</view>
-        <view class="arrow_b {{item.flag ? 'active_c' : ''}}"></view>
+    <view class="wrap">
+      <view class="item" wx:for="{{list1}}" wx:key="index">
+        <view class="btm">
+          <view class="tit-wrap" wx:if="{{item.plot}}" bindtap="showPlot1" data-index="{{index}}">
+            <view class="txt">剧情简介</view>
+            <view class="arrow {{item.flag ? 'active' : ''}}"></view>
+          </view>
+          <view class="plot" hidden="{{!item.flag}}">{{item.plot}}</view>
+        </view>
       </view>
-      <view class="plot" hidden="{{!item.flag}}">{{item.plot}}</view>
     </view>
   </view>
 </view>
@@ -522,19 +528,24 @@
 
 <view class="box">
   <view class="item35 a">
-    <swiper class="detail-banner" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" indicator-color="{{beforeColor}}" indicator-active-color="{{afterColor}}" style="background: white;">
+    <swiper class="detail-banner" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+      duration="{{duration}}" circular="{{circular}}" indicator-color="{{beforeColor}}"
+      indicator-active-color="{{afterColor}}" style="background: white;">
       <swiper-item wx:for="{{banner_list}}" wx:key="index">
         <view class='videocover' data-id="{{index}}" bindtap='playbtn' wx:if="{{item.type==1}}">
           <view class='videocoverbg'></view>
           <image src='/images/icon-play.png' class='playbtn' bindtap="videoPlay" hidden="{{controls}}"></image>
           <!-- <image src='../../../img/icon/icon-pause.png' class='playbtn' bindtap="videoPause"></image> -->
         </view>
- 
+
         <view wx:if="{{item.type==1}}">
-          <video class='box-w block' id="video" src="{{item.video}}" show-center-play-btn="{{false}}" autoplay='{{index === currentId ? true:false}}' objectFit="cover" bindended="jieshu" controls="{{controls}}"></video>
+          <video class='box-w block' id="video" src="{{item.video}}" show-center-play-btn="{{false}}"
+            autoplay='{{index === currentId ? true:false}}' objectFit="cover" bindended="jieshu"
+            controls="{{controls}}"></video>
         </view>
-        
-        <image class="detail-banner-img" src="{{item.url}}" bindtap="previewImage1" data-src="{{item.url}}"   wx:if="{{item.type==0}}"></image>
+
+        <image class="detail-banner-img" src="{{item.url}}" bindtap="previewImage1" data-src="{{item.url}}"
+          wx:if="{{item.type==0}}"></image>
       </swiper-item>
     </swiper>
   </view>

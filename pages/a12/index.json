@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "小功能集合",
   "usingComponents": {
     "item":"/components/item/item"
   }

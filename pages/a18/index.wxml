@@ -1,4 +1,7 @@
-<!--蒙层 -->
+
+<view class="box">
+  <view wx:for="{{20}}">测试参数</view>
+  <!--蒙层 -->
 <view class="new_mc1">
   <view class="new_mc_tip">点击解锁</view>
   <view class="new_mc_ts">即可查看全部片区排名</view>
@@ -16,4 +19,5 @@
     <view class="modal-content_tip" bindtap="onCancel">成为会员免费解锁</view>
     <view class="modal-content_btn" bindtap="onConfirm">马上开通会员</view>
   </view>
+</view>
 </view>

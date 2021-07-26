@@ -1,9 +1,16 @@
-<view class="page" style="background-color:{{pageBackgroundColor}}">
-  <view class="bj" bindtap="changeColor">点击修改背景颜色</view>
-  <view bindtap="hotLinkTopic" class="list-item_type flexbox_xuequ {{topic==1?'sub-cur':''}}" data-index="{{1}}">
-    热门刚需
+<view class="page" style="background-color: {{backgroundColor}}">
+  <view class="cu-bar bg-white solid-bottom">
+    <view class="action">
+      <text class="cuIcon-title text-blue"></text>选择背景颜色
+    </view>
   </view>
-  <view bindtap="hotLinkTopic" class="list-item_type flexbox_xuequ {{topic==2?'sub-cur':''}}" data-index="{{2}}">
-    改善置业
+  <view class="grid col-3 bg-white padding-sm">
+    <view class="padding-sm" wx:for="{{ColorList}}" wx:key='' wx:if="{{index<12}}">
+      <view class="bg-{{item.name}} padding radius text-center light" data-index='{{index}}'
+        bindtap="changeBackgroungcolor">
+        <view class="text-lg">{{item.title}}</view>
+        <view class="margin-top-sm text-Abc">{{item.name}}</view>
+      </view>
+    </view>
   </view>
 </view>

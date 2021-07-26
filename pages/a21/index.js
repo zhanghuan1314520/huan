@@ -1,80 +1,94 @@
-// pages/a17/index.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    topic: 1,
+    backgroundColor: '',
+    color: "#fadbd9",
+    ColorList: [{
+        title: '嫣红',
+        name: 'red',
+        color: '#fadbd9'
+      },
+      {
+        title: '桔橙',
+        name: 'orange',
+        color: '#fde6d2'
+      },
+      {
+        title: '明黄',
+        name: 'yellow',
+        color: '#fef2ce'
+      },
+      {
+        title: '橄榄',
+        name: 'olive',
+        color: '#e8f4d9'
+      },
+      {
+        title: '森绿',
+        name: 'green',
+        color: '#d7f0db'
+      },
+      {
+        title: '天青',
+        name: 'cyan',
+        color: '#d2f1f0'
+      },
+      {
+        title: '海蓝',
+        name: 'blue',
+        color: '#cce6ff'
+      },
+      {
+        title: '姹紫',
+        name: 'purple',
+        color: '#e1d7f0'
+      },
+      {
+        title: '木槿',
+        name: 'mauve',
+        color: '#ebd4ef'
+      },
+      {
+        title: '桃粉',
+        name: 'pink',
+        color: '#f9d7ea'
+      },
+      {
+        title: '棕褐',
+        name: 'brown',
+        color: '#ede1d9'
+      },
+      {
+        title: '玄灰',
+        name: 'grey',
+        color: '#e7ebed'
+      },
+      {
+        title: '草灰',
+        name: 'gray',
+        color: '#aaaaaa'
+      },
+      {
+        title: '墨黑',
+        name: 'black',
+        color: '#333333'
+      },
+      {
+        title: '雅白',
+        name: 'white',
+        color: '#ffffff'
+      },
+    ],
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-  changeColor: function () {
-    var bgColor = this.data.pageBackgroundColor == 'red' ? '#5cb85c' : 'red';
-    // 设置背景颜色数据
+  //更换背景颜色
+  changeBackgroungcolor: function (e) {
+    var that = this;
+    const id = e.currentTarget.dataset.index;
     this.setData({
-      pageBackgroundColor: bgColor
-    });
-  },
-
-  hotLinkTopic: function (dt) {
-    var t = this,
-      dc = dt.currentTarget.dataset.index;
-    t.setData({
-      topic: dc,
-    });
-  },
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+      // backgroundColor: '#ec008c'
+      // backgroundColor: "#ebd4ef"
+      backgroundColor: this.data.ColorList[id].color
+    })
+    console.log(id)
   }
 })

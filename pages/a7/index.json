@@ -1,4 +1,6 @@
 {
-  "navigationBarTitleText": "列表项数据详情折叠效果",
-  "usingComponents": {}
+  "navigationBarTitleText": "echarts图表单个实例",
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  }
 }
