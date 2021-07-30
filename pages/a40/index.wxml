@@ -1,0 +1,7 @@
+<view class='out' style='margin-top:10px'>
+ <view class='in' style='width:{{progressWidth}}%'></view>
+</view>
+<view class='caozuo'>
+ <text>{{progressTime}}秒</text>
+ <text bindtap='playbtn' data-change='1'>{{playPausetips}}</text>
+</view>

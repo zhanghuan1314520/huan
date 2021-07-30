@@ -551,11 +551,15 @@
   </view>
 </view>
 
-
-
+<view class="tip">点击按钮内容显示和隐藏，并且文字改变</view>
 <view class="box">
   <view class="item36 a">
-    111
+    <!--按钮-->
+    <view class="more" bindtap="showedit">{{editText}}</view>
+    <!--内容-->
+    <view class="delete {{editTrue?'isRuleShow':'isRuleHide'}}">
+      <image  src='/images/img_01.jpg' mode="widthFix"></image>
+    </view>
   </view>
 </view>
 

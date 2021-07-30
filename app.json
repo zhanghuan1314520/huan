@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/index_1/index",
+    "pages/a32/index",
+    "pages/a31/index",
     "pages/a30/index",
     "pages/a25/index",
     "pages/a24/index",
@@ -30,7 +33,21 @@
     "pages/a26/index",
     "pages/a22/index",
     "pages/a9/index",
-    "pages/a28/forget_password/forget_password"
+    "pages/a28/forget_password/forget_password",
+    "pages/index_2/index",
+    "pages/index_3/index",
+    "pages/index_4/index",
+    "pages/index_5/index",
+    "pages/a33/index",
+    "pages/a34/index",
+    "pages/a35/index",
+    "pages/a36/index",
+    "pages/a37/index",
+    "pages/a38/index",
+    "pages/a39/index",
+    "pages/a40/index",
+    "pages/a41/index",
+    "pages/a42/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -39,6 +56,44 @@
     "navigationBarTitleText": "小功能",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#d81e06",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index_1/index",
+        "text": "首页",
+        "iconPath": "images/tab/tab_1.png",
+        "selectedIconPath": "images/tab/tab_1_ed.png"
+      },
+      {
+        "pagePath": "pages/index_2/index",
+        "text": "楼盘",
+        "iconPath": "images/tab/tab_2.png",
+        "selectedIconPath": "images/tab/tab_2_ed.png"
+      },
+      {
+        "pagePath": "pages/index_3/index",
+        "text": "资讯",
+        "iconPath": "images/tab/tab_3.png",
+        "selectedIconPath": "images/tab/tab_3_ed.png"
+      },
+      {
+        "pagePath": "pages/index_4/index",
+        "text": "信息",
+        "iconPath": "images/tab/tab_4.png",
+        "selectedIconPath": "images/tab/tab_4_ed.png"
+      },
+      {
+        "pagePath": "pages/index_5/index",
+        "text": "我的",
+        "iconPath": "images/tab/tab_5.png",
+        "selectedIconPath": "images/tab/tab_5_ed.png"
+      }
+    ]
   },
   "permission": {
     "scope.userLocation": {

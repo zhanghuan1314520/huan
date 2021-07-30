@@ -1,0 +1,10 @@
+<block wx:for="{{list}}" wx:key="index">
+    <view class="info-timeline">
+      <view class="info-item">
+        <view class="info-text-content">
+          <view>【{{item.status}}】</view>
+          <view>{{item.time}}</view>
+        </view>
+      </view>
+    </view>
+  </block>

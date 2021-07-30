@@ -1312,6 +1312,16 @@ image{display: block}
   display: block;
 }
 /************** item36*****************/
+.delete image{
+  width: 80%;
+  height: 80%;
+}
+.isRuleShow {
+  opacity: 1;
+}
+.isRuleHide {
+  opacity: 0;
+}
 /************** item37*****************/
 /************** item38*****************/
 /************** item39*****************/

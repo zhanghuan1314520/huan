@@ -487,6 +487,10 @@ Page({
     afterColor: "red", //当前选中的指示点颜色
     // 轮播数据 + 效果 E
     controls: false,
+    //item36
+    editTrue: false,
+    showModalStatus: false,
+    editText: '编辑'
   },
 
   /**
@@ -1087,5 +1091,22 @@ Page({
       list1: this.data.list1
     })
   },
+  //item36
+  // 编辑
+showedit: function() {
+  var that = this;
+  if (that.data.editTrue == true) {
+    that.setData({
+      editTrue: false,
+      editText: '编辑'
+    })
+
+  } else {
+    that.setData({
+      editTrue: true,
+      editText: '完成',
+    })
+  }
+},
   onHide: function () {},
 })
