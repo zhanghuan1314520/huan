@@ -112,7 +112,7 @@
 
 
 <navigator  hover-class="none"  url="/pages/a25/index">
-  <view class="box">24.遮罩</view>
+  <view class="box">24.自定义页面,吸顶</view>
 </navigator>
 
 
@@ -198,7 +198,7 @@
 
 
 <navigator  hover-class="none"  url="/pages/a42/index">
-  <view class="box">41.</view>
+  <view class="box">41.水印</view>
 </navigator>
 
 

@@ -1,0 +1,8 @@
+<view class="water_top" style="pointer-events: none;">
+    <view class="water-text">{{watermarkText}}</view>
+    <view class="water-text">{{watermarkText}}</view>
+    <view class="water-text">{{watermarkText}}</view>
+    <view class="water-text">{{watermarkText}}</view>
+    <view class="water-text">{{watermarkText}}</view>
+    <view class="water-text">{{watermarkText}}</view>
+</view>

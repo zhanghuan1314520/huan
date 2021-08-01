@@ -1,54 +1,125 @@
-<view class="box_b" style="top:{{top}};height:{{height}}" top="{{top}}"  memeber="{{memeber}}" typeid="{{typeid}}" height="{{height}}"
-  bindtap="{{showDialogBtn1}}" hidden='{{vipShowed}}'>
-  <view class="box_item">
-    <view class="new_mc_tip">点击解锁</view>
-    <view class="new_mc_ts">即可查看全部片区排名</view>
-    <view class="new_mc_btn">立即解锁</view>
-  </view>
-</view>
-
-
-
+<cover-view class="box_b" style="top:{{top}}%;height:{{height}}%" top="{{top}}" member="{{member}}" typeid="{{typeid}}"
+  height="{{height}}" bindtap="showDialogBtn1" hidden='{{vipShowed|| !member.viplevel>0}}'>
+  <cover-view class="box_item">
+    <cover-view class="new_mc_tip">点击解锁{{community.id}}</cover-view>
+    <cover-view class="new_mc_ts">即可查看全部片区排名</cover-view>
+    <cover-view class="new_mc_btn">立即解锁</cover-view>
+  </cover-view>
+</cover-view>
 
 <!--弹窗内容开始-->
-<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModals}}"></view>
-<view class="modal-dialog" wx:if="{{showModals}}">
-  <scroll-view scroll-y="true">
-    <view class="modal-title">解锁全部价格走势</view>
-    <view class="modal_jb">{{list.money}}金币</view>
-    <view class="modal-content3">
-      <view class="modal-content_tip">邀请好友</view>
-      <navigator openType="navigate" hover-class="none" url="/house/cenglou/invitation/invitation">
-        <view class="modal-content_btn">邀请好友</view>
-      </navigator>
-    </view>
-    <view class="modal-content">
-      <view class="modal-content_tip">成为会员免费解锁</view>
+<cover-view class="modal-mask" bindtap="showDialogBtn1" catchtouchmove="preventTouchMove" wx:if="{{showModals}}">
+</cover-view>
+<cover-view class="modal-dialog" wx:if="{{showModals}}">
+  <cover-view scroll-y="true">
+    <cover-view class="modal-hader">
+      <cover-view class="modal-title">解锁全部价格走势</cover-view>
+      <cover-image class="chahao"  bindtap="ok1" src="/images/chahao.png"></cover-image>
+    </cover-view>
+    <cover-view class="modal_jb">{{list.money}}金币</cover-view>
+    <cover-view class="modal-content3">
+      <cover-view class="modal-content_tip">邀请好友</cover-view>
+      <!-- 邀请好友弹窗事件开始 -->
+      <cover-view class="modal-content_btn" bindtap="showDialogBtn2" hidden='{{vipShowed1}}'>邀请好友</cover-view>
+      <!-- 邀请好友弹窗事件结束 -->
+    </cover-view>
+    <cover-view class="modal-content">
+      <cover-view class="modal-content_tip">成为会员免费解锁</cover-view>
       <navigator openType="navigate" hover-class="none" url="/pages/member/membercard/index">
-        <view class="modal-content_btn">马上开通会员</view>
+        <cover-view class="modal-content_btn">马上开通会员</cover-view>
       </navigator>
-    </view>
-    <view class="modal-content">
-      <view class="modal-content_tip">直接充值金币</view>
-      <view class="modal-content_btn2">解锁后一个月内免费查询</view>
-    </view>
-    <view class="modal-content">
-      <view wx:if="{{status>-1}}">
-      </view>
-      <view wx:else>
-        <view class="modal-content_tip3">余额不足，请邀请朋友一起赚金币</view>
-      </view>
-      <view class="modal-content_btn3">当前余额:<text>{{member.credit2}}</text>金币</view>
-    </view>
+    </cover-view>
+    <cover-view class="modal-content">
+      <cover-view class="modal-content_tip">解锁说明</cover-view>
+      <cover-view class="modal-content_btn2">解锁后一个月内免费查询</cover-view>
+    </cover-view>
+    <cover-view class="modal-content">
+      <cover-view wx:if="{{status>-1&&member.credit2>=10}}">
+      </cover-view>
+      <cover-view wx:else>
+        <cover-view class="modal-content_tip3">余额不足，请邀请朋友一起赚金币</cover-view>
+      </cover-view>
+      <cover-view class="modal-content_btn3">
+        <cover-view>当前余额:</cover-view>
+        <cover-view class="text">{{member.credit2}}</cover-view>
+        <cover-view>金币</cover-view>
+      </cover-view>
+    </cover-view>
 
-   <view wx:if="{{status>-1}}">
-    <view class="modal-content_btn_ed" bindtap="getPay">立即解锁</view>
-   </view>
-   <view wx:else>
-    <view class="modal-content_btn1" bindtap="getPay">立即解锁</view>
-   </view>
-    <!-- <view class="modal-content_tip1">充值即代表同意<text>《充值协议》</text></view>
-    <view class="modal-content_tip2">虚拟商品购买后不可退换，1金币=1元</view> -->
-  </scroll-view>
-</view>
+    <cover-view wx:if="{{status>-1&&member.credit2>10}}">
+      <cover-view class="modal-content_btn_ed" bindtap="getPay">立即解锁</cover-view>
+    </cover-view>
+    <cover-view wx:else>
+      <cover-view class="modal-content_btn1" bindtap="getPay1">立即解锁</cover-view>
+    </cover-view>
+    <!-- <cover-view class="modal-content_tip1">充值即代表同意<text>《充值协议》</text></cover-view>
+    <cover-view class="modal-content_tip2">虚拟商品购买后不可退换，1金币=1元</cover-view> -->
+  </cover-view>
+</cover-view>
 <!--弹窗内容结束-->
+
+
+
+<!--邀请好友弹窗内容开始-->
+<cover-view class="modal-mask" bindtap="showDialogBtn1" catchtouchmove="preventTouchMove" wx:if="{{showModalss}}">
+</cover-view>
+<cover-view class="modal-dialog" wx:if="{{showModalss}}">
+  <cover-view scroll-y="true">
+    <cover-view class="invitation_box">
+     <cover-view class="haoyuo">
+      <cover-view class="invitation_title" >邀请好友获得金币</cover-view>
+      <cover-image class="chahao1"  bindtap="ok" src="/images/chahao.png"></cover-image>
+     </cover-view>
+      <cover-view class="invitation_content">
+        <cover-view class="invitation_item">
+          <cover-view class="invitation_item_r">
+            <cover-image src="http://www.bingshandashu.com/assets/img/share1.b972a602.png"></cover-image>
+          </cover-view>
+          <cover-view class="invitation_item_l_1"> 邀请好友</cover-view>
+        </cover-view>
+        <cover-view class="invitation_item1">
+          <!-- <cover-view class="arrow1"></cover-view> -->
+          <cover-image class="arrow1" src="/images/haoyou_left.png"></cover-image>
+        </cover-view>
+        <cover-view class="invitation_item">
+          <cover-view class="invitation_item_r">
+            <cover-image src="http://www.bingshandashu.com/assets/img/share2.9525964b.png"></cover-image>
+          </cover-view>
+          <cover-view class="invitation_item_l">
+            好友关注<cover-view class="text">手边大数</cover-view>
+          </cover-view>
+        </cover-view>
+        <cover-view class="invitation_item1">
+          <!-- <cover-view class="arrow1"></cover-view> -->
+          <cover-image class="arrow1" src="/images/haoyou_left.png"></cover-image>
+        </cover-view>
+
+        <cover-view class="invitation_item">
+          <cover-view class="invitation_item_r">
+            <cover-image src="http://www.bingshandashu.com/assets/img/share3.4915a881.png"></cover-image>
+          </cover-view>
+          <cover-view class="invitation_item_l">
+            <cover-view>双方各得</cover-view>
+            <cover-view>10个金币</cover-view>
+          </cover-view>
+        </cover-view>
+      </cover-view>
+      <cover-view>
+        <button class="invitation_btn" openType="share">马上邀请好友</button>
+      </cover-view>
+      <cover-view>
+        <navigator hover-class="none" url="/commission/pages/down/index">
+          <cover-view class="invitation_record">
+            <cover-view style="padding: 0 10rpx;">邀请记录</cover-view>
+            <!-- <cover-view class="cheap_t_l_arrow"></cover-view>
+            <cover-view class="cheap_t_l_arrow"></cover-view> -->
+            <cover-image class="cheap_t_l_arrow" src="/images/haoyou_left.png"></cover-image>
+            <cover-image class="cheap_t_l_arrow" src="/images/haoyou_left.png"></cover-image>
+          </cover-view>
+        </navigator>
+      </cover-view>
+    </cover-view>
+
+  </cover-view>
+</cover-view>
+<!--邀请好友弹窗内容结束-->

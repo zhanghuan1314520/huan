@@ -1,6 +1,6 @@
 {
-  "navigationBarTitleText": "遮罩",
+  "navigationStyle": "custom",
   "usingComponents": {
-    "vipmask":"/components/vipmask/index"
+  
   }
 }
