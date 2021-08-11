@@ -1,0 +1,9 @@
+/* pages/a43/index.wxss */
+.box_content{
+  margin: 20rpx;
+}
+.box{
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+}

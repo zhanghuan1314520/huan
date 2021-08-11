@@ -1,0 +1,145 @@
+<view class="content">
+    <view class="row vue-ref" data-ref="row" id="city">
+        <view bindtap="selet" class="sigle{{!tab[index]?' active':''}}"
+           data-index="{{index}}"
+            wx:for="{{titleData}}" wx:key="index">
+            <label class="_span{{!tab[index]?' active_1':''}}">{{item}}</label>
+            <image class="down" src="https://cdn.lottery.okgoes.com/up.png" wx:if="{{!tab[index]?' active':''}}"></image>
+            <image class="down" src="https://cdn.lottery.okgoes.com/down.png" wx:else></image>
+        </view>
+    </view>
+    <view style="position:relative;">
+        <view class="posa-cover"  hidden="{{tab[0]}}"></view>
+        <!-- 区域 -->
+        <view class="area-control" hidden="{{tab[0]}}">
+            <view class="select-data">
+                <view class="s-left">
+                    <scroll-view class="scroll-Y" scrollY="true">
+                        <view bindtap="typeSelect" class="{{['scroll-view-item',index==active?'item-active':'']}}"
+                           data-id="{{item.id}}" data-index="{{index}}"
+                            wx:for="{{area}}" wx:key="id">{{''+item.name+''}}</view>
+                    </scroll-view>
+                </view>
+                <view class="s-middle">
+                    <scroll-view class="scroll-Y" scrollY="true">
+                        <view bindtap="regionSelect" class="{{['scroll-view-item',index==actives?'item-active':'']}}"
+                           data-id="{{item.id}}" data-index="{{index}}"
+                            wx:for="{{region}}" wx:key="index">{{''+item.name+''}}</view>
+                    </scroll-view>
+                </view>
+                <view class="s-right">
+                    <scroll-view class="scroll-Y" scrollY="true">
+                        <view bindtap="rSelect" class="{{['scroll-view-item',index==activess?'item-active':'']}}"
+                        data-id="{{item.id}}" data-index="{{index}}"
+                            wx:for="{{regionData}}" wx:key="index">{{''+item.name+''}}</view>
+                    </scroll-view>
+                </view>
+            </view>
+            <view class="confirm">
+                <label bindtap="handleReset" class="reset _span"
+                    data-event-opts="{{[ [ 'tap',[ [ 'handleReset',['area'] ] ] ] ]}}">重置</label>
+                <label bindtap="handleConfirm" class="ok _span"
+                    data-event-opts="{{[ [ 'tap',[ [ 'handleConfirm',['area'] ] ] ] ]}}">确认</label>
+            </view>
+        </view>
+        <view class="posa-cover"  hidden="{{tab[1]}}"></view>
+        <view class="price-control"  hidden="{{tab[1]}}">
+            <!-- 价格 -->
+            <view class="select-data">
+                <view class="s-left">
+                    <scroll-view class="scroll-Y" scrollY="true">
+                        <view bindtap="priceSelect" class="{{['scroll-view-item',index==p_active?'item-active':'']}}"
+                        data-id="{{item.id}}" data-index="{{index}}"
+                            wx:for="{{price}}" wx:key="id">{{''+item.name+''}}</view>
+                    </scroll-view>
+                </view>
+                <view class="s-middle">
+                    <scroll-view class="scroll-Y" scrollY="true">
+                        <view bindtap="priceRegionSelect" class="{{['scroll-view-item',idx==item.id?'item-active':'']}}"
+                        data-id="{{item.id}}" data-index="{{index}}"
+                            wx:for="{{regionPrice}}" wx:key="index">{{''+(
+                            item.min===item.max?'不限':item.min+'-'+item.max+(p_active===0?'元':'万') )+''}}</view>
+                    </scroll-view>
+                </view>
+            </view>
+            <view class="confirm">
+                <label bindtap="handleReset" class="reset _span"
+                   data-price="{{item.price}}">重置</label>
+                <label bindtap="handleConfirm" class="ok _span"
+                  data-price="{{item.price}}">确认</label>
+            </view>
+        </view>
+        <view class="posa-cover"  hidden="{{tab[2]}}"></view>
+        <view class="size-control"  hidden="{{tab[2]}}">
+            <!-- 面积 -->
+            <view class="size-content">
+                <label bindtap="sizeSeleted" class="{{['.span _span',idx==item.id?'span-active':'']}}"
+                data-id="{{item.id}}" data-index="{{index}}"
+                    wx:for="{{size}}" wx:key="id">{{''+item.min+'-'+item.max+'m²'+''}}</label>
+            </view>
+            <view class="confirm">
+                <label bindtap="handleReset" class="reset _span"
+                    data-event-opts="{{[ [ 'tap',[ [ 'handleReset',['size'] ] ] ] ]}}">重置</label>
+                <label bindtap="handleConfirm" class="ok _span"
+                    data-event-opts="{{[ [ 'tap',[ [ 'handleConfirm',['size'] ] ] ] ]}}">确认</label>
+            </view>
+        </view>
+
+        <view class="posa-cover"  hidden="{{tab[3]}}"></view>
+        <view class="size-control"  hidden="{{tab[3]}}">
+            <!-- 开发商 -->
+            <view class="size-content">
+                <label bindtap="devSeleted" class="{{['.span _span',idx==item.id?'span-active':'']}}"
+                data-id="{{item.id}}" data-index="{{index}}"
+                    wx:for="{{developer}}" wx:key="id">{{item.name}}</label>
+            </view>
+            <view class="confirm">
+                <label bindtap="handleReset" class="reset _span"
+                data-id="{{item.id}}" data-index="{{index}}">重置</label>
+                <label bindtap="handleConfirm" class="ok _span"
+                data-id="{{item.id}}" data-index="{{index}}">确认</label>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+<view style="margin: 130rpx 20rpx 20rpx 20rpx;">
+    <view bindtap="__e" class="{{['scroll-view-item data-house',show_des?'bor':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'houseDetails',['$0'],[ [ ['list','',index] ] ] ] ] ] ]}}" id="house" wx:for="{{list}}" wx:key="index">
+        <view class="line">
+            <view class="left-dotted"></view>
+            <view class="{{['top',topLine?'topline':'']}}">
+                <view class="house-img">
+                    <view class="host-photo" style="{{'background-size:cover;'+'background-image:'+'url('+item.picture+'?x-oss-process=style/123)'+';'}}">
+                        <view class="host-describe" wx:if="{{!show_des}}">
+                            <view catchtap="__e" class="host-status" data-event-opts="{{[ [ 'tap',[ [ 'showRes',['$0'],[ [ ['list','',index] ] ] ] ] ] ]}}" wx:if="{{item.m0}}">{{item.m1}}</view>
+                            <view class="host-time" wx:if="{{item.m2&&item.saleStatus!=9}}">{{item.m3}}</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="house-right">
+                    <view class="house-des">{{item.name}}</view>
+                    <view class="house-price" wx:if="{{item.minPrice}}">{{item.maxPrice?item.minPrice+'-'+item.maxPrice+'元/㎡':item.minPrice+'元/㎡起'}}</view>
+                    <view class="house-price" wx:else>价格待定</view>
+                    <view class="house-addr">{{item.addr||''}}</view>
+                    <view class="house-tag" wx:if="{{item.tabs}}">
+                        <label class="_span" wx:for="{{item.tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">{{tab}}</label>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="bottom" wx:if="{{show_des}}">
+            <label class="_span">{{'清秋点评：'+item[$orig].lotteryComment||'暂无'}}</label>
+        </view>
+    </view>
+</view>

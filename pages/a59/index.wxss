@@ -1,0 +1,129 @@
+.box {
+  color: black;
+  font-size: 26rpx;
+}
+
+/* 悬浮 */
+.share_box {
+  position: fixed;
+  right: 0;
+  bottom: 0rpx;
+  width: 90rpx;
+  height: 54rpx;
+  z-index: 1;
+  top: 290rpx;
+  line-height: 54rpx;
+  background-image: url(https://i.loli.net/2021/08/09/7MwjFC2GvUWBzun.png);
+  background-size: 100% 100%;
+}
+
+/* 正常 */
+.share_box2 {
+  width: 120rpx;
+  border-radius: 40rpx;
+  background-color: rgb(241, 78, 78);
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+
+
+.share_box3 {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background-color: rgb(241, 78, 78);
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+
+.share_box4 {
+  width: 120rpx;
+  background-color: rgb(241, 78, 78);
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+
+.share_box5 {
+  width: 120rpx;
+  background-color: rgb(241, 78, 78);
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  border-top-left-radius: 40rpx;
+  border-bottom-left-radius: 40rpx;
+}
+
+.share_box6 {
+  width: 120rpx;
+  background-image: url(https://i.loli.net/2021/08/09/7MwjFC2GvUWBzun.png);
+  background-size: 100% 100%;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+
+.share_box7 {
+  width: 120rpx;
+  background-color: rgb(241, 78, 78);
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  border-top-left-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+}
+
+
+.share_box8 {
+  width: 120rpx;
+  border-radius: 40rpx;
+  background-color: rgb(241, 78, 78);
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  display: flex;
+}
+
+.share_box8_img {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 15rpx;
+}
+
+.share_box8_img image {
+  width: 100%;
+  height: 100%;
+}
+
+.share_box8_font {
+  width: 50rpx;
+}
+
+
+
+
+
+
+.share_box9 {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: rgb(241, 78, 78);
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  display: flex;
+}
+
+.share_box9_img {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+  padding-left: 30rpx;
+}
+
+.share_box9_img image {
+  width: 100%;
+  height: 100%;
+}
+
+.share_box9_font {
+  width: 50rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  padding-left: 25rpx;
+}

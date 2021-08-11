@@ -1,0 +1,9 @@
+<view class="box">单个图片</view>
+
+<image style="width:100%;" bindtap="preview_1" data-src="{{img}}"  src="{{img}}"></image>
+
+<view class="box">多个图片–循环</view>
+
+<block wx:for="{{pictures}}" wx:key="picture.list">
+<image mode="aspectFill" bindtap="preview_2"  src='{{item}}' data-list="{{pictures}}" data-src="{{item}}" lazy-load style="width:100%;"></image>
+</block>

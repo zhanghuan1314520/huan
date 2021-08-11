@@ -1,0 +1,17 @@
+<my-component>
+  <view slot="page1">
+    首页
+  </view>
+  <view slot="page2">
+    发现
+  </view>
+  <view slot="page3">
+    扫一扫
+  </view>
+  <view slot="page4">
+    圈子
+  </view>
+  <view slot="page5">
+    我的
+  </view>
+</my-component>

@@ -1,0 +1,8 @@
+<button bindtap='countdown1'>60秒倒计时</button>
+<text>{{second}}</text>
+
+
+
+ <button bindtap='countdown'>电商秒杀倒计时效果</button>
+<text >秒杀: {{clock}}</text>
+<text>{{micro_second}}</text> 

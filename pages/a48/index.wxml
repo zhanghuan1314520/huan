@@ -1,0 +1,24 @@
+<!-- <web-view src="{{list.link}}"> -->
+ <web-view src="https://mp.weixin.qq.com/">
+  <!-- <view wx:if="{{broker}}"> -->
+    <cover-view class="box">
+      <cover-view class="box_nav">
+        <cover-view class="box_nav1" bindtap="callBroker">
+          <!-- <cover-image class="box_nav1_img" src="{{mediuarr.qrcode}}"></cover-image> 
+          -->
+            <cover-image class="box_nav1_img" src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM5FImumgFDooW2xRdHJR5JttmnkeXHzpNECCzNnbX5a2Q/0"></cover-image>
+        </cover-view>
+        <cover-view class="box_nav2">
+          <!-- <cover-view class="box_nav2_name">{{mediuarr.uname}}</cover-view> -->
+          <cover-view class="box_nav2_name">层楼</cover-view>
+          <cover-view class="box_nav2_name">顾问</cover-view>
+        </cover-view>
+        <cover-view bindtap="sharePoster" class="box_nav4">分享给朋友</cover-view>
+      </cover-view>
+    </cover-view>
+  <!-- </view> -->
+  <!-- <view wx:else>
+    <cover-view bindtap="sharePoster" class="share-box">分享给朋友</cover-view>
+  </view> -->
+
+</web-view>

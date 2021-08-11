@@ -1,0 +1,21 @@
+<view>
+  <view class="indextop {{scrollTop > 10 ? 'navstyl':'unnavstyl'}}">
+    <view style="height:{{statusBarHeight}};"></view>
+    <view style="height:{{navheight}};padding:6px 0;display: flex;line-height: 32px;">
+      <view style="width:80rpx;opacity:1">
+        <view wx:if="{{scrollTop > 10 }}">
+          <view class="arrow_1" bindtap="to"></view>
+        </view>
+        <view wx:else>
+          <view class="arrow_2" bindtap="to"></view>
+        </view>
+      </view>
+      <view class="xiangqi {{scrollTop > 10 ? 'xiangqi':'unxiangqi'}}">{{name}}</view>
+      <view style="width:80rpx"></view>
+    </view>
+  </view>
+</view>
+<view>
+ <image style="width:100%" src="https://cdn.lottery.okgoes.com/fps/2021/3/3b36c2f744004f44a508dca9cc9081a4.jpg?x-oss-process=style/123"></image>
+ <view wx:for="{{40}}">参数</view>
+</view>

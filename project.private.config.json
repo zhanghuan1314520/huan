@@ -1,0 +1,65 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "按钮",
+          "pathName": "pages/a58/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "按钮样式",
+          "pathName": "pages/a59/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/a58/index",
+          "pathName": "pages/a58/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/a57/index",
+          "pathName": "pages/a57/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/a60/index",
+          "pathName": "pages/a60/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/a57/index",
+          "pathName": "pages/a57/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/a50/indx",
+          "pathName": "pages/a50/indx",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/a63/index",
+          "pathName": "pages/a63/index",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

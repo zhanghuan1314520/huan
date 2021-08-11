@@ -1,0 +1,15 @@
+<view class="box_content">
+  <view>统一获取====={{aa}}</view>
+<view class="box">
+  <view>单独获取=====</view>
+ <view>{{Y}}</view>/
+ <view>{{M}}</view>/
+ <view>{{D}}</view>/
+ <view>{{hour}}</view>/
+ <view>{{minute}}</view>/
+ <view>{{second}}</view>
+</view>
+<view wx:for="{{newsList}}" wx:key="id">
+  {{item.publishTime}}
+</view>
+</view>

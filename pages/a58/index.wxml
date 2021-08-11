@@ -1,0 +1,68 @@
+<!-- 1 -->
+<view class="box1">原形切换</view>
+<view class="box">
+  <view class="top">
+  <view class='tab1 {{menuTapCurrent=="0"?"active":""}}' data-current="0" catchtap="menuTap">挂牌分析</view>
+  <view class='tab2 {{menuTapCurrent=="1"?"active":""}}' data-current="1" catchtap="menuTap">成交分析</view>
+</view>
+<!-- 内容区域 -->
+<view class="tab3" hidden="{{menuTapCurrent!='0'}}">1</view>
+<view class="tab3" hidden="{{menuTapCurrent!='1'}}">2</view>
+</view>
+<!-- 1 -->
+
+
+<!-- 2 -->
+<view class="box1">滑动点击切换</view>
+<view class="box">
+  <view class='ticket-container'>
+    <scroll-view scroll-y bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}"
+      scroll-top="{{scrollTop}}">
+      <!--Tab布局-->
+      <view class='title'>
+        <view class="{{0 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='0'>
+          <text>未使用</text>
+          <hr class="line-style"/>
+        </view>
+        
+        <view class="{{1 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='1'>
+          <text>已使用</text>
+          <hr class="line-style"/>
+        </view>
+        <view class="{{2 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='2'>
+          <text>已过期</text>
+          <hr class="line-style" />
+        </view>
+      </view>
+ 
+      <!--内容布局-->
+      <swiper class='swiper' bindchange='pagechange' current='{{currentIndex}}'>
+        <swiper-item class='swiper'>
+          <view wx:for="{{firstList}}" wx:for-item="item" class='record-item'>
+            <view class='name'>
+              <span>名称：{{item.name}}</span>
+              <span>面额：{{item.money}}</span>
+            </view>
+          </view>
+        </swiper-item>
+        <swiper-item class='swiper' class='swiper'>
+          <view wx:for="{{secondList}}" wx:for-item="item" class='record-item'>
+            <view class='name'>
+              <span>名称：{{item.name}}</span>
+              <span>面额：{{item.money}}</span>
+            </view>
+          </view>
+        </swiper-item>
+        <swiper-item class='swiper' class='swiper'>
+          <view wx:for="{{thirdList}}" wx:for-item="item" class='record-item'>
+           <view class='name'>
+              <span>名称：{{item.name}}</span>
+              <span>面额：{{item.money}}</span>
+            </view>
+          </view>
+        </swiper-item>
+      </swiper>
+    </scroll-view>
+</view>
+</view>
+<!-- 2 -->

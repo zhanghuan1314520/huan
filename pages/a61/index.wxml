@@ -1,0 +1,26 @@
+<view class="box">
+  <view class="box_item {{currentTab==0 ? 'on' : ''}}" bindtap="mySort"  data-current="0"  data-property="prix">总价</view>
+  <view class="box_item {{currentTab==1 ? 'on' : ''}}" bindtap="mySort"  data-current="1"  data-property="area">面积</view>
+  <view class="box_item {{currentTab==2 ? 'on' : ''}}" bindtap="mySort"  data-current="2"  data-property="price">价格</view>
+</view>
+
+
+<!-- 下面列表 -->
+<view class="container">
+
+  <view class='xiangqing' wx:for="{{arr}}" data-id="{{item.id}}" wx:key='id'>
+    <view class='xiangqing_img'>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class='xiangqing_info'>
+      <text class='zi'>自营</text><text class='title'>{{item.title}}</text>
+      <view class='key'>
+        <text wx:for="{{item.world}}" class='text{{index}}' wx:key='id'>{{item.message}}</text>
+      </view>
+      <view class='house'>{{item.area}}m²</view>
+      <view class='prix'>
+        <text class='prix1'>￥{{item.prix}}万</text><text>{{item.price}}元/m²</text><text></text>
+      </view>
+    </view>
+  </view>
+</view>

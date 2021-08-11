@@ -1,0 +1,73 @@
+<view class="box"> 悬浮和背景图片</view>
+<view class="share_box">
+  <button style=" width:160rpx; color:#fff;font-size: 20rpx;border: none;margin-left: -20rpx;" openType="share" hover-class="none"
+    plain="true">分享</button>
+</view>
+
+
+<view class="box">椭圆形</view>
+<view class="share_box2">
+  <button style="width:160rpx;color:#fff;font-size: 20rpx;border: none;margin-left: -20rpx;" openType="share" hover-class="none"
+    plain="true">分享</button>
+</view>
+
+
+<view class="box">圆形</view>
+<view class="share_box3">
+  <button style="width:100rpx;color:#fff;font-size: 20rpx;border: none;padding-left: 10rpx;line-height: 50rpx"
+    openType="share" hover-class="none" plain="true">分享</button>
+</view>
+
+
+<view class="box">正方形</view>
+<view class="share_box4">
+  <button style="width:160rpx;color:#fff;font-size: 20rpx;border: none;margin-left: -20rpx;" openType="share" hover-class="none"
+    plain="true">分享</button>
+</view>
+
+
+<view class="box">半圆形</view>
+<view class="share_box5">
+  <button style="width:160rpx;color:#fff;font-size: 20rpx;border: none;margin-left: -20rpx;" openType="share" hover-class="none"
+    plain="true">分享</button>
+</view>
+
+<view class="box"> 背景图片</view>
+<view class="share_box6">
+  <button style="width:160rpx;color:#fff;font-size: 20rpx;border: none;margin-left: -20rpx;" openType="share" hover-class="none"
+    plain="true">分享</button>
+</view>
+
+
+<view class="box">右下左上圆形</view>
+<view class="share_box7">
+  <button style="width:160rpx;color:#fff;font-size: 20rpx;border: none;margin-left: -20rpx;" openType="share" hover-class="none"
+    plain="true">分享</button>
+</view>
+
+
+
+<view class="box">图片和文字 左右</view>
+<view class="share_box8">
+  <button style="color:#fff;font-size: 20rpx;border: none;display: flex;align-items: center;padding:0;" openType="share"
+    hover-class="none" plain="true">
+    <view class="share_box8_img">
+      <image src="https://i.loli.net/2021/08/10/aQFlK5JZ9DNfsmp.png"></image>
+    </view>
+    <view class="share_box8_font">分享</view>
+  </button>
+</view>
+
+
+
+
+<view class="box">图片和文字 上下</view>
+<view class="share_box9">
+  <button style="color:#fff;font-size: 20rpx;border: none;align-items: center;padding:0;" openType="share"
+    hover-class="none" plain="true">
+    <view class="share_box9_img">
+      <image src="https://i.loli.net/2021/08/10/aQFlK5JZ9DNfsmp.png"></image>
+    </view>
+    <view class="share_box9_font">分享</view>
+  </button>
+</view>

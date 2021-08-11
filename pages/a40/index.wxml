@@ -5,3 +5,8 @@
  <text>{{progressTime}}秒</text>
  <text bindtap='playbtn' data-change='1'>{{playPausetips}}</text>
 </view>
+
+
+
+
+

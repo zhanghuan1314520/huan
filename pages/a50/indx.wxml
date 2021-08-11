@@ -1,0 +1,39 @@
+<view class="box">
+  <switch checked bindchange="switch1Change" color="#26a2ff" />
+</view>
+
+
+<view class="box">
+  <view class="switch">
+    <view class="switchNums {{num == 0?'currentNum':''}}" bindtap="switchChange" data-index="0">
+      {{selectOpen[0]}}
+    </view>
+    <view class="switchNums {{num == 1?'currentNum':''}}" bindtap="switchChange" data-index="1">
+      {{selectOpen[1]}}
+    </view>
+  </view>
+</view>
+
+
+
+<view class="box">
+  <view class='pay-switch'>
+    <switch color='#1F3238' data-gongprice='{{gongprice}}' data-discounts='{{discounts}}' bindchange="switch1Change" />
+  </view>
+</view>
+
+
+
+<view class="box">
+  <view class="body-view">
+    <switch bindchange="switch1Change1" />
+  </view>
+  <view wx:if="{{shows==true}}">
+    随着switch组件切换来显示
+  </view>
+</view>
+
+
+<view class="box">
+  <switch bindchange='switchClick'>{{switchTitle}}</switch>
+</view>

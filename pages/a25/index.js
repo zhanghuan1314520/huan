@@ -19,9 +19,9 @@ Page({
 
 
     tab: [
-      { title: '楼市动态', id: 0 },
-      { title: '楼市报告', id: 1 },
-      { title: 'VIP专家顾问', id: 2 }
+      { title: '文本1', id: 0 },
+      { title: '文本2', id: 1 },
+      { title: '文本3', id: 2 }
     ],
     idx: 0,
     page: 1,
@@ -226,6 +226,11 @@ Page({
     let index = e.currentTarget.dataset.index;
     t.setData({
       idx: index,
+    })
+  },
+  to:function(){
+    wx.navigateBack({
+      delta: 1,
     })
   }
 })

@@ -1,0 +1,32 @@
+<!--project/pages/news/news.wxml-->
+<view class="nav">
+  <view class="box_item">
+    <block>
+      <view class="nav-item {{index==active?'cur':''}}" wx:for="{{nav}}" bindtap="changeNav" data-id="{{item.id}}"  data-index="{{index}}"
+        wx:key="id"> {{item.title}}</view>
+    </block>
+  </view>
+</view>
+
+
+<view class="containers">
+  <view class="box" wx:for="{{list}}" wx:key="id" wx:key="id" data-id="{{item.id}}" data-name="{{item.link}}"
+    bindtap="noticeApi_get_share">
+    <view class="box_l">
+      <view class="box_l_title">{{item.title}}</view>
+      <view class="box_tag">
+        <view class="box_tag_l">
+          <view class="box_tag_l_img">
+            <image src="{{item.mediu_thumb}}"></image>
+          </view>
+          <view class="box_tag_l_name">{{item.mediu_title}}</view>
+        </view>
+        <view class="box_tag_r">{{item.atime}}</view>
+      </view>
+      <view class="load-more" wx:if="{{list.length>0}}">{{loadMessage}}</view>
+    </view>
+    <view class="box_r">
+      <image src="{{item.thumb}}"></image>
+    </view>
+  </view>
+</view>

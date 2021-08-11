@@ -1,0 +1,48 @@
+<view class="tab__panel">
+  <view class="tab__content" hidden="{{activeIndex != 0}}">
+    <slot name="page1"></slot>
+  </view>
+  <view class="tab__content" hidden="{{activeIndex != 1}}">
+    <slot name="page2"></slot>
+  </view>
+  <view class="tab__content" hidden="{{activeIndex != 2}}">
+    <slot name="page3"></slot>
+  </view>
+  <view class="tab__content" hidden="{{activeIndex != 3}}">
+    <slot name="page4"></slot>
+  </view>
+  <view class="tab__content" hidden="{{activeIndex != 4}}">
+    <slot name="page5"></slot>
+  </view>
+</view>
+
+<view class="nav_shadow"></view>
+
+<view class="nav_scan">
+</view>
+
+<view class="navigation_bar">
+  <view class="navbar">
+    <block wx:for="{{tabs_block}}" wx:key="true">
+      <view id="{{index}}" class="navbar__item {{activeIndex == index ? 'bar_item_on' : ''}}" bindtap="tabClick">
+        <block wx:if="{{activeIndex != index}}" wx:key="true">
+          <view class="navbar__imgs">
+            <image class="navbar__img" src="{{item.icon}}"></image>
+          </view>
+        </block>
+
+        <block wx:if="{{activeIndex == index}}" wx:key="true">
+          <view class="navbar__imgs">
+            <image class="navbar__img" src="{{item.iconed}}"></image>
+          </view>
+        </block>
+
+        <view class="navbar__title">{{item.text}}</view>
+
+        <block wx:if="{{item.style == 3}}" wx:key="true">
+            <image class="navbar__img_3" src="/images/tab/tab_3_ed.png"></image>
+        </block>
+      </view>
+    </block>
+  </view>
+</view>

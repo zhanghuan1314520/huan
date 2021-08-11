@@ -1,0 +1,6 @@
+<button size="mini" type="default" plain="true" class='form-code-btn' bindtap='sendCode'
+  style='color:{{color}}; border-color: {{color}};background-color:#FFF;' disabled="{{disabled}}">{{getCode}}</button>
+
+
+
+  <view bindtap="aa">2222</view>
