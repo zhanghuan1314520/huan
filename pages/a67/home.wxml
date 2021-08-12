@@ -1,0 +1,6 @@
+<view class="box_bg" style="background-image: url(https://sbmf.ww2ss.com/dfimages/house/z/new_bg_{{index}}.png);"></view>
+
+
+<view class="box" style="color:{{color}}">
+  {{title}}
+</view>

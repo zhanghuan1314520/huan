@@ -1,4 +1,4 @@
-// pages/a67/index.js
+// pages/a1/home.js
 Page({
 
   /**
@@ -11,8 +11,19 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function (t) {
+    console.log(t)
+   var title = t.title;
+   var index = t.index;
+   var color = t.color;
+    wx.setNavigationBarTitle({
+      title: '这是'+title
+    })
+    this.setData({
+      index:index,
+      title:title,
+      color:color
+    })
   },
 
   /**

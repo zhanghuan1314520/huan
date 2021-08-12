@@ -1,2 +1,81 @@
-<!--pages/a65/index.wxml-->
-<text>pages/a65/index.wxml</text>
+<view class="container">
+  <view class="container-top {{oneFixed}}" id="tab">
+    <view class="params-bar-content">
+      <view style="text-align: center;font-size:26rpx"> 日期范围：</view>
+      <view class="select-date-content">
+        <picker mode="date" fields="day" value="{{sdate}}" start="2016-01-01" end="2021-12-31"
+          bindchange="getDateTimes">
+          <view class="selectDate">
+            {{sdate}}
+          </view>
+        </picker>
+        <view style="width: 50rpx;text-align: center"> 至</view>
+        <picker mode="date" fields="day" value="{{edate}}" start="2016-01-01" end="2021-12-31"
+          bindchange="getDateTimee">
+          <view class="selectDate">
+            {{edate}}
+          </view>
+        </picker>
+      </view>
+      <!-- 周榜 -->
+      <view class="listItem">
+        <view class="list-item_type {{styleInd==1?'active':''}}">
+          <picker bindchange="bindMultiPickerChange1" bindcolumnchange="bindMultiPickerColumnChange"
+            value="{{multiIndex1}}" range="{{multiArray1}}">
+            周榜
+          </picker>
+        </view>
+        <!--月榜 -->
+        <view class="list-item_type {{styleInd==2?'active':''}}">
+          <view class="picker_group">
+            <picker mode="date" fields="month" value="{{date}}" start="2016-01-01" end="2021-12-31"
+              bindchange="bindDateChange">
+              <view class="picker">
+                月榜
+              </view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="list-header" id="list-header" style="width:100%">
+      <view class="list-header-item" wx:for="{{rankList}}" wx:key="index" style="width:{{rankList[index].width}}rpx">
+        <view class="name"> {{item.label}}</view>
+        <view class="unit"> {{item.subLabel}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="container-body">
+    <view class="list-content">
+      <scroll-view scrollX class="scroll-list-body" style=" height:100%">
+        <scroll-view scrollY scrollTop="200px" style="width:100%;background:#fff;">
+          <view class="list-body">
+            <view bindtap="goCommunity" data-sobj="{{item}}" class="list-body-row" wx:for="{{deallist}}" wx:key="item">
+              <block>
+                <view class="list-body-row-item item-rank" style="width:{{rankList[0].width}}rpx;">
+                  {{index+1}}</view>
+                <view class="list-body-row-item" style="width:{{rankList[1].width}}rpx;">
+                  {{item.title}}
+                </view>
+                <view class="list-body-row-item" style="width:{{rankList[2].width}}rpx;">
+                  {{item.areaname}}
+                </view>
+                <view class="list-body-row-item" style="width:{{rankList[3].width}}rpx;">
+                  {{item.num}}
+                </view>
+                <view class="list-body-row-item" style="width:{{rankList[4].width}}rpx;">
+                  {{item.sump}}
+                </view>
+                <view class="list-body-row-item" style="width:{{rankList[5].width}}rpx;">
+                  {{item.junjia}}
+                </view>
+              </block>
+              <view class="goto-icon icon icon--arrow-right" style="font-size:26rpx; color:#5F5F60;">
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

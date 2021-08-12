@@ -304,17 +304,17 @@
 
 
 <navigator  hover-class="none"  url="/pages/a65/index">
-  <view class="box">64.</view>
+  <view class="box">64.时间选择(周，月)</view>
 </navigator>
 
 
 <navigator  hover-class="none"  url="/pages/a66/index">
-  <view class="box">65.</view>
+  <view class="box">65.自定义页面</view>
 </navigator>
 
 
 <navigator  hover-class="none"  url="/pages/a67/index">
-  <view class="box">66.</view>
+  <view class="box">66.动态修改顶部标题</view>
 </navigator>
 
 
