@@ -1,0 +1,5 @@
+/* pages/page_7/p1/index.wxss */
+.box{
+  width: 200rpx;
+  margin: 100rpx  auto;
+}

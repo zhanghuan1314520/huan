@@ -1,9 +1,0 @@
-<view class="parent">
-  <scroll-view class="second-child" scroll-y="true">
-    <view  wx:for="{{100}}" wx:key="index" class="aa">
-      <view class="box">11</view>
-    </view>
-  </scroll-view>
-</view>
-
-<authorize bind:__l="__l" dataApi="{{member}}"></authorize>

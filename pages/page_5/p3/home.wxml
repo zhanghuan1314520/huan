@@ -1,0 +1,110 @@
+<!-- 自定义状态栏区域开始-->
+<view class="indextop {{scrollTop > 10 ? 'navstyl':'unnavstyl'}}">
+  <view style="height:{{statusBarHeight}};"></view>
+  <view style="height:{{navheight}};padding:6px 0;display: flex;line-height: 32px;">
+    <view wx:if="{{scrollTop > 10}}">
+      <view style="width:100rpx;opacity:1;margin-left: 30rpx;">
+        <view class="ranking_box_r" bindtap="back">
+          <view class="arrow1"></view>
+          <view class="ranking_box_r_font"> 返回</view>
+        </view>
+      </view>
+    </view>
+    <view wx:else>
+      <view style="width:100rpx;opacity:1;margin-left: 30rpx;">
+        <view class="ranking_box_r" bindtap="back">
+          <view class="arrow"></view>
+          <view class="ranking_box_r_font" style="color:#fff"> 返回</view>
+        </view>
+      </view>
+    </view>
+    <view class="xiangqi {{scrollTop > 10 ? 'xiangqi':'unxiangqi'}}">{{diytitle}}</view>
+    <view style="width:80rpx"></view>
+  </view>
+</view>
+<!-- 自定义状态栏区域结束 -->
+
+
+<!-- 背景区域 -->
+
+<view class="ranking_box_bg"
+  style="background-image:url(https://sbmf.ww2ss.com/dfimages/house/z/new_bg_{{index}}.png);">
+  <!-- 切换区域 -->
+  <view class="xq_nav">
+    <!-- 周榜 -->
+    <view class="listItem" style="background-color:{{items.bgcolor}};">
+      <view class="list-item_type {{styleInd==1?'active':''}}"
+        style="{{styleInd==1?'background:linear-gradient(to right,'+items.activebgc+','+items.activebgc2+')':''}}">
+        <picker bindchange="bindMultiPickerChange1" bindcolumnchange="bindMultiPickerColumnChange"
+          value="{{multiIndex1}}" range="{{multiArray1}}">
+          周榜
+        </picker>
+      </view>
+         <!-- 重点 -->
+      <view class="list-item_type {{styleInd==2?'active':''}}"
+        style="{{styleInd==2?'background:linear-gradient(to right,'+items.activebgc+','+items.activebgc2+')':''}}">
+        <view class="picker_group">
+          <picker mode="date" fields="month" value="{{date}}" start="2016-01-01" end="2021-12-31"
+            bindchange="bindDateChange" indicator-class="picker-box">
+            月榜
+          </picker>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 内容区域 -->
+<view class="xq_box">
+  <view class="xq_box_t" style="color:{{items.color}}">
+    <view class="xq_box_item">排行</view>
+    <view class="xq_box_item2">{{items.name}}</view>
+    <view class="xq_box_item3">{{items.name2}}</view>
+    <view class="xq_box_item4">
+      <view>{{items.name3}}</view>
+      <view>{{items.unit}}</view>
+    </view>
+    <view class="xq_box_item5">
+      <view>{{items.name4}}</view>
+      <view>({{items.unit2}})</view>
+    </view>
+    <view class="xq_box_item6">
+      <view>{{items.name5}}</view>
+      <view>({{items.unit3}})</view>
+    </view>
+  </view>
+
+  <view wx:if="{{deallist.length>0}}">
+    <view class="xq_box_b" wx:for="{{deallist}}" wx:key="id" data-index="{{index}}" data-sobj="{{item}}"
+      bindtap="goCommunity">
+      <view class="xq_box_item">
+        <view class="xq_box_item_img" wx:if="{{index<3}}">
+          <image src="https://sbmf.ww2ss.com/dfimages/house/z/new_{{index}}.png"></image>
+        </view>
+        <view wx:else>
+          <view class="xq_box_item_number" style="background-color:{{items.nunbgcolor}}">{{index+1}}</view>
+        </view>
+      </view>
+      <view class="xq_box_item2">{{item.title}}</view>
+      <view class="xq_box_item3">{{item.areaname}}</view>
+      <view class="xq_box_item4">
+        <view wx:if="{{item.num !==null}}">{{item.num}}</view>
+        <view wx:else>-</view>
+      </view>
+      <view class="xq_box_item5">
+        <view wx:if="{{item.sump !==null}}">
+          {{item.sump}}
+        </view>
+        <view wx:else>-</view>
+      </view>
+      <view class="xq_box_item6">
+        <view wx:if="{{item.junjia !==null}}">
+          {{item.junjia}}
+        </view>
+        <view wx:else>-</view>
+      </view>
+    </view>
+  </view>
+  <view wx:else>
+    <view class="no_data">没有数据</view>
+  </view>
+</view>

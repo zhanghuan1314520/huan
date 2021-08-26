@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "newhouseList":"/components/lists/index"
+  }
+}

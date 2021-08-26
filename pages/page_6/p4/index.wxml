@@ -1,0 +1,17 @@
+<view class="list_box">
+  <scroll-view scroll-x="true" class="nav" enable-flex scroll-with-animation="{{true}}">
+    <view class="box_item">
+      <block>
+        <view class="nav-item {{index==active?'cur':''}}" wx:for="{{nav}}" bindtap="changeNav" data-id="{{item.id}}"
+          data-index="{{index}}" wx:key="id">
+          {{item.title}}
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+  <view class="list_box">
+    <view class="item" wx:for="{{list}}" wx:key="id" data-index="{{index}}"  data-id="{{item.id}}">
+      <view>{{item.title}}----{{item.atime}}</view>
+    </view>
+  </view>
+</view>

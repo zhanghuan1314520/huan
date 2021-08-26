@@ -1,0 +1,10 @@
+/* pages/page/p11/index.wxss */
+.box{
+  width: 200rpx;
+  background-color: rgb(238, 126, 126);
+  color: #fff;
+  font-size: 30rpx;
+  margin: 100rpx auto;
+  text-align: center;
+  padding: 20rpx;
+}

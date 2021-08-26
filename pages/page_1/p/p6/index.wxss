@@ -1,0 +1,23 @@
+@import "../comm.wxss";
+
+.dots2{ 
+  position: absolute; 
+  right: 40rpx; 
+  bottom: 20rpx; 
+  display: flex; 
+  justify-content: center; 
+ } 
+ .dot2{ 
+  margin: 0 10rpx; 
+  width: 28rpx; 
+  height: 28rpx; 
+  background: #fff; 
+  border-radius: 50%; 
+  transition: all .6s; 
+  font: 300 18rpx/28rpx "microsoft yahei"; 
+  text-align: center; 
+ } 
+ .active2{ 
+  background: #f80; 
+  color:#fff; 
+ }

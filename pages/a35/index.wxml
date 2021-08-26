@@ -1,6 +1,0 @@
-<view class='parentstyle '>
-    <view class='centerStyle'>
-      <input password='{{passwordType}}' maxlength="20" placeholder="请输入密码" style='font-size:34rpx'></input>
-      <image src='{{defaultType? "../../images/eye2.png": "../../images/eye1.png"}}' class='imageStyle' bindtap='eyeStatus'></image>
-    </view>
-</view>

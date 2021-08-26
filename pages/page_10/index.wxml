@@ -1,0 +1,12 @@
+<navigator  hover-class="none"  url="/pages/page_10/p1/index">
+  <view class="box">1.单个实例</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_10/p2/index">
+  <view class="box">2.多个实例</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_10/p3/index">
+  <view class="box">3.切换(图表)</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_10/p4/index">
+  <view class="box">4.</view>
+</navigator>

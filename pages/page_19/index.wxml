@@ -1,0 +1,6 @@
+<navigator  hover-class="none"  url="/pages/page_19/p1/index">
+  <view class="box">1.</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_18/p2/index">
+  <view class="box">2.</view>
+</navigator>

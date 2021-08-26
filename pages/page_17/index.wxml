@@ -1,0 +1,15 @@
+<navigator  hover-class="none"  url="/pages/page_17/p1/index">
+  <view class="box">1.跑马灯效果，类似滚动字幕或者滚动广告之类的，使用简单的CSS样式控制</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_17/p2/index">
+  <view class="box">2.文字跑马灯(js控制)</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_17/p3/index">
+  <view class="box">3.文字跑马灯(js控制间隔)</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_17/p4/index">
+  <view class="box">4.</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_17/p5/index">
+  <view class="box">5.</view>
+</navigator>

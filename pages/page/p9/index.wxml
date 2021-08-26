@@ -1,0 +1,6 @@
+<view class='parentstyle '>
+    <view class='centerStyle'>
+      <input password='{{passwordType}}' maxlength="20" placeholder="请输入密码" style='font-size:34rpx'></input>
+      <image src='{{defaultType? "https://i.loli.net/2021/08/22/b5pYyBw82nckiQu.png": "https://i.loli.net/2021/08/22/uMH3izWj6NCcF8L.png"}}' class='imageStyle' bindtap='eyeStatus'></image>
+    </view>
+</view>

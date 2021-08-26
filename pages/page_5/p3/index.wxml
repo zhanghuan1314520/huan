@@ -1,0 +1,65 @@
+<!-- 自定义状态栏区域开始-->
+<view class="indextop {{scrollTop > 10 ? 'navstyl':'unnavstyl'}}">
+  <view style="height:{{statusBarHeight}};"></view>
+  <view style="height:{{navheight}};padding:6px 0;display: flex;line-height: 32px;">
+    <view wx:if="{{scrollTop > 10}}">
+      <view style="width:100rpx;opacity:1;margin-left: 30rpx;">
+        <view class="ranking_box_r" bindtap="back">
+          <view class="arrow1"></view>
+          <view class="ranking_box_r_font"> 返回</view>
+        </view>
+      </view>
+    </view>
+    <view wx:else>
+      <view style="width:100rpx;opacity:1;margin-left: 30rpx;">
+        <view class="ranking_box_r" bindtap="back">
+          <view class="arrow"></view>
+          <view class="ranking_box_r_font" style="color:#fff"> 返回</view>
+        </view>
+      </view>
+    </view>
+    <view class="xiangqi {{scrollTop > 10 ? 'xiangqi':'unxiangqi'}}">手边买房</view>
+    <view style="width:80rpx"></view>
+  </view>
+</view>
+<!-- 自定义状态栏区域结束 -->
+
+
+
+
+
+<view class="ranking_box_bg"></view>
+
+<view class="ranking_cintent_box" wx:for="{{list}}"
+data-title="{{item.title}}"
+  data-id="{{item.id}}"
+  data-index="{{index}}"
+  data-color="{{item.color}}"
+  data-bgcolor="{{item.bgcolor}}"
+  data-bgcolor2="{{item.bgcolor2}}"
+  data-bgcolor3="{{item.bgcolor3}}"
+  data-bgcolor4="{{item.bgcolor4}}"
+  data-bgcolor5="{{item.bgcolor5}}"
+  data-nunbgcolor="{{item.nunbgcolor}}"
+  data-activebgc="{{item.activebgc}}"
+  data-activebgc2="{{item.activebgc2}}"
+  data-name="{{item.name}}"
+  data-name2="{{item.name2}}"
+  data-name3="{{item.name3}}"
+  data-name4="{{item.name4}}"
+  data-name5="{{item.name5}}"
+  data-unit="{{item.unit}}"
+  data-unit2="{{item.unit2}}"
+  data-unit3="{{item.unit3}}"
+  wx:key="id" bindtap="tolist"
+  style="background-image:url(https://sbmf.ww2ss.com/dfimages/house/z/new_imgs_{{index}}.png);">
+  <view class="ranking_cintent_item">
+    <view class="ranking_cintent_item_r">
+      <view class="ranking_cintent_item_t">{{item.title}}</view>
+      <view class="ranking_cintent_item_b">{{item.tip}}</view>
+    </view>
+    <view class="ranking_cintent_item_l">
+      <image mode="aspectFill" src="https://sbmf.ww2ss.com/dfimages/house/z/new_imgs_r.png"></image>
+    </view>
+  </view>
+</view>

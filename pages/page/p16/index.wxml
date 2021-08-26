@@ -1,0 +1,3 @@
+<view class="box">
+  <button bindtap="toStorage">存储</button>
+</view>

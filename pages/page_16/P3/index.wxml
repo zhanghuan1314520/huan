@@ -1,0 +1,27 @@
+<view class="process_box">
+  <view class="new-block">
+    <view class="adviser_nav_title">TA的动态</view>
+    <view wx:if="{{items.length>0}}">
+      <block wx:for="{{items}}" wx:key="id">
+        <view class="timeline">
+          <view class="yuan"></view>
+          <label class="time-line-title _span">{{item.time}}</label>
+          <label class="time-line-title _span" style="margin-left: 30rpx;">置业顾问-{{item.name}}</label>
+        </view>
+        <view class="new-content">
+          <view class="title">{{item.title}}</view>
+          <view class="zx">{{item.title}}近况，详情可咨询【{{item.name}}】</view>
+          <view class="title-content">
+            <image mode="aspectFill" lazy-load="true" src="{{item.image}}"></image>
+          </view>
+        </view>
+      </block>
+    </view>
+    <view wx:else>
+      <view class="none">
+        <image src="https://sbmf.ww2ss.com/dfimages/house/z/adviser_none.png"></image>
+        <view class="none_fz">暂未发布动态</view>
+      </view>
+    </view>
+  </view>
+</view>

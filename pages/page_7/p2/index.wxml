@@ -1,0 +1,5 @@
+<view class="box">
+  <view wx:for="{{newsList}}" wx:key="id">
+    <view>年月日时分秒:{{item.publishTime}}</view>
+  </view>
+</view>

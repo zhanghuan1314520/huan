@@ -1,0 +1,26 @@
+@import "../comm.wxss";
+
+.dots1 {
+  width: 210rpx;
+  height: 20rpx;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10rpx;
+}
+/*未选中时的小圆点样式 */
+.dot1 {
+  width: 70rpx;
+  height: 10rpx;
+  border-radius: 14rpx;
+  margin-right: 26rpx;
+  background-color: #de8a78;
+}
+/*选中以后的小圆点样式  */
+.active1 {
+  width: 70rpx;
+  height: 10rpx;
+  background-color: #fc4308;
+}

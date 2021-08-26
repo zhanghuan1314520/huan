@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "echarts图表单个实例",
-  "usingComponents": {
-    "ec-canvas": "../../ec-canvas/ec-canvas"
-  }
-}

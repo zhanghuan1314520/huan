@@ -1,0 +1,7 @@
+<wxs module="filter" src="./time.wxs"></wxs>
+<view class="box">
+  <view wx:for="{{newsList}}" wx:key="id">
+    <view>{{filter.dateFormat(item.publishTime,'yyyy-MM-dd')}}</view>
+    <!-- <view>{{item.publishTime}}</view> -->
+  </view>
+</view>

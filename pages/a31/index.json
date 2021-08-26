@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "筛选(二级)",
-  "usingComponents": {
-    "area-select": "/components/area/area"
-  }
-}

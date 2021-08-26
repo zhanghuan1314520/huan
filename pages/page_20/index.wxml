@@ -1,0 +1,28 @@
+<view class="box">方式1:同一页面data-id</view>
+<view class="box1" wx:for="{{list}}" data-id="{{item.id}}" wx:key="id" bindtap="a1">
+  {{item.name}}-{{item.pic}}
+</view>
+<view class="box">方式2:同一页面data-index</view>
+<view class="box1" wx:for="{{list}}" data-index="{{index}}" wx:key="id" bindtap="a2">
+  {{item.name}}-{{item.pic}}
+</view>
+<view class="box">方式3:不同同一页面data-url</view>
+<view class="box1" wx:for="{{list2}}" data-url="{{item.url}}" wx:key="id" bindtap="a3">
+  {{item.name}}-{{item.pic}}
+</view>
+<view class="box">方式4:同一页面ata-go</view>
+<view class="box1" wx:for="{{list2}}" data-go="/pages/page_20/p1/index" wx:key="id" bindtap="a4">
+  {{item.name}}-{{item.pic}}
+</view>
+<view class="box">方式5:同一页面,标签navigate普通,无参数</view>
+<navigator hoverClass="none" openType="navigate" url="/pages/page_20/p1/index">
+  <view class="box1" wx:for="{{list2}}"  wx:key="id">
+    {{item.name}}-{{item.pic}}
+  </view>
+</navigator>
+<view class="box">方式6:标签navigate,带参数id</view>
+<navigator hoverClass="none"  openType="navigate"  wx:for="{{list}}" data-id="{{item.id}}"  wx:key="id" url="/pages/page_20/p1/index?id={{item.id}}">
+  <view class="box1">
+    {{item.name}}-{{item.pic}}
+  </view>
+</navigator>

@@ -1,0 +1,34 @@
+<view  class="data-house">
+    <view class="top">
+      <view class="house-img">
+        <view class="host-photo" style="background-size:cover;background-image:url('{{picture}}')">
+          <view class="host-describe">
+            <view class="host-status" data-indxe="{{index}}">{{m1}}</view>
+            <view class="host-time">{{m2}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="house-right">
+        <view class="house-des">{{name}}</view>
+        <view class="house-price">
+          {{maxPrice?minPrice+'-'+maxPrice+'元/㎡':minPrice+'元/㎡起'}}</view>
+        <view class="house-addr">{{addr}}</view>
+        <view class="house-tag">
+          <label class="_span" wx:for="{{tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">{{tab}}</label>
+        </view>
+        <!-- 新增加 -->
+        <view class="house-ranking">
+          <view class="house-ranking_r">
+            <image src="https://sbmf.ww2ss.com/dfimages/house/z/nav_img_t1.png"></image>
+          </view>
+          <view class="children">余杭区综合热度第<text>{{num}}</text>名</view>
+        </view>
+        <view class="house-ranking">
+          <view class="house-ranking_r">
+            <image src="https://sbmf.ww2ss.com/dfimages/house/z/nav_img_t2.png"></image>
+          </view>
+          <view class="children">登录截止：<text class="time">{{time}}</text></view>
+        </view>
+      </view>
+    </view>
+</view>

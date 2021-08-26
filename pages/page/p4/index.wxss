@@ -1,0 +1,70 @@
+.box{
+  text-align: center;
+}
+
+.fix.moveright {
+  animation: right 0.5s ease;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes right {
+  from {
+    right: 14px;
+  }
+  to {
+    right: -40px;
+  }
+}
+@keyframes right {
+  from {
+    right: 14px;
+  }
+  to {
+    right: -40px;
+  }
+}
+.fix.moveleft {
+  animation: left 0.5s ease;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes left {
+  from {
+    right: -40px;
+  }
+  to {
+    right: 14px;
+  }
+}
+@keyframes left {
+  from {
+    right: -40px;
+  }
+  to {
+    right: 14px;
+  }
+}
+.fix {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100rpx;
+  height: 100rpx;
+  right: 28rpx;
+  bottom: 330rpx;
+  background-color: #4A9BEB;
+  box-shadow: 0rpx 4rpx 20rpx 0rpx rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  font-size: 22rpx;
+  color: #fff;
+  opacity: 0.9;
+  flex-direction: column;
+}
+.share_img{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 12rpx;
+}
+.share_img image{
+  width: 100%;
+  height: 100%;
+}

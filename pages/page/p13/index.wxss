@@ -1,0 +1,15 @@
+/* pages/a1/page11.wxss */
+.box {
+  display: flex;
+  font-size: 26rpx;
+  padding: 10rpx 20rpx;
+  justify-content: space-between;
+}
+
+.bigBox {
+  color: blueviolet;
+}
+
+.delete {
+  color: brown;
+}

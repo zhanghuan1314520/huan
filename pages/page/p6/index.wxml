@@ -1,0 +1,11 @@
+<view class="page" style="background-color: {{backgroundColor}}">
+  <view class="grid col-3 bg-white padding-sm">
+    <view class="padding-sm" wx:for="{{ColorList}}" wx:key='id' wx:if="{{index<12}}">
+      <view class="bg-{{item.name}} padding radius text-center light" data-index='{{index}}'
+        bindtap="changeBackgroungcolor">
+        <view class="text-lg">{{item.title}}</view>
+        <view class="margin-top-sm text-Abc">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+</view>

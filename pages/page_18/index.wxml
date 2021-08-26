@@ -1,0 +1,12 @@
+<navigator  hover-class="none"  url="/pages/page_18/p1/index">
+  <view class="box">1.登录和注册切换(协议,短信验证码)</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_18/p2/index">
+  <view class="box">2.登录(输入框和按钮联动)</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_18/p3/index">
+  <view class="box">3.</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_18/p4/index">
+  <view class="box">4.</view>
+</navigator>

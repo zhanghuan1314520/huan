@@ -1,7 +1,0 @@
-<view class='progress-block'>
-    <!-- <text wx:if="{{ count < 5 }}">{{ count }}/5</text> -->
-    <view class='progress-content'>
-      <view class='progress'></view>
-      <view class="progress progress-active {{ count < cellNumber ? '' : 'progress-active-full' }}" style="width:{{ 160/cellNumber * count }}rpx"></view>
-    </view>
-  </view>

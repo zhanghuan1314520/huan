@@ -1,0 +1,6 @@
+<!--pages/page/p11/index.wxml-->
+
+
+<view class="box">
+  <view bindtap="get">花式打印</view>
+</view>

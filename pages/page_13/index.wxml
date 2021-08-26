@@ -1,0 +1,15 @@
+<navigator  hover-class="none"  url="/pages/page_13/p1/index">
+  <view class="box">1.常规</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_13/p2/index">
+  <view class="box">2.自定义(圆角)</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_13/p3/index">
+  <view class="box">3.切换(图表)</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_13/p4/index">
+  <view class="box">4.</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_13/p5/index">
+  <view class="box">5.</view>
+</navigator>

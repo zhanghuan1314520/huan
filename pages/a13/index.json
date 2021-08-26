@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "dropdownmenu": "/components/dropdownmenu/dropdownmenu"
-  },
-  "navigationBarTitleText": "级联选择器"
-}

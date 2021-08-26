@@ -1,0 +1,29 @@
+<navigator  hover-class="none"  url="/pages/page_1/p/p1/index">
+  <view class="box">1.常规</view>
+</navigator>
+
+<navigator  hover-class="none"  url="/pages/page_1/p/p2/index">
+  <view class="box">2.修改indicator-color</view>
+</navigator>
+
+<navigator  hover-class="none"  url="/pages/page_1/p/p3/index">
+  <view class="box">3.修改indicator-color 原点变半圆长条</view>
+</navigator>
+
+<navigator  hover-class="none"  url="/pages/page_1/p/p4/index">
+  <view class="box">4.修改indicator-color 长条</view>
+</navigator>
+
+<navigator  hover-class="none"  url="/pages/page_1/p/p5/index">
+  <view class="box">5.轮播图显示图片计数 当前/总数</view>
+</navigator>
+
+
+<navigator  hover-class="none"  url="/pages/page_1/p/p6/index">
+  <view class="box">6.轮播图显示图片计数(圆形)</view>
+</navigator>
+
+
+<navigator  hover-class="none"  url="/pages/page_1/p/p7/index">
+  <view class="box">7.000</view>
+</navigator>

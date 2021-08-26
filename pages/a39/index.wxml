@@ -1,4 +1,0 @@
-<view bindtap='click'>点击</view>
-<!-- //这是显示隐藏的部分 -->
-<view hidden="{{hiddenName}}">隐藏显示部分</view>
-　　

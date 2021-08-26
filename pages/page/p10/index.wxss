@@ -1,0 +1,11 @@
+/* pages/a34/index.wxss */
+.box{
+  width: 300rpx;
+  margin: 100rpx auto;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}

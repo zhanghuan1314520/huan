@@ -1,6 +1,0 @@
-
-<wxs module="filter" src="../a53/time.wxs"></wxs>
-<view wx:for="{{newsList}}" wx:key="id">
-  <!-- {{item.publishTime}} -->
-  <view>{{filter.dateFormat(item.publishTime,'yyyy-MM-dd')}}</view>
-</view>

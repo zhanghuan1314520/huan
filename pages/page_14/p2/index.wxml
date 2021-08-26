@@ -1,0 +1,17 @@
+
+<view class="s_box">
+  <list id="goodsList" 
+        wx:for="{{goodsArray}}"
+        wx:key="unique" 
+        picture="{{item.picture}}" 
+        name="{{item.name}}"
+        addr="{{item.addr}}" 
+        time="{{item.time}}" 
+        price="{{item.price}}" 
+        num="{{item.num}}" 
+        minPrice="{{item.minPrice}}"
+        m1="{{item.m1}}"
+        m2="{{item.m2}}"
+        tabs="{{item.tabs}}">
+  </list>
+</view>

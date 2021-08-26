@@ -1,0 +1,11 @@
+<view class="box">
+  <view wx:for="{{aa}}" wx:key="index">
+    <!-- <newhouseList item="{{item}}"
+      //过滤器处理状态
+      date="{{filters.dateChange(item)}}"
+      saleStatus="{{filters.stateChange(item.saleStatus)}}">
+    </newhouseList> -->
+    <newhouseList item="{{item}}">
+    </newhouseList>
+  </view>
+</view>

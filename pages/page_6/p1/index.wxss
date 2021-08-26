@@ -1,0 +1,50 @@
+.box{
+  margin: 20rpx 0;
+}
+.box1{
+  font-size: 28rpx;
+  color: #FF5722;
+}
+/* 切换1 */
+.top {
+  width: 368rpx;
+  height: 60rpx;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 36rpx;
+  font-size: 30rpx;
+  color: #BB87FE;
+  display: flex;
+  margin: 0 auto;
+}
+.tab1 {
+  width: 184rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  align-self: center;
+  color: #999;
+  border-top-left-radius: 36rpx;
+  border-bottom-left-radius: 36rpx;
+  background-color: rgb(31, 221, 228);
+}
+
+.tab2 {
+  width: 184rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-top-right-radius: 36rpx;
+  border-bottom-right-radius: 36rpx;
+  text-align: center;
+  align-self: center;
+  color: #999;
+  background-color: rgb(101, 92, 228);
+}
+.tab3{
+  text-align: center;
+  color: #FF5722;
+}
+.top .active {
+  color: #fff;
+  background-color: #FF5722;
+}

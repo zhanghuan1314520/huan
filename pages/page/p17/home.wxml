@@ -1,0 +1,9 @@
+<view class="content_box" wx:for="{{list}}" bindtap="bb" wx:key="id" catchtap="delcon" data-indexdel="{{index}}">
+  <view class="content_box_item">
+    <view>{{item.TypeTags}}</view>
+    <view>{{item.Content}}</view>
+    <view class="dd">
+      <image src="{{item.imgs}}"></image>
+    </view>
+  </view>
+</view>

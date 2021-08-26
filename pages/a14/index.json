@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "Echarts绘制图多个展示实例",
-  "usingComponents": {
-    "ec-canvas": "../../ec-canvas/ec-canvas"
-  }
-}

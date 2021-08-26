@@ -10,7 +10,9 @@
 }
 
 .nav {
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 99;
   display: flex;
   border-bottom: 1px solid #f7f7f7;
@@ -78,7 +80,7 @@
   overflow-y: scroll;
   float: left;
   width: 50%;
-  height: 600rpx;
+  height: 330rpx;
   line-height: 80rpx;
   box-sizing: border-box;
   font-size: 14px;

@@ -1,0 +1,8 @@
+<view class="box">
+  <view class="top">
+    <view class='tab1 {{menuTapCurrent=="0"?"active":""}}' data-current="0" catchtap="menuTap">挂牌分析</view>
+    <view class='tab2 {{menuTapCurrent=="1"?"active":""}}' data-current="1" catchtap="menuTap">成交分析</view>
+  </view>
+  <view class="tab3" hidden="{{menuTapCurrent!='0'}}">1</view>
+  <view class="tab3" hidden="{{menuTapCurrent!='1'}}">2</view>
+</view>

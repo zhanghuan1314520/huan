@@ -1,0 +1,9 @@
+<navigator  hover-class="none"  url="/pages/page_7/p1/index">
+  <view class="box">1.wxs</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_7/p2/index">
+  <view class="box">2.for循环</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_7/p3/index">
+  <view class="box">3.获取当前年月日时分秒</view>
+</navigator>

@@ -1,0 +1,20 @@
+<navigator  hover-class="none"  url="/pages/page_2/p1/index">
+  <view class="box">1.筛选(清除和确定)</view>
+</navigator>
+
+
+
+<navigator  hover-class="none"  url="/pages/page_2/p2/index">
+  <view class="box">2.筛选(级联选择器和自定义组件)</view>
+</navigator>
+
+
+
+<navigator  hover-class="none"  url="/pages/page_2/p3/index">
+  <view class="box">3.筛选(区间)</view>
+</navigator>
+
+
+<navigator  hover-class="none"  url="/pages/page_2/p4/index">
+  <view class="box">4.筛选</view>
+</navigator>

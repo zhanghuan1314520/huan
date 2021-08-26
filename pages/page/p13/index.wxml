@@ -1,0 +1,7 @@
+<view wx:if="{{list.length>0}}" style="margin: 20rpx;">
+  <view wx:for="{{list}}" class="box">
+    <view class="bigBox">列表内容</view>
+    <view class="delete" catchtap="delcon" data-indexdel="{{index}}" data-name="{{item.name}}">删除</view>
+  </view>
+</view>
+<view wx:else style="margin: 30rpx 20rpx; text-align: center;">暂时没有数据</view>

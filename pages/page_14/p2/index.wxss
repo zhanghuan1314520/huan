@@ -1,0 +1,5 @@
+/* pages/a1/p/p1.wxss */
+.s_box{
+  padding: 10rpx 20rpx;
+   background-color: #fff;
+ }

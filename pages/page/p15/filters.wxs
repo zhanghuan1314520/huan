@@ -1,0 +1,89 @@
+var filters = {
+  changeDate: function (value) {
+    var date =getDate(value*1000);
+    var Month = date.getMonth() + 1;
+    var Day = date.getDate();
+    var Y = date.getFullYear() + '-';
+    var M = Month < 10 ? '0' + Month + '-' : Month + '-';
+    var D = Day + 1 < 10 ? '0' + Day : Day;
+    return Y + M + D;
+  },
+
+  toFixed:function(value){
+    return value.toFixed(2) // 此处2为保留两位小数，保留几位小数，这里写几 (value/10000).toFixed(2)
+  },
+  
+  stateChange:function(value){
+    var text=""
+    switch(value){
+      case "0":
+        text="热门楼盘"
+        break;
+      case "1":
+        text="即将预售"
+        break;
+      case "2":
+        text="正在公示"
+        break;
+      case "3":
+        text="正在登记"
+        break;
+      case "4":
+        text="即将摇号"
+        break;
+      case "5":
+        text="即将选房"
+        break;
+      case "6":
+        text="已选房"
+        break;
+      case "7":
+        text="待售"
+        break;
+      case "8":
+        text="在售"
+        break;
+    }
+    return text
+  },
+  
+  dateChange:function(item){
+    var text=""
+    switch(item.saleStatus){
+      case "0":
+        text=""
+        break;
+      case "1":
+        text=""
+        break;
+      case "2":
+        text="登记时间:"+(item.djtime?item.djtime:"待定")
+        break;
+      case "3":
+        text="登记截止:"+(item.djtimeto?item.djtimeto:"待定")
+        break;
+      case "4":
+        text=item.yhsj?"摇号时间:"+item.yhsj:"摇号时间:待定"
+        break;
+      case "5":
+        text=item.xftime?"选房时间:"+item.xftime:"选房时间:待定"
+        break;
+      case "6":
+        text=""
+        break;
+      case "7":
+        text=""
+        break;
+      case "8":
+        text=""
+        break;
+    }
+    return text
+  }
+}
+module.exports = {
+  changeDate: filters.changeDate,
+  toFixed:filters.toFixed,
+  stateChange:filters.stateChange,
+  dateChange:filters.dateChange
+}

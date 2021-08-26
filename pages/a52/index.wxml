@@ -1,6 +1,0 @@
-<view wx:for="{{newsList}}" wx:key="id">
-  {{item.publishTime}}
-  <!-- <view>{{item}}</view> -->
-</view>
-
-<view>{{currenttime}}</view>

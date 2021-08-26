@@ -1,0 +1,33 @@
+<view bindtap="tofloorDis" class="houseItem" data-id="{{item.id}}">
+  <view class="houseItem-img">
+    <!-- <image src="/images/logo_none.png"></image> -->
+    <image src="{{item.picture}}"></image>
+    <view class="saleStatus" wx:if="{{item.saleStatus!=0}}">{{saleStatus}}</view>
+  </view>
+  <view class="houseItem-right">
+    <view class="houseItem-name">{{item.name}}</view>
+    <view class="houseItem-price" wx:if="{{item.minPrice>0}}">
+      {{item.maxPrice?item.minPrice+'-'+item.maxPrice+'元/㎡':item.minPrice+'元/㎡起'}}
+    </view>
+    <view class="houseItem-price" wx:else>价格待定</view>
+    <view class="houseItem-addr">{{item.addr}}</view>
+    <view class="houseItem-tag" wx:if="{{item.tabs}}">
+      <label class="_span" wx:for="{{item.tabs}}" wx:for-index="i" wx:for-item="tab" wx:key="i">
+        {{tab}}
+      </label>
+    </view>
+    <!-- <view class="houseItem-date" wx:if="{{date}}">{{date}}</view> -->
+    <view class="house-ranking">
+      <view class="house-ranking_r">
+        <image src="https://sbmf.ww2ss.com/dfimages/house/z/nav_img_t1.png"></image>
+      </view>
+      <view class="children" style="color:#000000;">余杭区综合热度第<text>1</text>名</view>
+    </view>
+    <view class="house-ranking" wx:if="{{date}}">
+      <view class="house-ranking_r">
+        <image src="https://sbmf.ww2ss.com/dfimages/house/z/nav_img_t2.png"></image>
+      </view>
+      <view class="children"><text class="time"> {{date}}</text></view>
+    </view>
+  </view>
+</view>

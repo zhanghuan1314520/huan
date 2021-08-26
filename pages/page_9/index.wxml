@@ -1,0 +1,9 @@
+<navigator hover-class="none" url="/pages/page_9/p1/index">
+  <view class="box">1.图片预览(单张)</view>
+</navigator>
+<navigator hover-class="none" url="/pages/page_9/p2/index">
+  <view class="box">2.图片预览(多张)</view>
+</navigator>
+<navigator hover-class="none" url="/pages/page_9/p3/index">
+  <view class="box">3.111</view>
+</navigator>

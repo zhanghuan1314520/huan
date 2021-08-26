@@ -1,0 +1,15 @@
+.box{
+  display: flex;
+  padding: 20rpx;
+  justify-content: space-between;
+}
+.item{
+  font-size: 26rpx;
+  padding: 10rpx;
+  text-align: center;
+  background-color: rgb(122, 202, 240);
+}
+.box2{
+  width: 100rpx;
+  margin: 20rpx auto;
+}

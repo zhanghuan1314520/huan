@@ -1,0 +1,8 @@
+<dropdownmenu dropDownMenuTitle='{{dropDownMenuTitle}}' dropDownMenuDistrictData='{{data1}}'
+  dropDownMenuSourceData='{{data2}}' dropDownMenuStyleData='{{data3}}' dropDownMenuFilterData='{{data4}}'
+  bind:selectedItem='selectedItem' />
+
+  
+  <view class="box">
+    <view wx:for="{{60}}">参数内容</view>
+  </view>

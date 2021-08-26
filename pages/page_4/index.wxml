@@ -1,0 +1,12 @@
+<navigator  hover-class="none"  url="/pages/page_4/p1/index">
+  <view class="box">1.时间选择器(月,周)</view>
+</navigator>
+
+<navigator  hover-class="none"  url="/pages/page_4/p2/index">
+  <view class="box">2.多列选择器</view>
+</navigator>
+
+
+<navigator  hover-class="none"  url="/pages/page_4/p3/index">
+  <view class="box">3.000</view>
+</navigator>

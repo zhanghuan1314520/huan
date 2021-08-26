@@ -1,0 +1,12 @@
+<navigator  hover-class="none"  url="/pages/page_14/p1/index">
+  <view class="box">1.弹窗</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_14/p2/index">
+  <view class="box">2.循环列表1</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_14/p3/index">
+  <view class="box">3.循环列表2</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_14/p4/index">
+  <view class="box">4.</view>
+</navigator>

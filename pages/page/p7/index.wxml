@@ -1,0 +1,6 @@
+<watermark></watermark>
+
+<view class="box">
+ <view wx:for="{{20}}">测试内容</view>
+</view>
+

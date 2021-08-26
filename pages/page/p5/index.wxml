@@ -1,0 +1,4 @@
+<view class="box">
+  <view wx:for="{{100}}">测试111</view>
+<view class='goTop' hidden='{{showTop}}' bindtap='goTop'>顶部</view>
+</view>

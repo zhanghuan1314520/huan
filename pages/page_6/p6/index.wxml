@@ -1,0 +1,28 @@
+<view class="box_content">
+  <view class="box_title">杭州市高层次人才认定条件</view>
+  <view class="aside flex">
+    <block wx:key="navList" wx:for="{{navList}}">
+      <view class="type-nav {{curNav == item.id ? 'selected' : ''}}" bindtap="selectNav" data-index="{{index}}"
+        data-id="{{item.id}}">
+        <view class="nav_name">{{item.name}}类</view>
+        <view class="nav_title {{curNav == item.id ? 'selecteds' : ''}}">{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="menu_content" wx:key="ishesList" wx:for="{{dishesList[curIndex]}}">
+    <view class="tab1_content" data-dish="{{item.id}}">
+      <view class="tab1_title">{{item.grade}}类申报条件</view>
+      <view class="tab1_content_item" wx:for="{{item.list}}" wx:fo-itemr="{{items}}" wx:key="id">
+        <view class="tab1_content_item_l">
+          <view class="circle"></view>
+        </view>
+        <view class="tab1_content_item_r">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+  <view>
+  </view>
+  <cover-view>
+		<button class="subscribe-btn" data-index="1" formType="submit" openType="share">分享</button>
+	</cover-view>
+</view>

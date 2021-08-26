@@ -57,6 +57,48 @@
         {
           "name": "pages/a63/index",
           "pathName": "pages/a63/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/a66/index",
+          "pathName": "pages/a66/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/page/index",
+          "pathName": "pages/page/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/page_5/p1/index",
+          "pathName": "pages/page_5/p1/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/page_5/index",
+          "pathName": "pages/page_5/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/page_5/p3/index",
+          "pathName": "pages/page_5/p3/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/page_21/index",
+          "pathName": "pages/page_21/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/page/index",
+          "pathName": "pages/page/index",
           "scene": null
         }
       ]

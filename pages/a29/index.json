@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "echarts切换(圆形按钮)",
-  "usingComponents": {
-    "ec-canvas": "../../ec-canvas/ec-canvas"
-  }
-}

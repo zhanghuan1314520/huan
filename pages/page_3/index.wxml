@@ -1,0 +1,13 @@
+<navigator  hover-class="none"  url="/pages/page_3/p1/index">
+  <view class="box">1.根据(属性id,name...)</view>
+</navigator>
+
+
+<navigator  hover-class="none"  url="/pages/page_2/p2/index">
+  <view class="box">2.000</view>
+</navigator>
+
+
+<navigator  hover-class="none"  url="/pages/page_2/p3/index">
+  <view class="box">3.000</view>
+</navigator>

@@ -1,0 +1,12 @@
+<navigator  hover-class="none"  url="/pages/page_5/p1/index">
+  <view class="box">1.吸顶(切换)</view>
+</navigator>
+
+<navigator  hover-class="none"  url="/pages/page_5/p2/index">
+  <view class="box">2.22</view>
+</navigator>
+
+
+<navigator  hover-class="none"  url="/pages/page_5/p3/index">
+  <view class="box">3.排行榜(动态传值)</view>
+</navigator>

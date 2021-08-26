@@ -1,0 +1,321 @@
+/* house/php2/index.wxss */
+
+page {
+  background-color: #F6F6F6;
+}
+.ranking_box_bg {
+  position: relative;
+  width: 750rpx;
+  height: 474rpx;
+  background-size: 100% 100%;
+}
+
+/* 22 */
+.xq_nav {
+  position: absolute;
+  width: 728rpx;
+  margin-top: 370rpx;
+  display: flex;
+  padding: 0 0 0 22rpx;
+  justify-content: space-between;
+}
+
+.xq_nav_r {
+  width: 170rpx;
+  height: 54rpx;
+  display: flex;
+  background-image: url(https://i.loli.net/2021/08/09/Ik1EtjmCig27YXF.png);
+  background-size: 100% 100%;
+}
+
+.xq_nav_l {
+  display: flex;
+  height: 54rpx;
+  align-items: center;
+}
+
+.xq_nav_l_t {
+  width: 140rpx;
+  height: 30rpx;
+  line-height: 32rpx;
+  display: flex;
+  font-size: 18rpx;
+  border-radius: 30rpx;
+  padding: 4rpx 0;
+  /* background-image: url(https://i.loli.net/2021/08/09/Ik1EtjmCig27YXF.png);
+  background-size: 100% 100%; */
+}
+
+.selectDate {
+  width: 136rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+}
+
+.xq_nav_l_m {
+  font-size: 22rpx;
+  color: #fff;
+  height: 30rpx;
+  margin: 0 6rpx;
+}
+
+
+.xq_nav_l_l{
+  margin-top: -65rpx;
+}
+
+.share_box {
+  /* width: 90rpx; */
+  height: 54rpx;
+  line-height: 54rpx;
+  border-top-left-radius: 40rpx;
+  border-bottom-left-radius: 40rpx;
+  margin-bottom: 10rpx;
+  /* background-image: url(https://i.loli.net/2021/08/09/7MwjFC2GvUWBzun.png);
+  background-size: 100% 100%; */
+}
+.rule_box {
+  /* width: 90rpx; */
+  height: 54rpx;
+  font-size: 20rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 54rpx;
+  border-top-left-radius: 40rpx;
+  border-bottom-left-radius: 40rpx;
+  /* background-image: url(https://i.loli.net/2021/08/09/7MwjFC2GvUWBzun.png);
+  background-size: 100% 100%; */
+}
+/* 默认按钮无边框 */
+button{
+  width: 100rpx;
+  height: 54rpx;
+}
+/* 22 */
+/* 切换部分 */
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.swiper-tab-list {
+  font-size: 22rpx;
+  color: #fff;
+  line-height: 56rpx;
+  padding-left: 8rpx;
+}
+
+.on {
+  background-image: url(https://i.loli.net/2021/08/09/gEejvzC5BRDH2n9.png);
+  background-size: 100% 100%;
+  height: 42rpx;
+  width: 88rpx;
+  margin: 8rpx;
+  text-align: center;
+  line-height: 40rpx;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-box view {
+  text-align: center;
+}
+
+/* 33 */
+.xq_box {
+  position: absolute;
+  width: 706rpx;
+  background-color: #F6F6F6;
+  border-radius: 42rpx;
+  margin-top: -30rpx;
+  margin-bottom: 40rpx;
+  padding: 0 22rpx;
+}
+
+.xq_box_t {
+  display: flex;
+  font-size: 24rpx;
+  text-align: center;
+  align-items: center;
+  padding: 34rpx 0 20rpx 0;
+}
+
+.xq_box_item {
+  width: 60rpx;
+}
+
+.xq_box_item_img {
+  width: 34rpx;
+  height: 42rpx;
+  margin: 0 13rpx;
+}
+
+.xq_box_item_img image {
+  width: 100%;
+  height: 100%;
+}
+
+.xq_box_item2 {
+  width: 130rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 5rpx;
+}
+
+.xq_box_item_number {
+  width: 36rpx;
+  height: 34rpx;
+  border-radius: 50%;
+  margin: 10rpx 13rpx;
+  line-height: 36rpx;
+  font-size: 22rpx;
+  /* background-color: #04C2FE; */
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+.xq_box_item3 {
+  width: 170rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.xq_box_item4 {
+  width: 100rpx;
+  margin-left: 5rpx;
+}
+
+.xq_box_item5 {
+  width: 110rpx;
+  margin-left: 5rpx;
+}
+
+.xq_box_item6 {
+  width: 110rpx;
+  margin-left: 10rpx;
+}
+
+.xq_box_b {
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  display: flex;
+  font-size: 20rpx;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 12rpx;
+}
+
+/* 33 */
+
+
+
+
+
+/* 自定义状态栏开始 */
+.indextop{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 750rpx;
+  z-index: 9999;
+}
+.navstyl{
+  background: #ffffff;
+}
+.xiangqi{
+  opacity: 1;
+  text-align: center;
+  flex: 1;
+  font-size: 30rpx;
+  margin-right: 80rpx;
+}
+.unxiangqi{
+  opacity: 0;
+  text-align: center;
+  flex: 1;
+}
+.arrow {
+  width: 20rpx;
+  height: 20rpx;
+  border-top: 2rpx solid #fff;
+  border-left: 2rpx solid #fff;
+  transform: rotate(-45deg);
+  margin-top: 20rpx;
+}
+.arrow1 {
+  width: 20rpx;
+  height: 20rpx;
+  border-top: 2rpx solid #000;
+  border-left: 2rpx solid #000;
+  transform: rotate(-45deg);
+  margin-top: 20rpx;
+}
+.content_box{
+  background-color: #fff;
+  padding: 0 22rpx;
+  margin: 24rpx 0;
+}
+.ranking_box_r{
+  display: flex;
+  width: 100rpx;
+}
+.ranking_box_r_font{
+  color: #000;
+  /* font-size: 30rpx; */
+  margin-left: 10rpx;
+}
+/* 自定义状态栏结束 */
+
+
+/* 22222 */
+.listItem{
+  width: 150rpx;
+  height: 54rpx;
+  display:flex;
+  border-radius: 40rpx;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10rpx;
+  /* background-image: url(https://i.loli.net/2021/08/09/Ik1EtjmCig27YXF.png);
+  background-size: 100% 100%; */
+}
+.list-item_type {
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  line-height: 40rpx;
+}
+.picker_group{
+  /* width: 60rpx; */
+  text-align: center;
+}
+.active{
+  color: #fff;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 30rpx;
+  width: 80rpx;
+}
+
+.sub-cur {
+  color: #fff;
+  background: #366ab3;
+}
+.no_data{
+  width: 200rpx;
+  font-size: 28rpx;
+  color: #888;
+  margin:100rpx  auto;
+  text-align: center;
+}

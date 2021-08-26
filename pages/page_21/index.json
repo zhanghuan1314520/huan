@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "房贷计算器",
+  "usingComponents": {
+    "loanToast": "../../pages/page_21/toast/toast",
+    "pickView": "../../pages/page_21/pick_view/pick_view"
+  }
+}

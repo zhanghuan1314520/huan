@@ -1,0 +1,9 @@
+/* pages/page_1/p/index.wxss */
+.box{
+  background-color: rgb(233, 146, 146);
+  padding: 20rpx;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  margin: 20rpx;
+}

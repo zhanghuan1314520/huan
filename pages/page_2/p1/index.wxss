@@ -1,0 +1,257 @@
+page{
+  background-color: #fff;
+}
+/* 筛选栏 */
+.cxj-contents {
+  position: fixed;
+  width: 100%;
+  height: 100rpx;
+  z-index: 1003;
+  box-shadow: 0px 15px 15px -15px rgba(200, 200, 200, 0.6);
+  overflow: hidden;
+  margin-top: -30rpx;
+}
+
+.cxj-menu {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 32rpx;
+}
+
+/* .cxj-menu .flex-view.active { 
+  background-color: #fff;
+  border-bottom: 5rpx solid #00aa14
+} */
+.cxj-menu .flex_nav.active {
+  color: #FF6F00
+}
+
+/* .cxj-menu .flex-view.active {color: #00aa14} */
+.flex-view {
+  flex: 1;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  line-height: 130rpx;
+}
+
+.flex_nav {
+  font-size: 32rpx;
+  color: #333
+}
+
+.cxj-icon {
+  width: 24rpx;
+  height: 24rpx;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/* 筛选内容 */
+.cxj-content {
+  width: 100%;
+  font-size: 28rpx;
+  z-index: 1009;
+}
+
+.cxj-content-li {
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.cxj-tab-layout {
+  width: 100%;
+  overflow: hidden;
+  z-index: 1009;
+  height: 100%;
+  background-color: rgba(000, 000, 000, .5);
+  position: fixed;
+}
+
+.cxj-tab-layout .navs.active {
+  background: #FFE5D9 !important;
+  color: #FF6F00;
+}
+
+.cxj-tap-wrap {
+  padding: 0 30rpx;
+  background: #fff;
+  padding-bottom: 20rpx
+}
+
+.cxj-tap-main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.title {
+  padding: 20rpx 30rpx;
+  font-size: 30rpx;
+}
+
+.scroll {
+  height: calc(100vh - 35px)
+}
+
+.cxj-tab-layout .navs {
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  font-size: 26rpx;
+  font-weight: 300;
+  background: #F3F3F3;
+  border-radius: 10rpx;
+  color: #333333;
+  margin-bottom: 24rpx;
+  flex: 0 0 31%;
+}
+
+.cxj-tap-main:after {
+  content: "";
+  width: 31%;
+}
+
+/* 按钮 */
+.select_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select_btn .clear {
+  flex: 1;
+  margin-right: 10rpx;
+  font-size: 30rpx;
+  font-weight: 300;
+  border: 1px solid #FF8751;
+  border-radius: 6rpx;
+  background-color: #fff;
+  color: #FF8751;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+
+.select_btn .submit {
+  flex: 2;
+  font-size: 30rpx;
+  margin-left: 10rpx;
+  font-weight: 300;
+  background-color: #FF8751;
+  color: #fff;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+
+
+
+
+/* pages/list/list.wxss */
+.xiangqing{
+  display: flex;
+  flex-wrap:wrap;
+  width: 100%;
+  border-top: 2rpx #dedede solid;
+  margin-top: 25rpx;
+  padding-top:10rpx; 
+}
+.xiangqing_img{
+  width: 40%;
+  padding: 25rpx;
+}
+.xiangqing_img image{
+  width: 100%;
+  height: 220rpx;
+}
+.xiangqing_info{
+  width: 50%;
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+}
+.xiangqing_info .zi{
+  border: 2rpx #FA8D33 solid;
+  color: #FA8D33;
+  padding:2rpx 10rpx;
+  font-size: 18rpx;
+  margin-right: 22rpx;
+  border-radius: 9rpx;
+}
+.xiangqing_info .title{
+  font-weight: 600;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  color: #404040;
+}
+.key{
+  margin: 15rpx 0;
+  font-size: 24rpx;
+}
+.key text{
+  margin-right: 15rpx;
+ padding: 0 9rpx;
+  
+}
+.key .text0{
+background: #DDF7FF;
+color: #77B3E3;
+}
+.key .text1{
+background: #FFF0DF;
+color: #EDD590;
+}
+.key .text2{
+background: #BEE2D4;
+color: 71C7A5;
+ 
+}
+.key .text3{
+background: #DAF3FF;
+color: 97C2EA;
+}
+.house{
+margin-top: 10rpx;
+color: #A8A8A8;
+font-size: 24rpx;
+}
+.prix{
+  margin-top:10rpx; 
+  font-size: 24rpx;
+}
+.prix .prix1{
+  color: #FA7C15;
+  font-size: 24rpx;
+  font-weight: 600;
+  margin-right: 25rpx;
+}
+.container{
+  display: block;
+}
+.yongjin{
+  width: 100%;
+  
+}
+.yongjin .yongjin_info{
+  background: #F6F6F6;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15rpx;
+  padding-top: 17rpx;
+  padding-left: 17rpx;
+  overflow: hidden
+}
+.yongjin .yongjin_info .yongjin_img{
+  width: 45rpx;
+  height: 45rpx;
+  float: left;
+}
+.yongjin .yongjin_info .yongjin_font{
+  padding-left: 17rpx;
+  float: left;
+  color: #F56D03;
+  font-size: 32rpx;
+}

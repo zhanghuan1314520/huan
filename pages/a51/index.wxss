@@ -1,6 +1,0 @@
-/* pages/a51/index.wxss */
-.box{
-  background-color: rgb(241, 168, 168);
-  font-size: 30rpx;
-  color: aqua;
-}

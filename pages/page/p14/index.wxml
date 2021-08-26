@@ -1,0 +1,39 @@
+<wxs module="filters" src="filters.wxs"></wxs>
+<view class="new_city_box1">
+  <view class="new_city_title">小区最新成交/涨幅排名top20</view>
+  <view class="new_city_nav">
+    <view class="new_city_nav_rs">
+      <view class="new_city_nav_name">小区</view>
+    </view>
+    <view class="new_city_nav_ls">
+      <view class="new_city_nav_name" bindtap="Reports_sort" data-arr="num">成交套数</view>
+      <view class="new_city_nav_name" bindtap="Reports_sort" data-arr="hb">网签均价</view>
+      <view class="new_city_nav_name" bindtap="Reports_sort" data-arr="hb_price">环比</view>
+      <view class="new_city_nav_name" bindtap="Reports_sort" data-arr="cjcount">挂牌均价</view>
+    </view>
+  </view>
+
+
+  <view class="new_city_list1" wx:for="{{datalist}}" wx:key="id" bindtap="goReports" data-cid="{{item}}"
+    data-title="{{item.title}}">
+    <view class="new_city_list_item1">
+      <view class="new_city_list_item1_r" wx:if="{{index<3}}">
+        <image src="https://sbmf.ww2ss.com/dfimages/jifen/top{{index}}.png"></image>
+      </view>
+      <view class="new_city_list_item1_r" wx:else>{{index+1}}</view>
+      <view class="new_city_list_item1_l">{{item.title}}</view>
+    </view>
+    <view class="new_city_list_item2">{{item.num==null?0:item.num}}</view>
+    <view class="new_city_list_item2">{{item.junjia}}</view>
+
+    <view class="new_city_list_item4">
+      <view class="red" wx:if="{{((item.junjia-item.hb)/item.hb)*100>0}}">
+        {{item.hb==null?'-':filters.toFixed(((item.junjia-item.hb)/item.hb)*100)}}%↑
+      </view>
+      <view class="green" wx:else>
+        {{item.hb==null?'-':filters.toFixed(((item.junjia-item.hb)/item.hb)*100)}}%↓
+      </view>
+    </view>
+    <view class="new_city_list_item2">{{item.cjcount==null?'-':item.cjcount}}</view>
+  </view>
+</view>

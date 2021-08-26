@@ -1,0 +1,12 @@
+<view class="hot_box">
+  <scroll-view scrollX="true">
+    <view class="scroll-view_H">
+      <view class="hot_item" wx:for="{{hot}}" wx:key="id">
+        <view class="hot_item_t">
+          <image mode="aspectFill" src="{{item.url}}"></image>
+        </view>
+        <view class="hot_item_b">{{item.name}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

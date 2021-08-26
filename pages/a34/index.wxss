@@ -1,7 +1,0 @@
-/* pages/a34/index.wxss */
-.hide{
-  display: none;
-}
-.show{
-  display: block;
-}

@@ -1,0 +1,12 @@
+<!-- 引入 -->
+<wxs module="filters" src="filters.wxs"></wxs>
+
+<!-- 渲染 -->
+<view class="box">
+  <view class="item" wx:for="{{category}}" wx:key="id">
+    <view>{{filters.stateChange(item.saleStatus)}}</view>
+  </view>
+</view>
+
+<!-- 数字 -->
+<view class="box2">{{filters.toFixed(data)}}</view>

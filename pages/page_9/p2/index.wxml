@@ -1,0 +1,10 @@
+<block wx:for="{{pictures}}" wx:key="id">
+  <image
+   mode="aspectFill"
+   bindtap="preview_2" src='{{item}}' 
+   data-list="{{pictures}}" 
+   data-src="{{item}}" 
+   lazy-load
+   style="width:100%;">
+  </image>
+</block>

@@ -1,0 +1,52 @@
+<view class="qa-question-wrapper">
+    <view class="question">
+        <view class="list-item">
+            <view class="content">
+                <textarea class="textarea" data-type="content" maxlength="300" placeholder="描述你的问题（5-300个字）"
+                    placeholderClass="content-placeholder" value="{{textVal}}" bindinput="handleTextInput"></textarea>
+                <view class="limit">
+                    <text class="input-length">{{textVal.length}}</text>
+                    <text class="separator">/</text>
+                    <text class="max-length">300</text>
+                </view>
+            </view>
+        </view>
+        <view class="list-item">
+            <view class="label">
+                <text class="title">上传图片</text>
+                <text class="word-limit">（最多添加6张）</text>
+            </view>
+            <view class="upload-imgs-list">
+                <view bindtap="handleChooseImg" class="upload-imgs-item">
+                    <view class="img-container">
+                        <image class="plus" src="https://i.loli.net/2021/08/24/vh3dJkygqL9eUbo.png"></image>
+                    </view>
+                </view>
+                <UpImg src="{{item}}" wx:for="{{chooseImgs}}" wx:key="*this" bindtap="handleRemoveImg" data-index="{{index}}"></UpImg>
+            </view>
+        </view>
+        <view class="list-item list-item_type">
+            <view class="label2">
+                <text class="title">问题类型</text>
+                <text class="word-limit">（最多选3个，再次点击取消）</text>
+            </view>
+            <view class="type-list">
+                <block wx:for="{{items}}" wx:for-item="v" wx:key="k" wx:for-index="index">
+                    <view class="li {{v.checked?'cur':''}}" data-index="{{index}}" data-value="{{v.value}}"
+                        bindtap="checkLabs">
+                        <label class='ti'>{{v.value}}</label>
+                    </view>
+                </block>
+            </view>
+        </view>
+        <view class="footer {{isIpx?'add-btn':''}}">
+            <view>
+                <view class="form_submit">
+                    <button class="btn_reset submit-btn" loading="{{showLoading}}" bindtap="handleFormSubmit">
+                        <text>提交问题</text>
+                    </button>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

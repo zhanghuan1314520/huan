@@ -1,0 +1,67 @@
+<!-- 自定义状态栏区域开始-->
+<view class="indextop {{scrollTop > 10 ? 'navstyl':'unnavstyl'}}">
+  <view style="height:{{statusBarHeight}};"></view>
+  <view style="height:{{navheight}};padding:6px 0;display: flex;line-height: 32px;">
+    <view wx:if="{{scrollTop > 10}}">
+      <view style="width:100rpx;opacity:1;margin-left: 30rpx;">
+        <view class="ranking_box_r" bindtap="back">
+          <view class="arrow1"></view>
+          <view class="ranking_box_r_font"> 返回</view>
+        </view>
+      </view>
+    </view>
+    <view wx:else>
+      <view style="width:100rpx;opacity:1;margin-left: 30rpx;">
+        <view class="ranking_box_r" bindtap="back">
+          <view class="arrow"></view>
+          <view class="ranking_box_r_font" style="color:#fff"> 返回</view>
+        </view>
+      </view>
+    </view>
+    <view class="xiangqi {{scrollTop > 10 ? 'xiangqi':'unxiangqi'}}">手边买房</view>
+    <view style="width:80rpx"></view>
+  </view>
+</view>
+<!-- 自定义状态栏区域结束 -->
+
+<!-- 背景区域 -->
+<view class="box_img">
+  <view class="aaa">
+    <view class="avatar_box_r_img">
+      <image src="/images/img_01.jpg"></image>
+    </view>
+    <view class="avatar_box_r_introduce">
+      <view class="avatar_box_r_introduce_title">文本一</view>
+      <view class="avatar_box_r_introduce_name">文本二</view>
+    </view>
+  </view>
+</view>
+
+
+
+<!-- 导航切换区域 -->
+<view class="navbar-wrap">
+  <view class="column {{isFixedTop?'fixed':''}}" id="navbar">
+    <view class='tab {{idx == index? "type-item-on" : ""}}' data-index='{{index}}' catchtap='tab' wx:for='{{tab}}'
+      wx:key='key'>{{item.title}}</view>
+  </view>
+  <view class="column" wx:if="{{isFixedTop}}"></view>
+</view>
+
+<view wx:if='{{idx == 0}}' class='tabs' data-id='0'>
+  <view class="cs1">
+    <view wx:for="{{40}}">文本1的内容</view>
+  </view>
+</view>
+
+<view wx:if='{{idx == 1}}' class='tabs' data-id='1'>
+  <view class="cs1">
+    <view wx:for="{{40}}">文本2的内容</view>
+  </view>
+</view>
+
+<view wx:if='{{idx == 2}}' class='tabs' data-id='2'>
+  <view class="cs1">
+    <view wx:for="{{40}}">文本3的内容</view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+/* pages/page_14/p3/index.wxss */
+.box{
+  padding: 20rpx;
+}

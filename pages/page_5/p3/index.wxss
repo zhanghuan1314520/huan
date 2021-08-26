@@ -1,0 +1,99 @@
+/* house/phb/index.wxss */
+page{
+  background-color:#F6F6F6;
+}
+/* 自定义状态栏开始 */
+.indextop{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 750rpx;
+  z-index: 9999;
+}
+.navstyl{
+  background: #ffffff;
+}
+.xiangqi{
+  opacity: 1;
+  text-align: center;
+  flex: 1;
+  font-size: 30rpx;
+  margin-right: 80rpx;
+}
+.unxiangqi{
+  opacity: 0;
+  text-align: center;
+  flex: 1;
+}
+.arrow {
+  width: 20rpx;
+  height: 20rpx;
+  border-top: 2rpx solid #fff;
+  border-left: 2rpx solid #fff;
+  transform: rotate(-45deg);
+  margin-top: 20rpx;
+}
+.arrow1 {
+  width: 20rpx;
+  height: 20rpx;
+  border-top: 2rpx solid #000;
+  border-left: 2rpx solid #000;
+  transform: rotate(-45deg);
+  margin-top: 20rpx;
+}
+.content_box{
+  background-color: #fff;
+  padding: 0 22rpx;
+  margin: 24rpx 0;
+}
+.ranking_box_r{
+  display: flex;
+  width: 100rpx;
+}
+.ranking_box_r_font{
+  color: #000;
+  font-size: 30rpx;
+  margin-left: 10rpx;
+}
+/* 自定义状态栏结束 */
+
+
+.ranking_box_bg{
+  width: 750rpx;
+  height: 394rpx;
+  background-image: url(https://sbmf.ww2ss.com/dfimages/house/z/new_bg.png); background-size: 100% 100%;
+}
+
+.ranking_cintent_box{
+  margin: 24rpx 22rpx;
+  width: 708rpx;
+  border-radius: 4rpx;
+  background-size: 100% 100%;
+  /* background-color: rgb(238, 123, 123); */
+}
+.ranking_cintent_item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 51rpx 67rpx 35rpx 64rpx;
+}
+.ranking_cintent_item_r{
+  color: #fff;
+}
+.ranking_cintent_item_t{
+  font-size:40rpx;
+  letter-spacing: 4rpx;
+}
+.ranking_cintent_item_b{
+  font-size: 22rpx;
+  text-align: center;
+  margin-top: 10rpx;
+}
+.ranking_cintent_item_l{
+  width: 18rpx;
+  height: 30rpx;
+}
+.ranking_cintent_item_l image{
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,9 @@
+<navigator  hover-class="none"  url="/pages/page_16/P1/index">
+  <view class="box">1.环形进度条</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_16/P2/index">
+  <view class="box">2.时间进度</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_16/P3/index">
+  <view class="box">3.流程</view>
+</navigator>
