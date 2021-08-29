@@ -1,0 +1,3 @@
+<!-- 自定义模板  分享 -->
+<import src="./sharebnt/index.wxml" />
+<template is="share_btn"></template>

@@ -99,6 +99,24 @@
         {
           "name": "pages/page/index",
           "pathName": "pages/page/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/page_22/index",
+          "pathName": "pages/page_22/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/page/p20/index",
+          "pathName": "pages/page/p20/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/page_11/index",
+          "pathName": "pages/page_11/index",
           "scene": null
         }
       ]

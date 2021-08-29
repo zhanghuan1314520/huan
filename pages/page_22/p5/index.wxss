@@ -1,0 +1,28 @@
+.pay-hint-content{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #888;
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+  text-overflow: ellipsis;
+  overflow:hidden;
+   /* // 通过以上四行实现收缩功能 */
+}
+.ellipsis{
+  /* // 最多显示3行 */
+  -webkit-line-clamp:3; 
+  /* // 透明度75% */
+  opacity: 0.75 
+}
+.unellipsis{
+  /* // 全部显示 */
+  -webkit-line-clamp:0;
+  /* // 不透明 */
+  opacity: 1 
+}
+.img-ellipsis{
+  width: 40rpx;
+  height: 40rpx;
+}

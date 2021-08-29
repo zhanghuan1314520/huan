@@ -1,0 +1,116 @@
+.cell-class{
+  display: block;
+  width: 100%;
+  border-bottom: 4rpx solid #EBEBEB;
+  font-size:26rpx;
+}
+.kind-list-item-bd {
+  height: 0;
+  overflow: hidden;
+}
+.kind-list-item-bd-show {
+  height: auto;
+}
+.kind-list-item-bd-list {
+  height: 0;
+  overflow: hidden;
+}
+.kind-list-item-bd-show-list-item {
+  height: auto;
+}
+.clear {
+  clear: both;
+}
+.borderContainer {
+  height: 10vw;
+  line-height: 10vw;
+  background-color: #5cacee;
+}
+.show {
+  background-color: #9f9f9f;
+}
+.rightBorder {
+  float: right;
+  padding-right: 2vw;
+}
+
+.rightBorder1 {
+  float: right;
+  padding-right: 2vw;
+}
+
+.rightBorder2 {
+  display: flex;
+  align-items: center;
+}
+.dataBorder {
+  /* height: 12vw; */
+  line-height: 12vw;
+}
+
+.dataBorder1 {
+  background-color: #9f9f9f;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.dataBorder2 {
+  border-bottom: 2rpx solid #fff;
+}
+.dataBorder3 {
+  background-color: #5cacee;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.lefrBorder {
+  float: left;
+}
+
+.nickText {
+  margin: 0vw 3vw;
+  display: inline-block;
+}
+
+.homeId {
+  margin: 0vw 5vw;
+  color: #fff;
+  display: inline-block;
+}
+
+.borderLeft {
+  width: 35%;
+}
+
+.borderRight {
+  width: 2rpx;
+  height: 10vw;
+  background-color: #ccc;
+}
+
+.borderRight1 {
+  width: 55%;
+}
+
+.showText {
+  height: 12vw;
+  line-height: 12vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25rpx;
+  border-bottom: 2rpx solid #ebebeb;
+}
+
+.showText1 {
+  padding-right: 1vw;
+  background-color: #eee;
+}
+
+.showText2 {
+  margin: 0vw 3vw;
+}
+
+.showText3 {
+  margin: 0 2vw;
+  display: inline-block;
+}

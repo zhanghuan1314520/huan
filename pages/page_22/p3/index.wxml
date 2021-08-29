@@ -1,0 +1,14 @@
+<view class='help'>
+ <view class='help_item' wx:for='{{maskData}}' wx:key='{{index}}'>
+   <view class='title' data-index='{{index + 1}}' catchtap='panel'>
+     <view class='title_1'>{{item.title}}{{index}}</view>
+     <view class='title_2'>
+       <!-- 图片 -->
+       <!-- <image src="../img/{{showIndex == index + 1 ? 'up':'down'}}.png"></image> -->
+       <!-- css样式 -->
+       <view class="{{showIndex == index + 1 ? 'up':'down'}}"></view>
+     </view>
+   </view>
+   <view class='detail' wx:if="{{showIndex == index + 1}}">{{item.text}}{{index}}</view>
+ </view>
+</view>

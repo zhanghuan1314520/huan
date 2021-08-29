@@ -1,2 +1,9 @@
-<!--pages/page_11/index.wxml-->
-<text>pages/page_11/index.wxml</text>
+<navigator hover-class="none" url="/pages/page_11/p1/index">
+  <view class="box">1.111</view>
+</navigator>
+<navigator hover-class="none" url="/pages/page_11/p2/index">
+  <view class="box">1.111</view>
+</navigator>
+<navigator hover-class="none" url="/pages/page_11/p3/index">
+  <view class="box">1.111</view>
+</navigator>

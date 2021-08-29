@@ -1,0 +1,10 @@
+<import src="./datalist/index.wxml" />
+
+<!-- 单个 -->
+<block wx:for="{{list}}" wx:key="id">
+ <view>{{item.name}}</view>
+</block>
+<!-- 模板 -->
+<block wx:for="{{list}}" wx:key="id">
+  <template is="list" data="{{item}}"></template>
+</block>

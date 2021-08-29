@@ -1,2 +1,17 @@
-<!--pages/page_17/p5/index.wxml-->
-<text>pages/page_17/p5/index.wxml</text>
+<view bindtap="toHouseMarket" class="list headRecommend">
+  <view class="headRecommend__inner">
+    <view class="headRecommend__left">
+      <image class="headRecommend__icon" mode="aspectFill" src="https://i.loli.net/2021/08/27/HixMvVkhcKREgpD.png"></image>
+    </view>
+    <view class="headRecommend__line"></view>
+    <view class="headRecommend__right">
+      <swiper autoplay="{{true}}" bindchange="headSwiperChange" circular="{{true}}" class="headRecommend__swiper"
+        duration="{{800}}" interval="{{5000}}">
+        <swiper-item catchtouchmove="catchTouchMove" class="headRecommend__item" wx:for="{{headlineArticles}}"
+          wx:key="index">
+          <view class="headRecommend__title">{{item.Title}}</view>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+</view>

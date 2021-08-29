@@ -8,8 +8,8 @@
   <view class="box">3.文字跑马灯(js控制间隔)</view>
 </navigator>
 <navigator  hover-class="none"  url="/pages/page_17/p4/index">
-  <view class="box">4.</view>
+  <view class="box">4.swiper(垂直滚动)</view>
 </navigator>
 <navigator  hover-class="none"  url="/pages/page_17/p5/index">
-  <view class="box">5.</view>
+  <view class="box">5.swiper(水平滚动)</view>
 </navigator>

@@ -1,2 +1,24 @@
-<!--pages/page_22/index.wxml-->
-<text>pages/page_22/index.wxml</text>
+<navigator  hover-class="none"  url="/pages/page_22/p1/index">
+  <view class="box">1.折叠面板（展开一个面板，隐藏其他面板（固定）</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_22/p2/index">
+  <view class="box">2.展开多级</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_22/p3/index">
+  <view class="box">3.折叠面板（展开一个面板，隐藏其他面板(循环）</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_22/p4/index">
+  <view class="box">4.折叠与展开文章功能</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_22/p5/index">
+  <view class="box">5.text文本的展开与收起</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_22/p6/index">
+  <view class="box">6.折叠与展开文章功能</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_22/p7/index">
+  <view class="box">7.折叠与展开文章功能</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_22/p8/index">
+  <view class="box">8.折叠与展开文章功能</view>
+</navigator>

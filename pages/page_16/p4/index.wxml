@@ -1,0 +1,72 @@
+<view class="card _div data-v-1e28c790">
+  <view class="name _p data-v-1e28c790">5.选房</view>
+  <view class="list _div data-v-1e28c790">
+    <view class="item _div data-v-1e28c790">
+      <view class="icon _div data-v-1e28c790">
+        <view class="circle _div data-v-1e28c790">
+          <view class="small _i data-v-1e28c790"></view>
+        </view>
+        <view class="line _div data-v-1e28c790"></view>
+      </view>
+      <view class="desc _div data-v-1e28c790">根据摇号顺序进行选房</view>
+    </view>
+    <view class="item _div data-v-1e28c790">
+      <view class="icon _div data-v-1e28c790">
+        <view class="circle _div data-v-1e28c790">
+          <view class="small _i data-v-1e28c790"></view>
+        </view>
+        <view class="line _div data-v-1e28c790"></view>
+      </view>
+      <text class="desc data-v-1e28c790">选房需携带本人有效身份证和意向登记通过的回执单。</text>
+    </view>
+    <view class="item _div data-v-1e28c790">
+      <view class="icon _div data-v-1e28c790">
+        <view class="circle _div data-v-1e28c790">
+          <view class="small _i data-v-1e28c790"></view>
+        </view>
+        <view class="line _div data-v-1e28c790"></view>
+      </view>
+      <text class="desc data-v-1e28c790">开发商对选房家庭人员身份等信息进行校验。</text>
+    </view>
+    <view class="item _div data-v-1e28c790">
+      <view class="icon _div data-v-1e28c790">
+        <view class="circle _div data-v-1e28c790">
+          <view class="small _i data-v-1e28c790"></view>
+        </view>
+        <view class="line _div data-v-1e28c790"></view>
+      </view>
+      <view class="desc _div data-v-1e28c790">
+        <view class="desc-title title-bottom _div data-v-1e28c790">委托他人办理选房，须携带如下资料：</view>
+        <text class="instructions data-v-1e28c790">①本人身份证原件
+          ②委托人身份证原件及复印件
+          ③公证委托书</text>
+      </view>
+    </view>
+    <view class="item _div data-v-1e28c790">
+      <view class="icon _div data-v-1e28c790">
+        <view class="circle _div data-v-1e28c790">
+          <view class="small _i data-v-1e28c790"></view>
+        </view>
+        <view class="line _div data-v-1e28c790"></view>
+      </view>
+      <text class="desc data-v-1e28c790">放弃选房：针对入围家庭，放弃两次，三个月不能参与摇号；放弃三次，六个月不能参与摇号。</text>
+    </view>
+    <view class="item _div data-v-1e28c790">
+      <view class="icon _div data-v-1e28c790">
+        <view class="circle _div data-v-1e28c790">
+          <view class="small _i data-v-1e28c790"></view>
+        </view>
+        <view class="line _div data-v-1e28c790"></view>
+      </view>
+      <text class="desc data-v-1e28c790">签订合同：具体签订合同的时间和形式根据开发商公示为准。</text>
+    </view>
+    <view class="item _div data-v-1e28c790">
+      <view class="icon _div data-v-1e28c790">
+        <view class="circle _div data-v-1e28c790">
+          <view class="small _i data-v-1e28c790"></view>
+        </view>
+      </view>
+      <text class="desc data-v-1e28c790">办理贷款：上述流程完成后就到了办理贷款业务的环节，售楼部会通知你什么时候去办理贷款。一般来说选房的时候，都会有银行的工作人员现场办理业务。</text>
+    </view>
+  </view>
+</view>

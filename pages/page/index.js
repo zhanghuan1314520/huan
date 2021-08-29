@@ -23,9 +23,10 @@ Page({
       {id:15,name:'过滤器',url:'/pages/page/p5/index'},
       {id:16,name:'数据缓存(存取)',url:'/pages/page/p16/index'},
       {id:17,name:'反馈(内容,图片,上传,多项选择)',url:'/pages/page/p17/index'},
-      {id:18,name:'',url:'/pages/page/p18/index'},
-      {id:19,name:'',url:'/pages/page/p19/index'},
-      {id:20,name:'',url:'/pages/page/p20/index'},
+      {id:18,name:'模板',url:'/pages/page/p18/index'},
+      {id:19,name:'模拟数据(单个和模板)',url:'/pages/page/p19/index'},
+      {id:20,name:'video(视频列表)(默认)',url:'/pages/page/p20/index'},
+      {id:21,name:'video(视频列表)(自定义暂停和播放,弹幕)',url:'/pages/page/p21/index'},
     ]
   },
 

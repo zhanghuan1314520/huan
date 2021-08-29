@@ -1,0 +1,68 @@
+<!-- homelistkey  一级 -->
+<view wx:for="{{homelistkey}}" 
+      wx:for-index="index" 
+      dat wx:for-item="item"
+      wx:key="index"
+      class="dataBorder2">
+   <view>
+      <view class="dataBorder" 
+            bindtap="onTap" 
+            data-homeid="{{item.homeId}}" 
+            data-ide="{{index}}" 
+            data-id="{{item.id}}"
+            data-change="{{item.change}}">
+        <view class="{{item.homeId==nowText?'dataBorder3':'dataBorder1'}}">
+           <view class="lefrBorder">
+              <view class="nickText" bindlongtap="updateHomeName" data-id="{{item.homeId}}">
+                {{item.homeName}}
+              </view>
+           <view class="homeId">{{item.homeId}}</view>
+          </view>
+        <view wx:if="{{item.homeId==nowText}}" class="rightBorder1">
+          <view class="rightBorder2">右布局</view>
+        </view>
+        <view wx:else class="rightBorder" data-globalid="{{item.homeId}}" catchtap="addHomePersion">
+        </view>
+        <view class="clear"></view>
+      </view>
+      <view class="kind-list-item-bd {{item.onClick? 'kind-list-item-bd-show' : ''}}">
+        <view>
+          <!-- dataList  二级 -->
+          <view wx:for="{{item.dataList}}" wx:for-item="items" wx:for-index="idx" wx:key="idx" data-item="{{items}}">
+            <view catchtap="clickItem" data-homeid="{{items.homeId}}" data-ide="{{index}}" data-id="{{items.id}}"
+              data-change="{{items.change}}">
+              <view>
+                <view class="showText2" style="float:left;">{{items.userPhone}}</view>
+              </view>
+              <view class="showText1">
+                <view bindtap="updataNameDialog" data-homeid="{{item.homeId}}" data-tel="{{items.userPhone}}"
+                  data-usernickname="{{items.userNickname}}" class="showText3">
+                  {{items.userNickname}}
+                </view>
+              </view>
+            </view>
+            <view class="kind-list-item-bd-list {{items.onClick? 'kind-list-item-bd-show-list-item' : ''}}">
+              <view>
+                <view wx:for="{{items.listItem}}" wx:for-item="gitem" wx:key="idxx" wx:for-index="idxx"
+                  data-item="{{gitem}}">
+                  <view catchtap="clickItem" data-homeid="{{gitem.homeId}}" data-ide="{{idxx}}" data-id="{{gitem.id}}"
+                    data-change="{{gitem.change}}">
+                    <view>
+                      <view class="showText2" style="float:left;">{{gitem.userPhone}}</view>
+                    </view>
+                    <view class="showText1">
+                      <view bindtap="updataNameDialog" data-homeid="{{item.homeId}}" data-tel="{{gitem.userPhone}}"
+                        data-usernickname="{{gitem.userNickname}}" class="showText3">
+                        {{gitem.userNickname}}
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,56 @@
+.help {
+  width: 700rpx;
+  margin: 0 auto;
+}
+ 
+.help .help_item {
+  margin: 10rpx auto;
+}
+ 
+.help .help_item .title {
+  font-size: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #f2f2f2;
+  display: flex;
+}
+ 
+.help .help_item .title .title_1 {
+  width: 630rpx;
+  height: 60rpx;
+  padding-left: 20rpx;
+}
+ 
+.help .help_item .title .title_2 {
+  width: 50rpx;
+  height: 60rpx;
+  text-align: center;
+}
+ 
+.help .help_item .title .title_2 image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 10rpx auto;
+}
+ 
+.help .help_item .detail {
+  margin: 10rpx auto;
+  font-size: 25rpx;
+  line-height: 40rpx;
+  text-indent: 2em;
+}
+
+.up{
+  width: 16rpx;
+  height: 16rpx;
+  border-top: 1px solid rgb(231, 14, 14);
+  border-right: 1px solid rgb(231, 9, 9);
+  transform: rotate(-45deg);
+}
+.down{
+  width: 16rpx;
+  height: 16rpx;
+  border-top: 1px solid rgb(231, 14, 14);
+  border-right: 1px solid rgb(231, 9, 9);
+  transform: rotate(135deg);
+}
