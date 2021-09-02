@@ -1,27 +1,18 @@
-// pages/page/p19/index.js
-
-let data = require('./data')
-
-
+// pages/page/p25/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list:[],
-    items:[]
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var t = this
-    t.setData({
-      list:data.dataList,
-      items:data.a
-    })
+
   },
 
   /**

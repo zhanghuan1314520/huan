@@ -1,36 +1,33 @@
-// pages/page/p19/index.js
-
-let data = require('./data')
-
-
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list:[],
-    items:[]
+   
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var t = this
-    t.setData({
-      list:data.dataList,
-      items:data.a
-    })
-  },
 
+  },
+  
+  
+  
+  
+  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    //获得dialog组件
+    this.dialog = this.selectComponent("#dialog");
   },
-
+  showDialogBtn1() {
+    this.dialog.showDialogBtn1();
+  },
   /**
    * 生命周期函数--监听页面显示
    */

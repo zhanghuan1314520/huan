@@ -143,7 +143,15 @@
     "pages/page_22/p7/index",
     "pages/page_22/p8/index",
     "pages/page/p20/index",
-    "pages/page/p21/index"
+    "pages/page/p21/index",
+    "pages/page/p22/index",
+    "pages/page/p23/index",
+    "pages/page/p24/index",
+    "pages/page_16/p5/index",
+    "pages/page_16/p6/index",
+    "pages/page_16/p7/index",
+    "pages/page/p25/index",
+    "pages/page/p26/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

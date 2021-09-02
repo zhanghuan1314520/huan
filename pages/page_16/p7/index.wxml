@@ -1,0 +1,8 @@
+<view id="wrapper2">
+  <view id="progressbar2"></view>
+  <view id="fill2" style="width:{{view2.Width}}px;height:{{view2.Height}}px;top:{{top}}px;">
+    <view class='fltent2' style="line-height:{{linheight}}px;height:{{view2.Height}}px;" id='mjltest'>
+      {{count3}}%
+    </view>
+  </view>
+</view>

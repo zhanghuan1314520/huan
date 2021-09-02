@@ -1,0 +1,13 @@
+.parent {
+  width: 400px;
+  margin: 20rpx;
+}
+
+.children {
+  font-size: 30rpx;
+  display: inline;
+  zoom: 1;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  background-color: rgb(221, 161, 161);
+}

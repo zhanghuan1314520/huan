@@ -1,0 +1,8 @@
+<view class="parent">
+  <view class="children">欢迎来到脚本之家</view>
+</view>
+
+<view class="parent">
+  <view class="children">欢迎</view>
+</view>
+

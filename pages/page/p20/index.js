@@ -1,4 +1,3 @@
-
 Page({
   data: {
     videoPlay: null,
@@ -30,24 +29,31 @@ Page({
       dataList: [
         {
           id: 1,
-          title: "这是测试视频内容",
+          image: 'https://i.loli.net/2021/08/27/LQubGjwVMxh7JoB.png',
+          name: '海燕说房产',
+          introduce: '杭州知名自媒体',
+          describe: '新政策后面对改善盘,无房不如有房',
           content: "http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400",
-          cover: "https://i.loli.net/2021/08/29/6jFDLX3mzeOb41P.jpg"
+          cover: "https://i.loli.net/2021/08/27/anMIibBR7SkCTE4.png"
         },
         {
           id: 2,
-          title: "这是测试视频内容2",
+          image: 'https://i.loli.net/2021/08/27/LQubGjwVMxh7JoB.png',
+          name: '海燕说房产',
+          introduce: '杭州知名自媒体',
+          describe: '新政策后面对改善盘,无房不如有房',
           content: "http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400",
-          cover: "https://i.loli.net/2021/08/29/6jFDLX3mzeOb41P.jpg"
+          cover: "https://aihome.aihome365.cn/2021/03/1536166d-68a1-4e6c-9250-87534aa3e11d.jpg?x-oss-process=style/P5"
         },
-        {
-          id: 3,
-          title: "这是测试视频内容3",
-          content: "http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400",
-          cover: "https://i.loli.net/2021/08/29/6jFDLX3mzeOb41P.jpg"
-        }
       ]
     });
 
+  },
+  getvideo: function (e) {
+    let id = e.currentTarget.dataset.id;
+    console.log("video", id)
+    wx.navigateTo({
+      url: '/house/columnists/detail?id=' + id,
+    })
   }
 })

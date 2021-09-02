@@ -11,14 +11,14 @@
   <view class="box">4.折叠与展开文章功能</view>
 </navigator>
 <navigator  hover-class="none"  url="/pages/page_22/p5/index">
-  <view class="box">5.text文本的展开与收起</view>
+  <view class="box">5.text文本的展开与收起(省略号)</view>
 </navigator>
 <navigator  hover-class="none"  url="/pages/page_22/p6/index">
-  <view class="box">6.折叠与展开文章功能</view>
+  <view class="box">6.列表</view>
 </navigator>
 <navigator  hover-class="none"  url="/pages/page_22/p7/index">
-  <view class="box">7.折叠与展开文章功能</view>
+  <view class="box">7.</view>
 </navigator>
 <navigator  hover-class="none"  url="/pages/page_22/p8/index">
-  <view class="box">8.折叠与展开文章功能</view>
+  <view class="box">8.</view>
 </navigator>

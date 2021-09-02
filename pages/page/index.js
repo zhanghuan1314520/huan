@@ -25,8 +25,13 @@ Page({
       {id:17,name:'反馈(内容,图片,上传,多项选择)',url:'/pages/page/p17/index'},
       {id:18,name:'模板',url:'/pages/page/p18/index'},
       {id:19,name:'模拟数据(单个和模板)',url:'/pages/page/p19/index'},
-      {id:20,name:'video(视频列表)(默认)',url:'/pages/page/p20/index'},
-      {id:21,name:'video(视频列表)(自定义暂停和播放,弹幕)',url:'/pages/page/p21/index'},
+      {id:20,name:'video(视频列表1)(默认)',url:'/pages/page/p20/index'},
+      {id:21,name:'video(视频列表2)(自定义暂停和播放,弹幕)',url:'/pages/page/p21/index'},
+      {id:22,name:'video(视频列表3)',url:'/pages/page/p22/index'},
+      {id:23,name:'js控制文本数量',url:'/pages/page/p23/index'},
+      {id:24,name:'video(视频列表3)',url:'/pages/page/p24/index'},
+      {id:25,name:'文本宽度自适应',url:'/pages/page/p25/index'},
+      {id:26,name:'遮罩',url:'/pages/page/p26/index'},
     ]
   },
 

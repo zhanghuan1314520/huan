@@ -1,27 +1,24 @@
-// pages/page/p19/index.js
-
-let data = require('./data')
-
-
+// pages/page_16/p6/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list:[],
-    items:[]
+    deflautWidth: 0,
+    inmoney: 400.00,
+    cost: 1000.00,
+    little: -200.00,
+    row1: "",
+    row2: "",
+    row3: ""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var t = this
-    t.setData({
-      list:data.dataList,
-      items:data.a
-    })
+
   },
 
   /**

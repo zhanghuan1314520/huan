@@ -1,26 +1,20 @@
-// pages/page/p19/index.js
-
-let data = require('./data')
-
-
+// pages/page/p23/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list:[],
-    items:[]
+    title: '测试菜市场测试测试菜市场删除测试测试',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var t = this
-    t.setData({
-      list:data.dataList,
-      items:data.a
+    this.setData({
+      //  js控制文本数量
+      title: this.data.title.substring(0, 10) + '...'
     })
   },
 

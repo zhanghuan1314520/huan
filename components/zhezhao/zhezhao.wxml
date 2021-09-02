@@ -1,0 +1,25 @@
+<view class="box_b" top="{{top}}" height="{{height}}">
+  <view class="box_item">
+    <view class="new_mc_tip">点击解锁</view>
+    <view class="new_mc_ts">即可查看全部片区排名</view>
+    <view class="new_mc_btn" bindtap="{{showDialogBtn1}}">立即解锁</view>
+  </view>
+</view>
+
+
+
+
+<!--弹窗内容开始-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModals}}"></view>
+<view class="modal-dialog" wx:if="{{showModals}}">
+  <view class="modal-title">解锁全部价格走势</view>
+  <view class="modal-content">
+    <view class="modal-content_tip">邀请好友</view>
+    <view class="modal-content_btn" bindtap="{{onCancel}}">邀请好友</view>
+  </view>
+  <view class="modal-content">
+    <view class="modal-content_tip">成为会员免费解锁</view>
+    <view class="modal-content_btn" bindtap="{{onConfirm}}">马上开通会员</view>
+  </view>
+</view>
+<!--弹窗内容结束-->

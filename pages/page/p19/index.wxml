@@ -8,3 +8,5 @@
 <block wx:for="{{list}}" wx:key="id">
   <template is="list" data="{{item}}"></template>
 </block>
+
+<view wx:for="{{items}}" wx:key="id">{{item.name}}</view>

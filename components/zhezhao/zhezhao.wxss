@@ -1,0 +1,106 @@
+/* 解锁区域部分开始 */
+.box_b{
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  height: 70%;
+  /* border-bottom-right-radius: 10rpx;
+  border-bottom-left-radius: 10rpx; */
+  position: absolute;
+  z-index: 10;
+  opacity: 0.9;
+  top: 30%;
+  display: flex;
+}
+.box_item{
+  display: inline-block;
+  content: '';
+  width: 100%;
+  height: 330rpx;
+  vertical-align: middle;
+  margin: auto;
+}
+.new_mc_tip {
+  width: 300rpx;
+  font-size: 26rpx;
+  color: #000;
+  padding-top: 20rpx;
+  font-weight: 600;
+  margin: 40rpx auto 0 auto;
+}
+
+.new_mc_ts {
+  width: 300rpx;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+  margin: 40rpx auto 0 auto;
+}
+
+.new_mc_btn {
+  width: 300rpx;
+  font-size: 28rpx;
+  border-radius: 30rpx;
+  background-color: #366AB3;
+  color: #fff;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin: 40rpx auto 0 auto;
+}
+/* 解锁区域部分结束 */
+/* 弹窗内容区域部分开始 */
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 710rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 40%;
+  left: 0;
+  z-index: 9999;
+ background-color: #f1e9e9;
+  border-radius: 10rpx;
+  margin: 0 20rpx;
+}
+
+.modal-title {
+  padding-top: 30rpx;
+  font-size: 30rpx;
+  color: #030303;
+  text-align: center;
+  font-weight: 600;
+}
+
+.modal-content {
+  padding: 30rpx 32rpx;
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+  justify-content: space-around;
+}
+
+.modal-content_tip {
+  font-size: 26rpx;
+  width: 210rpx;
+  color: #888;
+}
+
+.modal-content_btn {
+  width: 200rpx;
+  background-color: #366AB3;
+  border-radius: 30rpx;
+  color: #fff;
+  text-align: center;
+  font-size: 24rpx;
+}
+/* 弹窗内容区域结束 */

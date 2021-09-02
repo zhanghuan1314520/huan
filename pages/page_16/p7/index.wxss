@@ -1,0 +1,28 @@
+#wrapper2{
+  position: relative;
+  width:100px;
+  height:230px;
+  border:1px solid darkgray;
+  margin-bottom: 50px;
+}
+#progressbar2{
+  position: absolute;
+  top:15px;
+  left:30px;
+  width:20px;
+  height:200px;
+  border:1px solid darkgray;
+  border-radius: 10px;
+}
+#fill2{
+position: absolute;left: 30px;
+background-color: #6caf00;
+border-radius: 10px;
+transform:rotate(180deg);
+}
+.fltent2{
+transform:rotate(180deg);
+font-size: 12px;
+text-align: center;
+height: 100%; 
+}

@@ -10,3 +10,12 @@
 <navigator  hover-class="none"  url="/pages/page_16/p4/index">
   <view class="box">4.流程2</view>
 </navigator>
+<navigator  hover-class="none"  url="/pages/page_16/p5/index">
+  <view class="box">5.setInterval</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_16/p6/index">
+  <view class="box">6.长度根据数字自适应</view>
+</navigator>
+<navigator  hover-class="none"  url="/pages/page_16/p7/index">
+  <view class="box">7.竖向(%)</view>
+</navigator>

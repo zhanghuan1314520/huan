@@ -1,0 +1,47 @@
+<view class="hot_header_item">
+  <view class="hot_header_r">
+    <view class="hot_header_r_img">
+      <image src="{{image}}"></image>
+    </view>
+    <view class="hot_header_r_name">
+      <view class="hot_header_r_name_t">{{name}}</view>
+      <view class="hot_header_r_name_b">{{introduce}}</view>
+    </view>
+  </view>
+  <view class="hot_header_l">
+    <button class="share" open-type="share">分享</button>
+  </view>
+</view>
+
+<view class="introduction">简介：{{describe}}</view>
+<view class="tag">
+  <block wx:for="{{tag}}" wx:key="id">
+    <label>#{{item.name}}</label>
+  </block>
+</view>
+
+<view class="list_box">
+  <view class="list_item" wx:for="{{list}}" wx:key="id">
+    <view class="list_item_video">
+      <video
+      src="{{item.videoSrc}}"
+       data-id="{{index}}"
+        wx:if="{{_index == index}}" 
+        objectFit='cover'
+        autoplay='true'
+        show-mute-btn="true"
+        title="true"
+        direction="true"
+        show-center-play-btn="true"
+        controls>
+      </video>
+      <image src="{{item.videoCoverImg}}" data-id="{{index}}" mode="aspectFill" bindtap="videoPlay"
+        style="display: {{ _index == index ? 'none' : 'block' }};"></image>
+      <cover-view class="video_item">
+        <cover-image class="video_item_img" src="https://i.loli.net/2021/08/28/NCralQouI189gHx.png"></cover-image>
+        <cover-view class="video_item_num">{{item.num}}</cover-view>
+      </cover-view>
+    </view>
+    <view class="list_item_title">{{item.title}}</view>
+  </view>
+</view>
